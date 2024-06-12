@@ -14,6 +14,13 @@ body {
   background: var(--green);
 }
 
+.header-container {
+  border-radius: 10px;
+  background-color: var(--cream);
+  width: 100%;
+  padding: 2rem;
+}
+
 h1 {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -22,102 +29,23 @@ h1 {
   justify-content: center; */
   text-align: center;
   /* margin-top: 2em; */
-  align-self: center;
+  /* align-self: center; */
   /* margin-left: 5em;
   margin-right: 5em; */
   width: 50%;
   font-size: 2rem;
   /* line-height: 1; */
-  font-weight: 800;
+  font-weight: 400;
   /* letter-spacing: -0.025em; */
   /* margin: 0; */
   /* color: var(--cream); */
-}
-/* 
-.h2-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-} */
-
-h2 {
-  font-family: Ubuntu;
-  text-align: center;
-  width: 20%;
-  transition: all .25s;
-}
-
-h2:hover {
-  /* background-color: var(--sage);
-  border-radius: 0.7em; */
-  cursor: pointer;
-  color: var(--lavender);
-  font-size: 26px;
-}
-
-#headshot {
-  width: 25%
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-hr {
-  width: 75%
-}
-
-* {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  box-sizing: border-box; 
-}
-
-@media only screen and (min-width: 600px) {
-  header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      background-color: var(--cream);
-      height: 10em;
-      padding-left: 2em;
-      padding-right: 3em;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      background-color: var(--green);
-      height: 6em;
-      padding-left: 0;
-      padding-right: 0;
-      margin: 0;
-      width: 100%
-  }
-
-  #header-icon {
-      height: 4em;
-  }
-  
-  .signature-logo {
-      height: 2em;
-  }
 }
 
 #mct-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%
+  width: 100%;
 }
 
 #header-icon {
@@ -181,6 +109,219 @@ hr {
   font-size: 26px;
 }
 
+.book-btn {
+  font-family: Ubuntu;
+  text-align: center;
+  /* width: 100%; */
+  transition: all .25s;
+  border: solid;
+  border-width: 3px;
+  border-radius: 5px;
+  transition: all .25s;
+  padding: 0.3em;
+  font-weight: 500;
+}
+
+.book-btn:hover {
+  /* background-color: var(--sage);
+  border-radius: 0.7em; */
+  cursor: pointer;
+  color: var(--lavender);
+  font-size: 26px;
+
+}
+
+#headshot-row-container {
+  align-items: center;
+  height: 60rem;
+
+}
+
+#headshot-container {
+  width: 40rem;
+  /* height: 60rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 4rem;
+  align-items: flex-end;
+}
+
+#about-container {
+  width: 40rem;
+  /* height: 60rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 4rem;
+  /* align-items: flex-start; */
+}
+
+#headshot-caption-container {
+  width: 40rem;
+  /* max-width: 35%; */
+  height: 60rem;
+  border-left-color: var(--cream);
+  border-left-width: 2px;
+  border-left-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headshot-caption {
+  /* margin-top: 10rem; */
+  margin-left: 4rem;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+#about-row-container {
+  align-items: center;
+  height: 110rem;
+
+}
+
+.about-caption {
+  /* margin-top: 10rem; */
+  margin-left: 2rem;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.FAQ {
+  margin-left: 2rem;
+  margin-right: 2rem
+}
+
+#snowshoe-container {
+  width: 40rem;
+  /* max-width: 35%; */
+  height: 100%;
+  border-left-color: var(--cream);
+  border-left-width: 2px;
+  border-left-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#headshot {
+  width: 80%;
+  /* width: 80%; */
+  height: auto;
+  border-radius: 10px;
+}
+
+#about {
+  width: 100%;
+  /* width: 80%; */
+  height: auto;
+  border-radius: 10px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.more-about {
+  width: 65%;
+}
+
+#certification-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+}
+
+#certification-title {
+  width: 100%;
+  text-align: left;
+}
+
+#faq-row-container {
+  /* align-items: center; */
+  /* height: 180rem; */
+
+}
+
+#q-container {
+  width: 40rem;
+  /* height: 60rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 4rem;
+  padding-left: 10rem;
+}
+
+#a-container {
+  width: 40rem;
+  /* max-width: 35%; */
+  height: 80rem;
+  border-left-color: var(--cream);
+  border-left-width: 2px;
+  border-left-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+hr {
+  width: 75%
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      /* background-color: var(--cream); */
+      height: 10em;
+      padding-left: 1em;
+      padding-right: 1em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      /* background-color: var(--green); */
+      height: 6em;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0;
+      width: 100%
+  }
+
+  #header-icon {
+      height: 4em;
+  }
+  
+  .signature-logo {
+      height: 2em;
+  }
+}
+
+
+
 .container {
   width: 100%;
   display: flex;
@@ -193,9 +334,8 @@ hr {
 
 .paragraph {
   font-size: 1.5rem;
-  margin-top: 2em;
-  margin-left: 4em;
-  margin-right: 4em
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 @media (min-width: 640px) {
@@ -236,6 +376,18 @@ hr {
 
 .margin-t-l {
   margin-top: 6rem;
+}
+
+.margin-b-l {
+  margin-bottom: 6rem;
+}
+
+.margin-t-s {
+  margin-top: 2rem;
+}
+
+.margin-b-s {
+  margin-bottom: 2rem;
 }
 
 .green {
