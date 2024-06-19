@@ -7,6 +7,8 @@ import { useState, useEffect } from 'react'
 import { api } from "~/trpc/server"
 import styles from "../styles/styles.css"
 
+import { ClientContainer } from "./components/ClientContainer"
+
 import { Header } from "./components/Header"
 import { Motif } from "./components/Motif"
 import { HDivider } from "./components/HDivider"
@@ -36,22 +38,24 @@ export default function Home() {
 
   return (
     <AppContextProvider>
-      <Header />
-      {/* <div className={styles.main}>
-        <div className={styles.container}> */}
-      <Motif />
-      <HDivider />
-      <CallToAction />
-      <HeadshotSection />
-      <SocialProof />
-      <About />
-      <MoreAbout />
-      <HDivider />
-      <Certification />
-      <FAQ />
-        {/* </div>
-      </div> */}
-      <Footer />
+      <ClientContainer>
+        <Header />
+        {/* <div className={styles.main}>
+          <div className={styles.container}> */}
+        <Motif />
+        <HDivider />
+        <CallToAction />
+        <HeadshotSection />
+        <SocialProof />
+        <About />
+        <MoreAbout />
+        <HDivider />
+        <Certification />
+        <FAQ />
+          {/* </div>
+        </div> */}
+        <Footer />
+      </ClientContainer>
     </AppContextProvider>
   );
 
