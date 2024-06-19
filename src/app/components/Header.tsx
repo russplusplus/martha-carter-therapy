@@ -1,9 +1,9 @@
-export function Header() {
+// "use client"
+// const log = console.log.bind(console)
+// log("we're logging babyyy!")
 
-    const handleScroll = () => {
-        console.log('scroll')
-    }
-
+import { Menu } from './Menu'
+export async function Header() {
     return (
         <header>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -22,6 +22,7 @@ export function Header() {
                     <a href="https://www.psychologytoday.com/us/therapists/martha-carter-denver-co/1061265" target="_blank" style={{"textDecoration": "none"}}>
                         <div id="connect-btn">CONNECT</div>
                     </a>
+                    <Menu />
                 </div>
             </div>
         </header>

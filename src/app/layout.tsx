@@ -1,10 +1,11 @@
+
 import "~/styles/styles.css";
 
 import { GeistSans } from "geist/font/sans";
 
 import { TRPCReactProvider } from "~/trpc/react";
 
-import { Header } from "./components/Header"
+import { AppContextProvider } from "./components/AppContext";
 
 export const metadata = {
   title: "Martha Carter Therapy",
@@ -20,10 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={GeistSans.className}>
-        <Header />
-        <TRPCReactProvider>
-          {children}
-        </TRPCReactProvider>
+          <TRPCReactProvider>
+              {children}
+          </TRPCReactProvider>
       </body>
     </html>
   );
