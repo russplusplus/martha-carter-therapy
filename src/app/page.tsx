@@ -3,12 +3,13 @@
 
 import Link from "next/link"
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { api } from "~/trpc/server"
 import styles from "../styles/styles.css"
 
 import { ClientContainer } from "./components/ClientContainer"
 
+import { BookingModal } from "./components/BookingModal"
 import { Header } from "./components/Header"
 import { Motif } from "./components/Motif"
 import { HDivider } from "./components/HDivider"
@@ -39,6 +40,7 @@ export default function Home() {
   return (
     <AppContextProvider>
       <ClientContainer>
+        <BookingModal />
         <Header />
         {/* <div className={styles.main}>
           <div className={styles.container}> */}

@@ -44,7 +44,7 @@ export function About() {
                 
             </div>
             <div id="snowshoe-container">
-                <img id='about' src='snowshoe.jpg' width="554" height="739"></img>
+                <img id='about-pic' src='snowshoe.jpg' width="554" height="739"></img>
               
             </div>          
         </div>

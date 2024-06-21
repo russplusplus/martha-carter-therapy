@@ -5,18 +5,47 @@
 
 // log('we"re logging baby')
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Hamburger from 'hamburger-react'
 import { useAppContext } from './AppContext'
 
 export function Menu() {
 
     // const [isOpen, setOpen] = useState(false)
-    let { isMenuOpen, setMenuOpen } = useAppContext()
+    let { 
+        isMenuOpen, 
+        setMenuOpen,
+        isBookingModalOpen,
+        setBookingModalOpen,
+        isBookingStarted,
+        setBookingStarted
+    } = useAppContext()
+
+    function scrollToIntro() {
+        document?.getElementById("headshot-row-container")?.scrollIntoView({
+            behavior: "smooth"
+        })
+    }
+
+    function scrollToAbout() {
+        document?.getElementById("about-row-container")?.scrollIntoView({
+            behavior: "smooth"
+        })
+    }
+
+    function scrollToFAQ() {
+        document?.getElementById("faq-row-container")?.scrollIntoView({
+            behavior: "smooth"
+        })
+    }
 
     useEffect(() => {
         console.log('isMenuOpen:', isMenuOpen)
     }, [isMenuOpen])
+
+    // useEffect(() => {
+    //     aboutRef.current = document.getElementById("headshot-row-container")
+    // }, [])
 
     return (
         <>
@@ -25,18 +54,19 @@ export function Menu() {
             </div>
             {isMenuOpen && 
                 <div id="menu">
-                    <h2 className="menu-row">
+                    <h2 className="menu-row" onClick={() => setBookingModalOpen(true)}>
                         Book a free consultation
                     </h2>
-                    <h2 className="menu-row">
-                        About
+                    <h2 className="menu-row" onClick={scrollToIntro}>
+                        Intro
                     </h2>
-                    <h2 className="menu-row">
-                        Q & A
+                    <h2 className="menu-row" onClick={scrollToAbout}>
+                        About me
                     </h2>
-                    <h2 className="menu-row">
-                        Another section
+                    <h2 className="menu-row" onClick={scrollToFAQ}>
+                        FAQs
                     </h2>
+                    
                 </div>
             }
             
