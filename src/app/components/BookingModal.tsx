@@ -7,12 +7,12 @@ import { useAppContext } from "./AppContext";
 
 import { IoClose } from "react-icons/io5";
 
-type FormData = {
-    fname: string,
-    lname: string,
-    email: string,
-    about: string
-}
+// type FormData = {
+//     fname: string,
+//     lname: string,
+//     email: string,
+//     about: string
+// }
 
 export function BookingModal() {
     const { 

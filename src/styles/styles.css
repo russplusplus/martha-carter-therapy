@@ -67,14 +67,17 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+  transition: all .25s;
 
-#exit-booking-modal-btn:hover {
-  background-color: var(--cream);
+  &:hover {
+    background-color: var(--cream);
+    font-size: 1.8rem;
+  }
 }
 
 #submit-booking-modal-btn {
   width: 10rem;
+  height: 2.5rem;
   font-size: 1.5rem;
   border-radius: 1rem;
   border-width: 0;
@@ -83,15 +86,23 @@ h1 {
   align-self: center;
   font-family: ubuntu;
   margin-top: 0.5rem;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
+  transition: all .25s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: var(--lavender);
+    font-size: 1.6rem;
+  }
 }
 
-#submit-booking-modal-btn:hover {
-  color: var(--lavender);
-}
 
 #finish-booking-modal-btn {
   width: 10rem;
+  height: 2.5rem;
   font-size: 1.5rem;
   border-radius: 1rem;
   border-width: 0;
@@ -100,11 +111,16 @@ h1 {
   align-self: center;
   font-family: ubuntu;
   margin-top: 0.5rem;
-  padding: 0.5rem;
-}
+  transition: all .25s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-#finish-booking-modal-btn:hover {
-  color: var(--lavender);
+  &:hover {
+    color: var(--lavender);
+    font-size: 1.6rem;
+  }
 }
 
 #thank-you {
@@ -120,6 +136,7 @@ h1 {
   justify-content: center;
   height: 100%;
   text-align: center;
+  font-family: ubuntu;
 }
 
 #booking-modal {
@@ -162,11 +179,11 @@ h1 {
   /* color: var(--green); */
   margin-right: 0.7em;
   transition: all .25s;
-}
 
-#ig-icon:hover {
-  color: var(--lavender);
-  font-size: 3rem;
+  &:hover {
+    color: var(--lavender);
+    font-size: 3rem;
+  }
 }
 
 #mail-icon {
@@ -174,11 +191,11 @@ h1 {
   /* color: var(--green); */
   margin-right: 0.7em;
   transition: all .25s;
-}
 
-#mail-icon:hover {
-  color: var(--lavender);
-  font-size: 3rem;
+  &:hover {
+    color: var(--lavender);
+    font-size: 3rem;
+  }
 }
 
 #connect-btn {
@@ -194,13 +211,18 @@ h1 {
   border-radius: 5px;
   transition: all .25s;
   margin-right: 4rem;
+
+  &:hover {
+    border-color: var(--lavender);
+    color: var(--lavender);
+    font-size: 1.6rem;
+  }
 }
 
-#connect-btn:hover {
-
-  border-color: var(--lavender);
-  color: var(--lavender);
-  font-size: 1.6rem;
+#menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #menu-btn-closed {
@@ -212,6 +234,10 @@ h1 {
   transition: all .25s;
   width: 4rem;
   height: 4rem;
+
+  &:hover {
+    color: var(--lavender);
+  }
 }
 
 #menu-btn-open {
@@ -222,17 +248,13 @@ h1 {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   padding: 0.5rem;
+  transition: all .25s;
   width: 4rem;
   height: 4rem;
-}
 
-#menu-btn-closed:hover {
-  color: var(--lavender);
-  /* height: 2rem; */
-}
-
-#menu-btn-open:hover {
-  color: var(--lavender);
+  &:hover {
+    color: var(--lavender);
+  }
 }
 
 #book-btn-corner {
@@ -247,15 +269,23 @@ h1 {
   align-items: center;
   width: 4rem;
   height: 4rem;
-}
+  transition: all .25s;
 
-#book-btn-corner:hover {
-  background-color: var(--sage);
+  &:hover {
+    background-color: var(--sage);
+  }
+
 }
 
 #book-btn-corner-logo {
   padding: .5rem;
   height: 4rem;
+  transition: all .25s;
+
+  &:hover {
+    padding: 0;
+    height: 4.01rem;
+  }
 }
 
 #menu {
@@ -276,11 +306,11 @@ h1 {
   height: 2rem;
   cursor: pointer;
   margin-top: .5rem;
-}
 
-.menu-row:hover {
-  color: var(--lavender);
-  font-size: 1.6rem;
+  &:hover {
+    color: var(--lavender);
+    font-size: 1.6rem;
+  }
 }
 
 .book-btn {
@@ -293,24 +323,23 @@ h1 {
   transition: all .25s;
   padding: 0.3em;
   font-weight: 500;
-}
 
-.book-btn:hover {
-  /* background-color: var(--sage);
-  border-radius: 0.7em; */
-  cursor: pointer;
-  color: var(--lavender);
-  font-size: 1.6rem;
-
+  &:hover {
+    cursor: pointer;
+    color: var(--lavender);
+    font-size: 1.6rem;
+  }
 }
 
 #headshot-row-container {
   align-items: center;
-  height: 60rem;
+  /* height: 60rem; */
 
 }
 
 #headshot-container {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   width: 40rem;
   /* height: 60rem; */
   display: flex;
@@ -318,10 +347,15 @@ h1 {
   justify-content: center;
   padding-right: 4rem;
   align-items: flex-end;
+  border-right-color: var(--cream);
+  border-right-width: 2px;
+  border-right-style: solid;
 }
 
 #about-container {
-  margin-top: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
   width: 40rem;
   /* height: 60rem; */
   display: flex;
@@ -329,15 +363,18 @@ h1 {
   justify-content: center;
   padding-right: 4rem;
   /* align-items: flex-start; */
+  border-right-color: var(--cream);
+  border-right-width: 2px;
+  border-right-style: solid;
 }
 
 #headshot-caption-container {
   width: 40rem;
   /* max-width: 35%; */
-  height: 60rem;
-  border-left-color: var(--cream);
+  /* height: 60rem; */
+  /* border-left-color: var(--cream);
   border-left-width: 2px;
-  border-left-style: solid;
+  border-left-style: solid; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -352,7 +389,7 @@ h1 {
 
 #about-row-container {
   align-items: center;
-  height: 100rem;
+  /* height: 100rem; */
 
 }
 
@@ -372,9 +409,9 @@ h1 {
   width: 40rem;
   /* max-width: 35%; */
   height: 100%;
-  border-left-color: var(--cream);
+  /* border-left-color: var(--cream);
   border-left-width: 2px;
-  border-left-style: solid;
+  border-left-style: solid; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -426,15 +463,16 @@ h1 {
   justify-content: flex-start;
   padding-right: 4rem;
   padding-left: 10rem;
+  border-right-color: var(--cream);
+  border-right-width: 2px;
+  border-right-style: solid;
 }
 
 #a-container {
   width: 40rem;
   /* max-width: 35%; */
-  height: 80rem;
-  border-left-color: var(--cream);
-  border-left-width: 2px;
-  border-left-style: solid;
+  /* height: 80rem; */
+  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -476,13 +514,14 @@ input {
   padding: .5rem;
   padding-left: 1rem;
   font-family: ubuntu;
+  transition: all .25s;
 
+  &:focus {
+    background-color: var(--sage);
+    outline: none;
+  }
 }
 
-input:focus {
-  background-color: var(--sage);
-  outline: none;
-}
 
 textarea {
   background-color: var(--cream);
@@ -492,11 +531,12 @@ textarea {
   padding: .5rem;
   padding-left: 1rem;
   font-family: ubuntu;
-}
+  resize: none;
 
-textarea:focus {
-  background-color: var(--sage);
-  outline: none;
+  &:focus {
+    background-color: var(--sage);
+    outline: none;
+  }
 }
 
 * {

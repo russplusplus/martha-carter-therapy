@@ -3,6 +3,20 @@ import { z } from "zod";
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 
 export const postRouter = createTRPCRouter({
+  contact: publicProcedure
+    .input(z.object({
+      firstName: z.string(),
+      lastName: z.string(),
+      email: z.string(),
+      about: z.string()
+    }))
+    .query(({ input }) => {
+      console.log('in ')
+      return {
+
+      }
+    })
+
   hello: publicProcedure
     .input(z.object({ text: z.string() }))
     .query(({ input }) => {

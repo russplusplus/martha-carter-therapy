@@ -17,25 +17,20 @@ export function ClientContainer(
 
     useEffect(() => {
         document.addEventListener("click", (event) => {
-            const firstElement = event.composedPath()[0]
-            log('firstElement:', firstElement)
-            if (   !firstElement?.className.includes('menu') 
-                && !firstElement?.id.includes('menu') 
-                && !firstElement?.className.includes('hamburger')) {
-                setMenuOpen(false)
-            }
-
-
-
-            // log("isBookingModalOpen:", isBookingModalOpen)
+            
+            let insideHamburgerMenu = false
             let insideBookingModal = false
             let insideBookingModalContainer = false
+
             for (let element of event.composedPath()) {
-                // console.log('element.id:', element.id)
+                if (element?.id === "menu-container") insideHamburgerMenu = true
                 if (element?.id === "booking-modal") insideBookingModal = true
                 if (element?.id === "booking-modal-container") insideBookingModalContainer = true
             }
+
+            if (!insideHamburgerMenu) setMenuOpen(false)
             if (!insideBookingModal && insideBookingModalContainer) setBookingModalOpen(false)
+        
         })
     }, [])
 

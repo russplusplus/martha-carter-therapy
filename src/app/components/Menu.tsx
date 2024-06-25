@@ -1,9 +1,7 @@
 // useState only works in client component
 "use client"
 
-// const log = console.log.bind(console)
-
-// log('we"re logging baby')
+const log = console.log.bind(console)
 
 import { useState, useEffect, useRef } from 'react'
 import Hamburger from 'hamburger-react'
@@ -20,6 +18,8 @@ export function Menu() {
         isBookingStarted,
         setBookingStarted
     } = useAppContext()
+
+    const [ menuHover, setMenuHover ] = useState(false)
 
     function scrollToIntro() {
         document?.getElementById("headshot-row-container")?.scrollIntoView({
@@ -39,18 +39,16 @@ export function Menu() {
         })
     }
 
-    useEffect(() => {
-        console.log('isMenuOpen:', isMenuOpen)
-    }, [isMenuOpen])
-
-    // useEffect(() => {
-    //     aboutRef.current = document.getElementById("headshot-row-container")
-    // }, [])
-
     return (
-        <>
-            <div id={isMenuOpen ? "menu-btn-open" : "menu-btn-closed"}>
-                <Hamburger toggled={isMenuOpen} toggle={setMenuOpen}/>
+        <div id="menu-container">
+            <div id={isMenuOpen ? "menu-btn-open" : "menu-btn-closed"}
+                onClick={() => {
+                    log("hamburger click")
+                    setMenuOpen(!isMenuOpen)
+                } }
+                onMouseOver={() => setMenuHover(true)}
+                onMouseOut={() => setMenuHover(false)}>
+                <Hamburger toggled={isMenuOpen} size={menuHover ? 38 : 32}/>
             </div>
             {isMenuOpen && 
                 <div id="menu">
@@ -72,6 +70,6 @@ export function Menu() {
             
 
 
-        </>
+        </div>
     )
 }
