@@ -369,7 +369,7 @@ h1 {
 }
 
 #headshot-caption-container {
-  width: 40rem;
+  width: 40%;
   /* max-width: 35%; */
   /* height: 60rem; */
   /* border-left-color: var(--cream);
@@ -406,7 +406,7 @@ h1 {
 }
 
 #snowshoe-container {
-  width: 40rem;
+  width: 40%;
   /* max-width: 35%; */
   height: 100%;
   /* border-left-color: var(--cream);
@@ -455,8 +455,19 @@ h1 {
 
 }
 
+#faq-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 #q-container {
-  width: 40rem;
+  width: 45%;
   /* height: 60rem; */
   display: flex;
   flex-direction: column;
@@ -469,7 +480,7 @@ h1 {
 }
 
 #a-container {
-  width: 40rem;
+  width: 45%;
   /* max-width: 35%; */
   /* height: 80rem; */
   
