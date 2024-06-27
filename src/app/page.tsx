@@ -1,13 +1,10 @@
-// useEffect only works in client components
-// "use client"
-
 import Link from "next/link"
 
 import { useState, useEffect, useRef } from 'react'
 import { api } from "~/trpc/server"
 import styles from "../styles/styles.css"
 
-import { ClientContainer } from "./components/ClientContainer"
+import { ClientWrapper } from "./components/ClientWrapper"
 
 import { BookingModal } from "./components/BookingModal"
 import { Header } from "./components/Header"
@@ -25,25 +22,12 @@ import { Footer } from "./components/Footer"
 import { AppContextProvider } from "./components/AppContext"
 
 export default function Home() {
-  // const hello = await api.post.hello({ text: "from tRPC" });
-
-  function handleScroll() {
-    console.log('scroll!')
-  }
-
-  // useEffect(() => {
-  //   document.body.addEventListener('click', () => {
-  //     console.log()
-  //   })
-  // }, [])
 
   return (
     <AppContextProvider>
-      <ClientContainer>
+      <ClientWrapper>
         <BookingModal />
         <Header />
-        {/* <div className={styles.main}>
-          <div className={styles.container}> */}
         <Motif />
         <HDivider />
         <CallToAction />
@@ -54,10 +38,8 @@ export default function Home() {
         <HDivider />
         <Certification />
         <FAQ />
-          {/* </div>
-        </div> */}
         <Footer />
-      </ClientContainer>
+      </ClientWrapper>
     </AppContextProvider>
   );
 

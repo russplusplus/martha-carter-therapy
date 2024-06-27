@@ -5,7 +5,7 @@ const log = console.log.bind(console)
 import { useEffect, useRef } from 'react'
 import { useAppContext } from './AppContext'
 
-export function ClientContainer(
+export function ClientWrapper(
     { children }
     :
     { children: React.ReactNode}
@@ -33,11 +33,6 @@ export function ClientContainer(
         
         })
     }, [])
-
-    useEffect(() => {
-        console.log('isBookingModalOpen:', isBookingModalOpen)
-    }, [isBookingModalOpen])
-
 
     return (
         <>

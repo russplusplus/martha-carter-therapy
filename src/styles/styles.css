@@ -380,11 +380,22 @@ h1 {
   justify-content: center;
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .headshot-caption {
   /* margin-top: 10rem; */
   margin-left: 4rem;
   margin-top: .5em;
   margin-bottom: .5em;
+  /* color: var(--green);
+  transition: all 1s; */
+}
+
+.headshot-caption.visible {
+  color: var(--cream)
 }
 
 #about-row-container {
