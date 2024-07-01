@@ -1,9 +1,9 @@
-import { FadeIn } from "./FadeIn"
+import { FadeInOnScroll } from "./FadeInOnScroll"
 
 export function MoreAbout() {
     return (
         <>
-            <FadeIn>
+            <FadeInOnScroll>
                 <div className="flex-h-center margin-t-l cream">
                     <p className="paragraph more-about">
                         As a Licensed Clinical Social Worker, I work with adults with a variety of concerns, including
@@ -13,8 +13,8 @@ export function MoreAbout() {
                         and easeful life.
                     </p>
                 </div>
-            </FadeIn>
-            <FadeIn>
+            </FadeInOnScroll>
+            <FadeInOnScroll>
                 <div className="flex-h-center margin-t-s cream">
                     <p className="paragraph more-about">
                         I approach therapy from a trauma-informed, nonjudgmental, attachment-based lens. I am
@@ -22,7 +22,7 @@ export function MoreAbout() {
                         resilience and strengths.
                     </p>
                 </div>
-            </FadeIn>
+            </FadeInOnScroll>
         </>
     )
 }

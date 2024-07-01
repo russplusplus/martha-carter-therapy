@@ -1,8 +1,8 @@
-import { FadeIn } from "./FadeIn"
+import { FadeInOnScroll } from "./FadeInOnScroll"
 
 export function SocialProof() {
   return (
-    <FadeIn>
+    <FadeInOnScroll>
       <div className={'flex-h-center margin-t-l margin-b-l cream'}>
         <h1>
           "Martha is an insightful, warm, compassionate therapist with wisdom and wit that 
@@ -10,6 +10,6 @@ export function SocialProof() {
           with her in several different settings."<br/><br/> - Mikyla Young-Bayless, LMFT
         </h1>
       </div>
-    </FadeIn>
+    </FadeInOnScroll>
   )
 }

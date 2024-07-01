@@ -1,9 +1,25 @@
+import { Lavender } from "./Lavender"
+import { MotifClientContainer } from "./MotifClientContainer"
+import { CallToAction } from "./CallToAction"
+
 export function Motif() {
-    return (
-        <div className={'flex-h-center margin-t-l cream'}>
-          <h1>
-            Therapy for adults in Colorado who are ready to transform their anxiety and trauma into personal growth and resilience
-          </h1>
-        </div>
-    )
+  return (
+    <MotifClientContainer>
+      <h1 id="motif-line-1">
+        Therapy for <Lavender>adults</Lavender> in <Lavender>Colorado</Lavender>
+      </h1>
+      <br/>
+      <h1 id="motif-line-2">
+        ready to transform their <Lavender>anxiety</Lavender> and <Lavender>trauma</Lavender>
+      </h1>
+      <br/>
+      <h1 id="motif-line-3">
+        into <Lavender>personal growth</Lavender> and <Lavender>resilience.</Lavender>
+      </h1>
+      <br/>
+
+      {/* <CallToAction/> */}
+
+    </MotifClientContainer>
+  )
 }

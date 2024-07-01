@@ -1,11 +1,11 @@
 import { Lavender } from "./Lavender"
-import { FadeIn } from "./FadeIn"
+import { FadeInOnScroll } from "./FadeInOnScroll"
 
 export function Certification() {
     return (
         <div className="flex-h-center margin-t-l margin-b-l cream">
             <div id="certification-container">
-                <FadeIn>
+                <FadeInOnScroll>
                     <h1 id="certification-title">Education and Certifications:</h1>
                     <br/>
                     <p className="paragraph">
@@ -38,7 +38,7 @@ export function Certification() {
                     <p className="paragraph">
                         All modules completed May 2024
                     </p>
-                </FadeIn>
+                </FadeInOnScroll>
             </div>
         </div>
     )

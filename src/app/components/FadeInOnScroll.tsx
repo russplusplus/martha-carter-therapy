@@ -3,7 +3,7 @@
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.compat.css"
 
-export function FadeIn(
+export function FadeInOnScroll(
     { children }
     :
     { children: React.ReactNode }
