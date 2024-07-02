@@ -5,14 +5,9 @@ const log = console.log.bind(console)
 import { useState, useEffect } from "react"
 import { useAppContext } from "./AppContext";
 
-import { IoClose } from "react-icons/io5";
+import { SubmitBtn } from "./SubmitBtn"
 
-// type FormData = {
-//     fname: string,
-//     lname: string,
-//     email: string,
-//     about: string
-// }
+import { IoClose } from "react-icons/io5";
 
 export function BookingModal() {
     const { 
@@ -22,13 +17,12 @@ export function BookingModal() {
         setBookingStarted
     } = useAppContext()
 
-    // const [ formData, setFormData ] = useState<FormData | null>(null)
-
     const [ firstName, setFirstName ] = useState('')
     const [ lastName, setLastName ] = useState('')
     const [ email, setEmail ] = useState('')
     const [ about, setAbout ] = useState('')
 
+    const [ isSubmitting, setSubmitting ] = useState(false)
     const [ isBookingComplete, setBookingComplete ] = useState(false)
 
     function finishBooking() {
@@ -41,14 +35,8 @@ export function BookingModal() {
         setBookingModalOpen(false)
     }
 
-    function submitForm() {
-        log('in submitForm')
-        setBookingComplete(true)
-        setBookingStarted(false)
-    }
-
     useEffect(() => {
-        console.log('isBookingModalOpen useEffect triggered')
+        log('isBookingModalOpen useEffect triggered')
         if (!isBookingModalOpen) {
             if (
                 firstName ||
@@ -96,7 +84,14 @@ export function BookingModal() {
                     <Field type="text" label="Last Name" id="lname" value={lastName} setFunction={setLastName} />
                     <Field type="email" label="Email Address" id="email" value={email} setFunction={setEmail} />
                     <Field type="textarea" label="A Bit About You" id="about" value={about} setFunction={setAbout} />
-                    <button id="submit-booking-modal-btn" onClick={submitForm} type="button">Submit</button>
+                    <SubmitBtn 
+                        firstName={firstName} 
+                        lastName={lastName}
+                        email={email}
+                        about={about}
+                        isSubmitting={isSubmitting}
+                        setSubmitting={setSubmitting}
+                    />
                 </form>
                 }
                 </div>
@@ -121,7 +116,7 @@ function Field({
     id,
     value,
     setFunction
-} : {
+}: {
     type: string,
     label: string,
     id: string,

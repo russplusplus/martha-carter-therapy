@@ -3,19 +3,23 @@ import { z } from "zod";
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 
 export const postRouter = createTRPCRouter({
-  contact: publicProcedure
+  book: publicProcedure
     .input(z.object({
       firstName: z.string(),
       lastName: z.string(),
       email: z.string(),
       about: z.string()
     }))
-    .query(({ input }) => {
-      console.log('in ')
-      return {
+    .mutation(({ input }) => {
+      console.log('in post book route')
+      console.log('input:', input)
+      // nodemailer
 
+
+      return {
+        response: 'response from book route'
       }
-    })
+    }),
 
   hello: publicProcedure
     .input(z.object({ text: z.string() }))

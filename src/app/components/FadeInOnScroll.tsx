@@ -9,7 +9,7 @@ export function FadeInOnScroll(
     { children: React.ReactNode }
 ) {
     return (
-        <ScrollAnimation animateIn="fadeIn">
+        <ScrollAnimation animateIn="fadeIn" style={{"zIndex":0}}>
             { children }
         </ScrollAnimation>
     )

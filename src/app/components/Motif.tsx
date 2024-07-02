@@ -6,15 +6,15 @@ export function Motif() {
   return (
     <MotifClientContainer>
       <h1 id="motif-line-1">
-        Therapy for <Lavender>adults</Lavender> in <Lavender>Colorado</Lavender>
+        Therapy for adults in Colorado
       </h1>
       <br/>
       <h1 id="motif-line-2">
-        ready to transform their <Lavender>anxiety</Lavender> and <Lavender>trauma</Lavender>
+        ready to transform their anxiety and trauma
       </h1>
       <br/>
       <h1 id="motif-line-3">
-        into <Lavender>personal growth</Lavender> and <Lavender>resilience.</Lavender>
+        into personal growth and resilience
       </h1>
       <br/>
 

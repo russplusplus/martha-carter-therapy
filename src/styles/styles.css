@@ -298,6 +298,7 @@ h1 {
   padding-left: 1rem;
   padding-right: 1.5rem;
   border-radius: 1rem;
+  z-index: 1;
 }
 
 .menu-row {

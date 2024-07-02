@@ -4,7 +4,7 @@ import FadeIn from 'react-fade-in';
 
 export function MotifClientContainer({
   children
-} : {
+}: {
   children: React.ReactNode
 }) {
   return (
