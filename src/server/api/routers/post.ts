@@ -2,6 +2,8 @@ import { z } from "zod";
 
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 
+import nodemailer from "nodemailer"
+
 export const postRouter = createTRPCRouter({
   book: publicProcedure
     .input(z.object({
@@ -14,7 +16,28 @@ export const postRouter = createTRPCRouter({
       console.log('in post book route')
       console.log('input:', input)
       // nodemailer
+      const transporter = nodemailer.createTransport({
+        host: "smtp.gmail.com",
+        service: "gmail",
+        auth: {
+          user: process.env.EMAIL_ADDRESS,
+          pass: process.env.EMAIL_PASSWORD
+        }
+      })
 
+      const mailOptions = {
+        from: process.env.EMAIL_ADDRESS,
+        to: "marthacartertherapy@gmail.com",
+        // to: "russell.kerber@gmail.com",
+        subject: "New Inquiry from marthacartertherapy.com!",
+        html: `
+          <p>Name: ${input.firstName} ${input.lastName}</p>
+          <p>Email Address: ${input.email}</p>
+          <p>${input.about}</p>
+        `
+      }
+
+      transporter.sendMail(mailOptions)
 
       return {
         response: 'response from book route'

@@ -177,25 +177,37 @@ h1 {
   display: flex;
   font-size: 2.7rem;
   /* color: var(--green); */
-  margin-right: 0.7em;
+  margin-right: 2rem;
   transition: all .25s;
 
   &:hover {
     color: var(--lavender);
     font-size: 3rem;
+  }
+
+  &:active {
+    margin-right: 1.7rem;
+    margin-left: 0.3rem;
+    margin-top: 0.5rem;
   }
 }
 
 #mail-icon {
   font-size: 2.7rem;
   /* color: var(--green); */
-  margin-right: 0.7em;
+  margin-right: 2rem;
   transition: all .25s;
 
   &:hover {
     color: var(--lavender);
     font-size: 3rem;
-  }
+  };
+
+  &:active {
+    margin-right: 1.7rem;
+    margin-left: 0.3rem;
+    margin-top: 0.5rem;
+  };
 }
 
 #connect-btn {
@@ -216,6 +228,12 @@ h1 {
     border-color: var(--lavender);
     color: var(--lavender);
     font-size: 1.6rem;
+  }
+
+  &:active {
+    margin-right: 3.7rem;
+    margin-left: 0.3rem;
+    margin-top: 0.5rem;
   }
 }
 
