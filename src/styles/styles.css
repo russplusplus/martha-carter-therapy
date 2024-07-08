@@ -358,8 +358,8 @@ h1 {
 #headshot-container {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  width: 40rem;
-  /* height: 60rem; */
+  /* width: 40rem; */
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -370,11 +370,31 @@ h1 {
   border-right-style: solid;
 }
 
+#headshot-caption-container {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+#about-row-container {
+  align-items: center;
+}
+
+
+.about-caption {
+  /* margin-top: 10rem; */
+  margin-left: 2rem;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
 #about-container {
   padding-top: 4rem;
   padding-bottom: 4rem;
 
-  width: 40rem;
+  width: 45%;
   /* height: 60rem; */
   display: flex;
   flex-direction: column;
@@ -386,10 +406,11 @@ h1 {
   border-right-style: solid;
 }
 
-#headshot-caption-container {
-  width: 40%;
+
+#snowshoe-container {
+  width: 45%;
   /* max-width: 35%; */
-  /* height: 60rem; */
+  height: 100%;
   /* border-left-color: var(--cream);
   border-left-width: 2px;
   border-left-style: solid; */
@@ -411,34 +432,9 @@ h1 {
   color: var(--cream)
 }
 
-#about-row-container {
-  align-items: center;
-  /* height: 100rem; */
-
-}
-
-.about-caption {
-  /* margin-top: 10rem; */
-  margin-left: 2rem;
-  margin-top: .5em;
-  margin-bottom: .5em;
-}
-
 .FAQ {
   margin-left: 2rem;
   margin-right: 2rem
-}
-
-#snowshoe-container {
-  width: 40%;
-  /* max-width: 35%; */
-  height: 100%;
-  /* border-left-color: var(--cream);
-  border-left-width: 2px;
-  border-left-style: solid; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 #headshot {
@@ -511,6 +507,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  
 }
 
 #footer-container {
