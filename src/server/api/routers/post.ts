@@ -14,8 +14,7 @@ export const postRouter = createTRPCRouter({
     }))
     .mutation(({ input }) => {
       console.log('in post book route')
-      console.log('input:', input)
-      // nodemailer
+      
       const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
         service: "gmail",
