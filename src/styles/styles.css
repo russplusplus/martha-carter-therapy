@@ -245,6 +245,7 @@ h1 {
 
 #menu-btn-closed {
   position: fixed;
+  z-index: 1;
   right: 2.3rem;
   background-color: var(--cream);
   border-radius: 1rem;
@@ -260,6 +261,7 @@ h1 {
 
 #menu-btn-open {
   position: fixed;
+  z-index: 1;
   right: 2.3rem;
   background-color: var(--cream);
   border-radius: 1rem;
