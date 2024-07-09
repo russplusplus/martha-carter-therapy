@@ -13,7 +13,8 @@ export const postRouter = createTRPCRouter({
       about: z.string()
     }))
     .mutation(async ({ input }) => {
-      console.log('in post book route')
+      log('in post book route')
+      log('process.env:', process.env)
 
       const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
