@@ -1,5 +1,4 @@
 
-// import { useEffect } from "react"
 import { Lavender } from "./Lavender"
 import { FadeInOnScroll } from "./FadeInOnScroll"
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -18,14 +17,14 @@ export function HeadshotSection() {
       <div id="headshot-caption-container" className="cream">
         <FadeInOnScroll>
           <p className='paragraph headshot-caption'>
-              You've spent your life making sure everyone else is okay, subtly ensuring everyone is
-              comfortable from behind the scenes, but you're <Lavender>exhausted</Lavender> and starting to wonder who you
+              You&apos;ve spent your life making sure everyone else is okay, subtly ensuring everyone is
+              comfortable from behind the scenes, but you&apos;re <Lavender>exhausted</Lavender> and starting to wonder who you
               even are.
           </p>
         </FadeInOnScroll>
         <FadeInOnScroll>
           <p className='paragraph headshot-caption'>
-            You're doing your best; you've been through a lot and you've managed to stay <Lavender>afloat</Lavender>,
+            You&apos;re doing your best; you&apos;ve been through a lot and you&apos;ve managed to stay <Lavender>afloat</Lavender>,
             doing what you need to do, and maybe even seeming like you have it all together but on the
             inside you feel like that is far from the truth.
           </p>
@@ -33,12 +32,12 @@ export function HeadshotSection() {
         <FadeInOnScroll>
           <p className='paragraph headshot-caption'>
             Because truth be told, you feel anxious, self-
-            critical, stuck, and <Lavender>lost</Lavender> because you're not even sure what makes you happy anymore. 
+            critical, stuck, and <Lavender>lost</Lavender> because you&apos;re not even sure what makes you happy anymore. 
           </p>
         </FadeInOnScroll>
         <FadeInOnScroll>
           <p className='paragraph headshot-caption'>
-            But that isn't enough for you- you're ready to stop <Lavender>surviving</Lavender> and start thriving.
+            But that isn&apos;t enough for you- you&apos;re ready to stop <Lavender>surviving</Lavender> and start thriving.
           </p>
         </FadeInOnScroll>
         <FadeInOnScroll>

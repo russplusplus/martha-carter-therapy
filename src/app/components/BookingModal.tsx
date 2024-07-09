@@ -121,7 +121,7 @@ function Field({
     label: string,
     id: string,
     value: string | undefined
-    setFunction: Function
+    setFunction: React.Dispatch<React.SetStateAction<string>>
 }) {
     return (
         <>

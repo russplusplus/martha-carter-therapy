@@ -2,7 +2,7 @@ import Link from "next/link"
 
 import { useState, useEffect, useRef } from 'react'
 import { api } from "~/trpc/server"
-import styles from "../styles/styles.css"
+// import styles from "../styles/styles.css"
 
 import { ClientWrapper } from "./components/ClientWrapper"
 

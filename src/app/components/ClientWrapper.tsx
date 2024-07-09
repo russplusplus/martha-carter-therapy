@@ -22,14 +22,14 @@ export function ClientWrapper(
             let insideBookingModal = false
             let insideBookingModalContainer = false
 
-            for (let element of event.composedPath()) {
+            for (const element of event.composedPath()) {
                 log('element:', element)
                 log('typeof element:', typeof element)
-                // @ts-ignore:next-line
+                // @ts-expect-error:next-line
                 if (element?.id === "menu-container") insideHamburgerMenu = true
-                // @ts-ignore:next-line
+                // @ts-expect-error:next-line
                 if (element?.id === "booking-modal") insideBookingModal = true
-                // @ts-ignore:next-line
+                // @ts-expect-error:next-line
                 if (element?.id === "booking-modal-container") insideBookingModalContainer = true
             }
 

@@ -9,14 +9,10 @@ import { useAppContext } from './AppContext'
 
 export function Menu() {
 
-    // const [isOpen, setOpen] = useState(false)
-    let { 
+    const { 
         isMenuOpen, 
         setMenuOpen,
-        isBookingModalOpen,
         setBookingModalOpen,
-        isBookingStarted,
-        setBookingStarted
     } = useAppContext()
 
     const [ menuHover, setMenuHover ] = useState(false)

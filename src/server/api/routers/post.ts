@@ -12,9 +12,9 @@ export const postRouter = createTRPCRouter({
       email: z.string(),
       about: z.string()
     }))
-    .mutation(({ input }) => {
+    .mutation(async ({ input }) => {
       console.log('in post book route')
-      
+
       const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
         service: "gmail",
@@ -36,7 +36,7 @@ export const postRouter = createTRPCRouter({
         `
       }
 
-      transporter.sendMail(mailOptions)
+      await transporter.sendMail(mailOptions)
 
       return {
         response: 'response from book route'

@@ -153,7 +153,7 @@ function MultiBreak(
     :
     { n: number }
 ) {
-    let breaks = []
+    const breaks = []
     for (let i = 0; i < n; i++) {
         breaks.push(<br key={i}/>)
     }
