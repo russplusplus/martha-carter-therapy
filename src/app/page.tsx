@@ -6,6 +6,7 @@ import { api } from "~/trpc/server"
 
 import { ClientWrapper } from "./components/ClientWrapper"
 
+import { BookingModalContextProvider } from "./components/BookingModalContext"
 import { BookingModal } from "./components/BookingModal"
 import { Header } from "./components/Header"
 import { Motif } from "./components/Motif"
@@ -26,7 +27,9 @@ export default function Home() {
   return (
     <AppContextProvider>
       <ClientWrapper>
-        <BookingModal />
+        <BookingModalContextProvider>
+          <BookingModal />
+        </BookingModalContextProvider>
         <Header />
         <Motif />
         <HDivider />

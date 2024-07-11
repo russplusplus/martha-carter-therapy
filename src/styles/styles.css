@@ -113,6 +113,18 @@ h1 {
   }
 }
 
+#booking-modal {
+  background-color: var(--lavender);
+  width: 40rem;
+  height: 40rem;
+  border-radius: 2rem;
+  padding: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
 #thank-you {
   background-color: var(--lavender);
   width: 40rem;
@@ -127,18 +139,6 @@ h1 {
   height: 100%;
   text-align: center;
   font-family: Ubuntu;
-}
-
-#booking-modal {
-  background-color: var(--lavender);
-  width: 40rem;
-  height: 40rem;
-  border-radius: 2rem;
-  padding: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
 }
 
 #incomplete-message {
@@ -209,7 +209,7 @@ h1 {
   font-size: 1.5rem;
   font-family: sans-serif;
   font-family: Ubuntu;
-  border-radius: 5px;
+  border-radius: 1rem;
   transition: all .25s;
   margin-right: 4rem;
 
@@ -328,7 +328,7 @@ h1 {
   text-align: center;
   border: solid;
   border-width: 3px;
-  border-radius: 5px;
+  border-radius: 1rem;
   transition: all .25s;
   padding: 0.3em;
   font-weight: 500;
@@ -419,13 +419,13 @@ h1 {
 #headshot {
   width: 80%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 #about-pic {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 1rem;
   margin-left: 4rem;
   margin-right: 4rem;
 }
