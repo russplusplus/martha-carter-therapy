@@ -89,6 +89,7 @@ export function BookingModal() {
             }
             setBookingModalOpen(false)
         }
+        setIncomplete(false)
     }, [isBookingModalOpen])
 
     useEffect(() => {
