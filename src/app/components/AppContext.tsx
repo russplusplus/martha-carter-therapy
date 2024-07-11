@@ -14,7 +14,6 @@ type AppContext = {
 const AppContext = createContext<AppContext | null>(null)
 
 export const AppContextProvider = (props: object) => {
-    console.log('typeof props:', typeof props)
     const [isMenuOpen, setMenuOpen] = useState<boolean>(false)
     const [isBookingModalOpen, setBookingModalOpen] = useState<boolean>(false)
     const [isBookingStarted, setBookingStarted] = useState<boolean>(false)

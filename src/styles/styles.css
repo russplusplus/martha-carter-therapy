@@ -5,12 +5,15 @@
   --sage: #d4f9cd;
 }
 
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/fonts/Ubuntu-Regular.ttf")
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: var(--green);
 }
 
@@ -23,23 +26,11 @@ body {
 }
 
 h1 {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center; */
+  font-family: Ubuntu;
   text-align: center;
-  /* margin-top: 2em; */
-  /* align-self: center; */
-  /* margin-left: 5em;
-  margin-right: 5em; */
   width: 50%;
   font-size: 2rem;
-  /* line-height: 1; */
   font-weight: 400;
-  /* letter-spacing: -0.025em; */
-  /* margin: 0; */
-  /* color: var(--cream); */
 }
 
 #booking-modal-container {
@@ -84,9 +75,8 @@ h1 {
   color: var(--cream);
   background-color: var(--green);
   align-self: center;
-  font-family: ubuntu;
+  font-family: Ubuntu;
   margin-top: 0.5rem;
-  /* padding: 0.5rem; */
   transition: all .25s;
   display: flex;
   flex-direction: column;
@@ -109,7 +99,7 @@ h1 {
   color: var(--cream);
   background-color: var(--green);
   align-self: center;
-  font-family: ubuntu;
+  font-family: Ubuntu;
   margin-top: 0.5rem;
   transition: all .25s;
   display: flex;
@@ -136,7 +126,7 @@ h1 {
   justify-content: center;
   height: 100%;
   text-align: center;
-  font-family: ubuntu;
+  font-family: Ubuntu;
 }
 
 #booking-modal {
@@ -149,6 +139,10 @@ h1 {
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
+}
+
+#incomplete-message {
+  margin-bottom: .5rem;
 }
 
 #mct-container {
@@ -176,7 +170,6 @@ h1 {
 #ig-icon {
   display: flex;
   font-size: 2.7rem;
-  /* color: var(--green); */
   margin-right: 2rem;
   transition: all .25s;
 
@@ -194,7 +187,6 @@ h1 {
 
 #mail-icon {
   font-size: 2.7rem;
-  /* color: var(--green); */
   margin-right: 2rem;
   transition: all .25s;
 
@@ -213,13 +205,10 @@ h1 {
 #connect-btn {
   border: solid;
   border-width: 3px;
-  /* border-color: var(--green); */
-  /* color: var(--green); */
   padding: 0.3em;
   font-size: 1.5rem;
   font-family: sans-serif;
   font-family: Ubuntu;
-  text-decoration: bold;
   border-radius: 5px;
   transition: all .25s;
   margin-right: 4rem;
@@ -295,7 +284,6 @@ h1 {
   &:hover {
     background-color: var(--sage);
   }
-
 }
 
 #book-btn-corner-logo {
@@ -338,7 +326,6 @@ h1 {
 .book-btn {
   font-family: Ubuntu;
   text-align: center;
-  /* width: 100%; */
   border: solid;
   border-width: 3px;
   border-radius: 5px;
@@ -361,7 +348,6 @@ h1 {
 #headshot-container {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  /* width: 40rem; */
   width: 45%;
   display: flex;
   flex-direction: column;
@@ -387,7 +373,6 @@ h1 {
 
 
 .about-caption {
-  /* margin-top: 10rem; */
   margin-left: 2rem;
   margin-top: .5em;
   margin-bottom: .5em;
@@ -398,12 +383,10 @@ h1 {
   padding-bottom: 4rem;
 
   width: 45%;
-  /* height: 60rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 4rem;
-  /* align-items: flex-start; */
   border-right-color: var(--cream);
   border-right-width: 2px;
   border-right-style: solid;
@@ -412,23 +395,16 @@ h1 {
 
 #snowshoe-container {
   width: 45%;
-  /* max-width: 35%; */
   height: 100%;
-  /* border-left-color: var(--cream);
-  border-left-width: 2px;
-  border-left-style: solid; */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .headshot-caption {
-  /* margin-top: 10rem; */
   margin-left: 4rem;
   margin-top: .5em;
   margin-bottom: .5em;
-  /* color: var(--green);
-  transition: all 1s; */
 }
 
 .headshot-caption.visible {
@@ -442,14 +418,12 @@ h1 {
 
 #headshot {
   width: 80%;
-  /* width: 80%; */
   height: auto;
   border-radius: 10px;
 }
 
 #about-pic {
   width: 100%;
-  /* width: 80%; */
   height: auto;
   border-radius: 10px;
   margin-left: 4rem;
@@ -491,7 +465,6 @@ h1 {
 
 #q-container {
   width: 45%;
-  /* height: 60rem; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -504,13 +477,9 @@ h1 {
 
 #a-container {
   width: 45%;
-  /* max-width: 35%; */
-  /* height: 80rem; */
-  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  
 }
 
 #footer-container {
@@ -537,7 +506,7 @@ hr {
 
 label {
   font-size: 1.5rem;
-  font-family: ubuntu;
+  font-family: Ubuntu;
   margin-bottom: 0.3rem;
 }
 
@@ -548,7 +517,7 @@ input {
   font-size: 1.5rem;
   padding: .5rem;
   padding-left: 1rem;
-  font-family: ubuntu;
+  font-family: Ubuntu;
   transition: all .25s;
 
   &:focus {
@@ -565,7 +534,7 @@ textarea {
   font-size: 1.5rem;
   padding: .5rem;
   padding-left: 1rem;
-  font-family: ubuntu;
+  font-family: Ubuntu;
   resize: none;
 
   &:focus {
@@ -589,7 +558,6 @@ textarea {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      /* background-color: var(--cream); */
       height: 10em;
       padding-left: 1rem;
       padding-right: 1rem;
@@ -602,7 +570,6 @@ textarea {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      /* background-color: var(--green); */
       height: 6em;
       padding-left: 0;
       padding-right: 0;
@@ -619,22 +586,9 @@ textarea {
   }
 }
 
-
-/* 
-.container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  padding: 4rem 1rem;
-} */
-
 .paragraph {
   font-size: 1.5rem;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Ubuntu;
 }
 /* 
 @media (min-width: 640px) {
@@ -672,26 +626,16 @@ textarea {
   flex-direction: row;
   justify-content: center;
 }
-/* 
-.motif-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-} */
 
 #motif-line-1 {
   width: 100%;
   text-align: left;
 }
 
-
 #motif-line-2 {
   width: 100%;
   text-align: center;
 }
-
 
 #motif-line-3 {
   width: 100%;

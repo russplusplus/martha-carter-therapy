@@ -14,7 +14,6 @@ export const postRouter = createTRPCRouter({
     }))
     .mutation(async ({ input }) => {
       log('in post book route')
-      log('process.env:', process.env)
 
       const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
@@ -24,8 +23,6 @@ export const postRouter = createTRPCRouter({
           pass: process.env.EMAIL_APP_PASSWORD
         }
       })
-
-      log('transporter:', transporter)
 
       const mailOptions = {
         from: process.env.EMAIL_ADDRESS,
@@ -38,8 +35,6 @@ export const postRouter = createTRPCRouter({
           <p>${input.about}</p>
         `
       }
-
-      log('mailOptions:', mailOptions)
 
       const transporterResponse = await transporter.sendMail(mailOptions)
 

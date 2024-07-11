@@ -5,7 +5,8 @@ const log = console.log.bind(console)
 import { useState, useEffect } from "react"
 import { useAppContext } from "./AppContext";
 
-import { SubmitBtn } from "./SubmitBtn"
+import { api } from "~/trpc/react";
+import { ColorRing } from "react-loader-spinner"
 
 import { IoClose } from "react-icons/io5";
 
@@ -24,6 +25,44 @@ export function BookingModal() {
 
     const [ isSubmitting, setSubmitting ] = useState(false)
     const [ isBookingComplete, setBookingComplete ] = useState(false)
+
+    const [ incompleteState, setIncompleteState ] = useState({
+        fname: false,
+        lname: false,
+        email: false,
+        about: false
+    })
+
+    const [ incomplete, setIncomplete ] = useState(false)
+
+    const submitBooking = api.post.book.useMutation()
+
+    async function submitForm() {
+        if (
+            firstName === "" ||
+            lastName  === "" ||
+            email     === "" ||
+            about     === ""
+        ) {
+            setIncomplete(true)
+            return
+        }
+
+        setIncomplete(false)
+        setSubmitting(true)
+        log('in submitForm')
+
+        const response = await submitBooking.mutateAsync({
+            firstName,
+            lastName,
+            email,
+            about
+        })
+
+        log('response:', response)
+        setBookingComplete(true)
+        setSubmitting(false)
+    }
 
     function finishBooking() {
         setFirstName('')
@@ -80,18 +119,22 @@ export function BookingModal() {
                 :
                 <form id="booking-modal" method="post">
                     <button id="exit-booking-modal-btn" onClick={() => setBookingModalOpen(false)}><IoClose /></button>
-                    <Field type="text" label="First Name" id="fname" value={firstName} setFunction={setFirstName}/>
+                    <Field type="text" label={"First Name"} id="fname" value={firstName} setFunction={setFirstName}/>
                     <Field type="text" label="Last Name" id="lname" value={lastName} setFunction={setLastName} />
                     <Field type="email" label="Email Address" id="email" value={email} setFunction={setEmail} />
                     <Field type="textarea" label="A Bit About You" id="about" value={about} setFunction={setAbout} />
-                    <SubmitBtn 
-                        firstName={firstName} 
-                        lastName={lastName}
-                        email={email}
-                        about={about}
-                        isSubmitting={isSubmitting}
-                        setSubmitting={setSubmitting}
-                    />
+                    {incomplete &&
+
+                        <h2 id="incomplete-message" className="flex-h-center">Please complete all fields.</h2>
+                    }
+                    <button id="submit-booking-modal-btn" onClick={submitForm} type="button">
+                        {isSubmitting
+                        ? <ColorRing 
+                            colors={["#cdb8ff","#cdb8ff","#cdb8ff","#cdb8ff","#cdb8ff"]}
+                        />
+                        : "Submit"
+                        }
+                    </button>
                 </form>
                 }
                 </div>
@@ -106,7 +149,6 @@ export function BookingModal() {
             </>
             }
         </>
-        
     )
 }
 

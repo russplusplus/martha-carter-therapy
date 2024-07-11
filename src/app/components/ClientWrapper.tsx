@@ -23,8 +23,6 @@ export function ClientWrapper(
             let insideBookingModalContainer = false
 
             for (const element of event.composedPath()) {
-                log('element:', element)
-                log('typeof element:', typeof element)
                 // @ts-expect-error:next-line
                 if (element?.id === "menu-container") insideHamburgerMenu = true
                 // @ts-expect-error:next-line
