@@ -1,5 +1,3 @@
-// "use client"
-
 import { FadeInOnScroll } from "./FadeInOnScroll"
 import { useState, useRef } from "react"
 import { Lavender } from "./Lavender"

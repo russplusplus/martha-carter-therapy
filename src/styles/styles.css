@@ -313,6 +313,7 @@ h1 {
 .menu-row {
   width: 19rem;
   transition: all .25s;
+  -webkit-transition: all .25s;
   height: 2rem;
   cursor: pointer;
   margin-top: .5rem;

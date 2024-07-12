@@ -1,7 +1,3 @@
-// "use client"
-// const log = console.log.bind(console)
-// log("we're logging babyyy!")
-
 import { Menu } from './Menu'
 export async function Header() {
     return (
