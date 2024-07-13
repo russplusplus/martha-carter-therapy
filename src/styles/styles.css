@@ -314,8 +314,11 @@ h1 {
   width: 19rem;
   transition: all .25s;
   -webkit-transition: all .25s;
+  transform: translate3d(0,0,0);
   -webkit-transform: translate3d(0,0,0);
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   height: 2rem;
   cursor: pointer;
