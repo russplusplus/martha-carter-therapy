@@ -4,6 +4,7 @@ import { useAppContext } from "./AppContext"
 import { browserName } from 'react-device-detect';
 console.log('browserName:', browserName)
 const bookBtnClass = browserName === "Safari" ? "book-btn-safari" : "book-btn"
+console.log('bookBtnClass:', bookBtnClass)
 
 export function CallToAction(
   { className } 
