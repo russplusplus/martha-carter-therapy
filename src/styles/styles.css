@@ -312,14 +312,20 @@ h1 {
 
 .menu-row {
   width: 19rem;
-  /* transition: font-size .25s ease;
-  -webkit-transition: font-size .25s ease;
-  transform: translate3d(0,0,0);
-  -webkit-transform: translate3d(0,0,0);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d; */
+  transition: all .25s;
+  height: 2rem;
+  cursor: pointer;
+  margin-top: .5rem;
+
+  &:hover {
+    color: var(--lavender);
+    font-size: 1.6rem;
+  }
+}
+
+.menu-row-safari {
+  width: 19rem;
+  /* transition: all .25s; */
   height: 2rem;
   cursor: pointer;
   margin-top: .5rem;
@@ -368,6 +374,7 @@ h1 {
 
 #headshot-caption-container {
   width: 45%;
+  padding-right: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -484,6 +491,7 @@ h1 {
 
 #a-container {
   width: 45%;
+  padding-right: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

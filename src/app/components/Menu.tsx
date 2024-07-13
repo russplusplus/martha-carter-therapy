@@ -1,4 +1,3 @@
-// useState only works in client component
 "use client"
 
 const log = console.log.bind(console)
@@ -6,6 +5,9 @@ const log = console.log.bind(console)
 import { useState, useEffect, useRef } from 'react'
 import Hamburger from 'hamburger-react'
 import { useAppContext } from './AppContext'
+import { browserName } from 'react-device-detect';
+
+const rowClass = browserName === "Safari" ? "menu-row-safari" : "menu-row"
 
 export function Menu() {
 
@@ -48,24 +50,20 @@ export function Menu() {
             </div>
             {isMenuOpen && 
                 <div id="menu">
-                    <h2 className="menu-row" onClick={() => setBookingModalOpen(true)}>
+                    <h2 className={rowClass} onClick={() => setBookingModalOpen(true)}>
                         Book a free consultation
                     </h2>
-                    <h2 className="menu-row" onClick={scrollToIntro}>
+                    <h2 className={rowClass} onClick={scrollToIntro}>
                         Intro
                     </h2>
-                    <h2 className="menu-row" onClick={scrollToAbout}>
+                    <h2 className={rowClass} onClick={scrollToAbout}>
                         About me
                     </h2>
-                    <h2 className="menu-row" onClick={scrollToFAQ}>
+                    <h2 className={rowClass} onClick={scrollToFAQ}>
                         FAQs
                     </h2>
-                    
                 </div>
             }
-            
-
-
         </div>
     )
 }

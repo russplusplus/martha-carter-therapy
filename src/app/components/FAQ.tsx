@@ -20,7 +20,7 @@ export function FAQ() {
                         <div id="a-container" className="cream">
                             <MultiBreak n={4} />
                             <FadeInOnScroll>
-                                <Answer breaks={2}>
+                                <Answer breaks={3}>
                                     Each session is devoted to your needs in that moment, which can vary from week to week. No
                                     one session looks the same, and while we ultimately want to address your larger goals, we will
                                     also stay flexible so we can tackle more urgent concerns that show up along the way. Your job is
