@@ -312,7 +312,7 @@ h1 {
 
 .menu-row {
   width: 19rem;
-  transition: all .25s ease;
+  transition: font-size .25s ease;
   -webkit-transition: all .25s ease;
   transform: translate3d(0,0,0);
   -webkit-transform: translate3d(0,0,0);
