@@ -2,7 +2,7 @@
 
 const log = console.log.bind(console)
 
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 import Hamburger from 'hamburger-react'
 import { useAppContext } from './AppContext'
 import { browserName } from 'react-device-detect';

@@ -1,12 +1,14 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import { useAppContext } from "./AppContext"
 import { browserName } from 'react-device-detect';
-console.log('browserName:', browserName)
-// const bookBtnClass = browserName === "Safari" ? "book-btn-safari" : "book-btn"
-const bookBtnClass = "book-btn-safari"
 
-console.log('bookBtnClass:', bookBtnClass)
+// const bookBtnClass = browserName === "Chrome" ? "book-btn" : "book-btn-safari"
+
+const log = console.log.bind(console)
+
+log('browserName:', browserName)
 
 export function CallToAction(
   { className } 
@@ -14,8 +16,15 @@ export function CallToAction(
   { className?: string }
 ) {
   const { setBookingModalOpen } = useAppContext()
+  const [ bookBtnClass, setBookBtnClass] = useState("book-btn")
 
   const allClassNames = "flex-h-center margin-t-l margin-b-l cream " + className
+
+
+  //
+  useEffect(() => {
+    setBookBtnClass(browserName === "Safari" ? "book-btn-safari" : "book-btn")
+  }, [browserName])
 
   return (
     <div className={allClassNames} onClick={() => setBookingModalOpen(true)}>
