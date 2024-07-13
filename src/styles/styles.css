@@ -89,6 +89,28 @@ h1 {
   }
 }
 
+#submit-booking-modal-btn-safari {
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  border-width: 0;
+  color: var(--cream);
+  background-color: var(--green);
+  align-self: center;
+  font-family: Ubuntu;
+  margin-top: 0.5rem;
+  transition: all .25s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: var(--lavender);
+  }
+}
+
 
 #finish-booking-modal-btn {
   width: 10rem;
@@ -110,6 +132,28 @@ h1 {
   &:hover {
     color: var(--lavender);
     font-size: 1.6rem;
+  }
+}
+
+#finish-booking-modal-btn-safari {
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  border-width: 0;
+  color: var(--cream);
+  background-color: var(--green);
+  align-self: center;
+  font-family: Ubuntu;
+  margin-top: 0.5rem;
+  transition: all .25s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: var(--lavender);
   }
 }
 
@@ -325,14 +369,13 @@ h1 {
 
 .menu-row-safari {
   width: 19rem;
-  /* transition: all .25s; */
+  transition: all .25s;
   height: 2rem;
   cursor: pointer;
   margin-top: .5rem;
 
   &:hover {
     color: var(--lavender);
-    font-size: 1.6rem;
   }
 }
 
@@ -350,6 +393,23 @@ h1 {
     cursor: pointer;
     color: var(--lavender);
     font-size: 1.6rem;
+  }
+}
+
+.book-btn-safari {
+  font-family: Ubuntu;
+  text-align: center;
+  border: solid;
+  border-width: 3px;
+  border-radius: 1rem;
+  transition: all .25s;
+  padding: 0.3em;
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--lavender);
+    /* font-size: 1.6rem; */
   }
 }
 
