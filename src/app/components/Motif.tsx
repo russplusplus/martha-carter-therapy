@@ -1,6 +1,4 @@
-import { Lavender } from "./Lavender"
 import { MotifClientContainer } from "./MotifClientContainer"
-import { CallToAction } from "./CallToAction"
 
 export function Motif() {
   return (
@@ -17,9 +15,6 @@ export function Motif() {
         into personal growth and resilience
       </h1>
       <br/>
-
-      {/* <CallToAction/> */}
-
     </MotifClientContainer>
   )
 }

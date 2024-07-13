@@ -56,7 +56,6 @@ export function About() {
                 <FadeInOnScroll>
                     <CallToAction className="margin-t-s margin-b-s"/>
                 </FadeInOnScroll>
-                
             </div>
             <div id="snowshoe-container">
                 <img id='about-pic' src='snowshoe.jpg' width="554" height="739"></img>
