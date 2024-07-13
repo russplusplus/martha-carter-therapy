@@ -4,7 +4,7 @@ const log = console.log.bind(console)
 
 import { api } from "~/trpc/react";
 import { ColorRing } from "react-loader-spinner"
-
+import { browserName } from 'react-device-detect';
 
 export function SubmitBtn({
     firstName,
@@ -42,7 +42,7 @@ export function SubmitBtn({
     }
 
     return (
-        <button id="submit-booking-modal-btn" onClick={submitForm} type="button">
+        <button id={browserName === "Safari" ? "submit-booking-modal-btn-safari" : "submit-booking-modal-btn"} onClick={submitForm} type="button">
             {isSubmitting
             ? <ColorRing 
                 colors={["#cdb8ff","#cdb8ff","#cdb8ff","#cdb8ff","#cdb8ff"]}

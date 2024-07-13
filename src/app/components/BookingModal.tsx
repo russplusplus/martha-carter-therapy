@@ -10,6 +10,7 @@ import { api } from "~/trpc/react";
 import { ColorRing } from "react-loader-spinner"
 
 import { IoClose } from "react-icons/io5";
+import { browserName } from 'react-device-detect';
 
 export function BookingModal() {
     const { 
@@ -109,7 +110,7 @@ export function BookingModal() {
                         I look forward to getting in touch with you soon.
                     </h2>
                     <br/>
-                    <button id="finish-booking-modal-btn" onClick={finishBooking}>Close</button>
+                    <button id={browserName === "Safari" ? "finish-booking-modal-btn-safari" : "finish-booking-modal-btn"} onClick={finishBooking}>Close</button>
                 </div>
                 :
                 <form id="booking-modal" method="post">
@@ -123,7 +124,7 @@ export function BookingModal() {
                     {incomplete &&
                         <h2 id="incomplete-message" className="flex-h-center">Please complete all fields.</h2>
                     }
-                    <button id="submit-booking-modal-btn" onClick={submitForm} type="button">
+                    <button id={browserName === "Safari" ? "submit-booking-modal-btn-safari" : "submit-booking-modal-btn"} onClick={submitForm} type="button">
                         {isSubmitting
                         ? <ColorRing 
                             colors={["#cdb8ff","#cdb8ff","#cdb8ff","#cdb8ff","#cdb8ff"]}

@@ -1,6 +1,7 @@
 "use client"
 
 import { useAppContext } from "./AppContext"
+import { browserName } from 'react-device-detect';
 
 export function CallToAction(
     { className } 
@@ -13,7 +14,7 @@ export function CallToAction(
 
     return (
         <div className={allClassNames} onClick={() => setBookingModalOpen(true)}>
-          <h2 className='book-btn'>
+          <h2 className={browserName === "Safari" ? "book-btn-safari" : "book-btn"}>
             Book a free consultation
           </h2>
         </div>
