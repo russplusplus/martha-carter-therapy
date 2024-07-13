@@ -2,6 +2,7 @@
 
 import { useAppContext } from "./AppContext"
 import { browserName } from 'react-device-detect';
+console.log('browserName:', browserName)
 
 export function CallToAction(
     { className } 
