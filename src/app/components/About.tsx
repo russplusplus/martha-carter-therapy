@@ -4,7 +4,7 @@ import { CallToAction } from "./CallToAction"
 
 export function About() {
     return (
-        <div className='flex-h-center' id='about-row-container'>
+        <div className='flex-h-center prevent-select' id='about-row-container'>
             <div id="about-container" className="cream">
                 <FadeInOnScroll>
                     <p className='paragraph about-caption '>

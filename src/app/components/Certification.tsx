@@ -3,7 +3,7 @@ import { FadeInOnScroll } from "./FadeInOnScroll"
 
 export function Certification() {
     return (
-        <div className="flex-h-center margin-t-l margin-b-l cream">
+        <div className="flex-h-center margin-t-l margin-b-l cream prevent-select">
             <div id="certification-container">
                 <FadeInOnScroll>
                     <h1 id="certification-title">Education and Certifications:</h1>

@@ -1,7 +1,7 @@
 import { Menu } from './Menu'
 export async function Header() {
     return (
-        <header>
+        <header className="prevent-select">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
             <div className="flex-h-center header-container">
                 <div id="mct-container">

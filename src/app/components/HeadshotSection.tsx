@@ -9,7 +9,7 @@ const log = console.log.bind(console)
 export function HeadshotSection() {
 
   return (
-    <div className='flex-h-center' id='headshot-row-container'>
+    <div className='flex-h-center prevent-select' id='headshot-row-container'>
       <div id="headshot-container">
         <img id='headshot' src='headshot.jpg' width="3024" height="4032"></img>
       </div>

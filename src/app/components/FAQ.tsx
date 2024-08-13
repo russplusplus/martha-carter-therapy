@@ -6,7 +6,7 @@ import { CallToAction } from "./CallToAction"
 export function FAQ() {
 
     return (
-        <div id='faq-row-container' className='flex-h-center'>
+        <div id='faq-row-container' className='flex-h-center prevent-select'>
             <div className="faq-column">
                     <div className="faq-row">
                         <div id="q-container" className="cream">

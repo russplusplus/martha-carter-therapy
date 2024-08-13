@@ -4,7 +4,7 @@ export function MoreAbout() {
     return (
         <>
             <FadeInOnScroll>
-                <div className="flex-h-center margin-t-l cream">
+                <div className="flex-h-center margin-t-l cream prevent-select">
                     <p className="paragraph more-about">
                         As a Licensed Clinical Social Worker, I work with adults with a variety of concerns, including
                         chronic anxiety, people pleasing, disordered eating, and childhood trauma, with a special
@@ -15,7 +15,7 @@ export function MoreAbout() {
                 </div>
             </FadeInOnScroll>
             <FadeInOnScroll>
-                <div className="flex-h-center margin-t-s cream">
+                <div className="flex-h-center margin-t-s cream prevent-select">
                     <p className="paragraph more-about">
                         I approach therapy from a trauma-informed, nonjudgmental, attachment-based lens. I am
                         trained in post-traumatic growth, so I am oriented to help clients capitalize on their own

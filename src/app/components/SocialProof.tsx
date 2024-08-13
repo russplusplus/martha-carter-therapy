@@ -3,7 +3,7 @@ import { FadeInOnScroll } from "./FadeInOnScroll"
 export function SocialProof() {
   return (
     <FadeInOnScroll>
-      <div className={'flex-h-center margin-t-l margin-b-l cream'}>
+      <div className={'flex-h-center margin-t-l margin-b-l cream prevent-select'}>
         <h1>
           &quot;Martha is an insightful, warm, compassionate therapist with wisdom and wit that 
           invites vulnerability. I highly recomment her as a clinician and have loved working 
