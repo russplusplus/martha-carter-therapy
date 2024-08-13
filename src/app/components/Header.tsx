@@ -6,11 +6,27 @@ export async function Header() {
             <div className="flex-h-center header-container">
                 <div id="mct-container">
                     <img id="header-icon" src="flower-lavender-cropped.png"></img>
-                    <div>
+                    {/* <div> */}
                         <img className="signature-logo" src="MARTHA.png"></img>
                         <img className="signature-logo" src="CARTER.png"></img>
                         <img className="signature-logo" src="THERAPY.png"></img>  
-                    </div>
+                        {/* <span className="green bold">
+                            Martha
+                        </span>
+                        <span className="green bold">
+                            Carter
+                        </span>
+                        <span className="green bold">
+                            Therapy
+                        </span> */}
+                        {/* <h1 className="green bold">
+                            <span>Martha </span>
+                            <span>Carter </span>
+                            <span>Therapy</span>
+                        </h1> */}
+                        {/* <h1 className="green bold">Martha Carter Therapy</h1> */}
+                        {/* <h1 className="green bold">Therapy</h1> */}
+                    {/* </div> */}
                 </div>
                 <div id="contact-container">
                     <a href="https://www.instagram.com/allthingsanxious" target="_blank"><i className="fa fa-instagram" id="ig-icon"></i></a>

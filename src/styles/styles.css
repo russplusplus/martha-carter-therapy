@@ -754,3 +754,7 @@ textarea {
 .sage {
   color: var(--sage);
 }
+
+.bold {
+  font-weight: bold;
+}
