@@ -7,50 +7,26 @@ export function About() {
         <div className='flex-h-center prevent-select' id='about-row-container'>
             <div id="about-container" className="cream">
                 <FadeInOnScroll>
-                    <p className='paragraph about-caption '>
-                        Hi, I’m Martha
+                    <p className='paragraph about-caption bold'>
+                        Who I see
                     </p>
                 </FadeInOnScroll>
                 <FadeInOnScroll>
                     <p className='paragraph about-caption '>
-                        I’m an anxious people pleaser and survivor of emotional trauma. Like you, I am all too familiar
-                        with not wanting to give up my caring nature, but being tired of losing myself in the process.
-                        I know you feel like your value comes from what you offer to others, but I am here to tell you
-                        that your worth goes far beyond that. You have unique strengths, and they aren’t all connected
-                        to how much care you show others.
+                        I see clients via tele-health across the state of Colorado. I am a trauma specialist and help adults 
+                        with chronic anxiety, people pleasing, childhood trauma, PTSD, emotional abuse, complex PTSD, and 
+                        relational trauma. 
                     </p>
                 </FadeInOnScroll>
                 <FadeInOnScroll>
                     <p className='paragraph about-caption '>
-                        Through somatic (body-focused) therapy sessions, you can turn your trauma and anxiety into
-                        superpowers. Together, we will transform your toxic shame into confidence, people pleasing
-                        into only saying yes when you want to, and self-doubt into self-assuredness. By using a somatic
-                        approach, you can feel calmer without having to try so hard to get there (aka you won’t have to
-                        constantly deep breath to keep a panic attack at bay).
+                        With more than 5 years of experience, I help clients to resolve their symptoms and build a more regulated 
+                        and easeful life by prioritizing what is most in-service of their nervous systems during sessions. 
                     </p>
                 </FadeInOnScroll>
                 <FadeInOnScroll>
                     <p className='paragraph about-caption '>
-                        And the best part? You don’t have to talk about the worst things that happened to you in the
-                        process. Traditional talk therapy encourages people to talk about their trauma, but somatic
-                        therapy allows you to shift your nervous system into a calmer state without sharing your
-                        darkest stories.
-                    </p>
-                </FadeInOnScroll>
-                <FadeInOnScroll>
-                    <p className='paragraph about-caption '>
-                        As a result, you’ll no longer feel the need to prove yourself to others, and can finally let go of
-                        your habit of reading into social interactions and people’s body language, or doing emotional
-                        labor for everyone and their brother out of fear people will leave if you don’t. You will feel
-                        more like yourself, connected to your true longings, sure of your strengths and worth, and
-                        naturally calm.
-                    </p>
-                </FadeInOnScroll>
-                <FadeInOnScroll>
-                    <p className='paragraph about-caption '>
-                        Ready to uncover your hidden superpowers from your anxiety and trauma?
-                        Schedule a free, no-commitment consultation to begin your transformative journey and come
-                        back home to yourself.
+                        Through working with me, clients feel calmer, more connected with themselves, and more engaged with their lives. 
                     </p>
                 </FadeInOnScroll>
                 <FadeInOnScroll>

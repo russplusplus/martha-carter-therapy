@@ -3,10 +3,10 @@ import { FadeInOnScroll } from "./FadeInOnScroll"
 
 export function Certification() {
     return (
-        <div className="flex-h-center margin-t-l margin-b-l cream prevent-select">
+        <div className="flex-h-center cream prevent-select certification-row-container">
             <div id="certification-container">
                 <FadeInOnScroll>
-                    <h1 id="certification-title">Education and Certifications:</h1>
+                    <p id="certification-title" className="paragraph bold">Education and Certifications:</p>
                     <br/>
                     <p className="paragraph">
                         Master of Social Work: Direct Practice
@@ -30,9 +30,7 @@ export function Certification() {
                     <br/>
                     <p className="paragraph">
                         <a href="https://www.swtraumatraining.com/2024-post-traumatic-growth-training" target="_blank">
-                            <Lavender>
-                                Post Traumatic Growth
-                            </Lavender>
+                            Post Traumatic Growth
                         </a>
                     </p>
                     <p className="paragraph">

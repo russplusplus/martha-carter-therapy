@@ -98,7 +98,7 @@ export function BookingModal() {
     return (
         <>
             {isBookingModalOpen ?
-            <dialog id="booking-modal-container" open>
+            <dialog id="booking-modal-container" className="prevent-select" open>
                 <div >
                 { isBookingComplete ?
                 <div id="thank-you">
@@ -124,7 +124,7 @@ export function BookingModal() {
                     {incomplete &&
                         <h2 id="incomplete-message" className="flex-h-center">Please complete all fields.</h2>
                     }
-                    <button id={browserName === "Safari" ? "submit-booking-modal-btn-safari" : "submit-booking-modal-btn"} onClick={submitForm} type="button">
+                    <button id={browserName === "Safari" ? "submit-booking-modal-btn-safari" : "submit-booking-modal-btn"} className="prevent-select" onClick={submitForm} type="button">
                         {isSubmitting
                         ? <ColorRing 
                             colors={["#cdb8ff","#cdb8ff","#cdb8ff","#cdb8ff","#cdb8ff"]}
@@ -139,7 +139,7 @@ export function BookingModal() {
             :
             <>
                 {isBookingStarted &&
-                <div id={"book-btn-corner"} onClick={() => setBookingModalOpen(true)}>
+                <div id={"book-btn-corner"} className="prevent-select" onClick={() => setBookingModalOpen(true)}>
                     <img id="book-btn-corner-logo" src="flower-forest.png"></img>
                 </div>
                 }

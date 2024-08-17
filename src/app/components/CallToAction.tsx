@@ -8,15 +8,17 @@ const log = console.log.bind(console)
 
 log('browserName:', browserName)
 
-export function CallToAction(
-  { className } 
-  : 
-  { className?: string }
-) {
+export function CallToAction({
+  className,
+  hoverColor
+  } : { 
+  className?: string,
+  hoverColor?: string
+}) {
   const { setBookingModalOpen } = useAppContext()
   const [ bookBtnClass, setBookBtnClass] = useState("book-btn prevent-select")
 
-  const allClassNames = "flex-h-center margin-t-l margin-b-l cream prevent-select" + className
+  const allClassNames = "flex-h-center margin-t-l cream prevent-select " + className
 
   useEffect(() => {
     setBookBtnClass(browserName === "Safari" ? "book-btn-safari prevent-select" : "book-btn prevent-select")
