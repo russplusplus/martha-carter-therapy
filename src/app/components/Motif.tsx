@@ -6,18 +6,6 @@ export function Motif() {
     <MotifClientContainer>
       <div id="hero-container">
         <div id="hero-caption-container" className="cream">
-          {/* <h1 id="motif-line-1">
-            Therapy for adults in Colorado
-          </h1>
-          <br/>
-          <h1 id="motif-line-2">
-            ready to transform their anxiety and trauma
-          </h1>
-          <br/>
-          <h1 id="motif-line-3">
-            into personal growth and resilience
-          </h1>
-          <br/> */}
           <h1 id="motif-line-1">
             Online trauma therapy
           </h1>
@@ -26,8 +14,8 @@ export function Motif() {
             for adults across Colorado
           </h1>
           <br/>
-          {/* <svg className="squiggle" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 400"><path d="M112.5560531616211,235.8744354248047C146.708517964681,229.6801161702474,235.74887227376303,201.35126831054689,295.51568603515625,202.69058227539062C355.2824997965495,204.02989624023436,361.7518579101562,243.71898864746095,432.73541259765625,243.04933166503906C503.7189672851563,242.37967468261718,630.4155232747396,207.30642435709635,675.7847290039062,199.10313415527344" fill="none" stroke-width="11" stroke="url(&quot;#SvgjsLinearGradient1001&quot;)" stroke-linecap="round" stroke-dasharray="0 0" transform="matrix(0.9950062499999999,5.551115123125783e-17,-5.551115123125783e-17,0.9950062499999999,7.79798592076304,-19.976401093149178)"></path><defs><linearGradient id="SvgjsLinearGradient1001"><stop stop-color="#d4f9cd" offset="0"></stop><stop stop-color="#fcf4e8" offset="1"></stop></linearGradient></defs></svg> */}
-          <svg className="squiggle" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 400"><path d="M112.5560531616211,235.8744354248047C146.708517964681,229.6801161702474,235.74887227376303,201.35126831054689,295.51568603515625,202.69058227539062C355.2824997965495,204.02989624023436,361.7518579101562,243.71898864746095,432.73541259765625,243.04933166503906C503.7189672851563,242.37967468261718,630.4155232747396,207.30642435709635,675.7847290039062,199.10313415527344" fill="none" stroke-width="7" stroke="url(&quot;#SvgjsLinearGradient1001&quot;)" stroke-linecap="round" stroke-dasharray="0 0" transform="matrix(0.9950062499999999,5.551115123125783e-17,-5.551115123125783e-17,0.9950062499999999,7.79798592076304,-19.976401093149178)"></path><defs><linearGradient id="SvgjsLinearGradient1001" gradientTransform="rotate(188, 0.5, 0.5)"><stop stop-color="#d4f9cd" offset="0"></stop><stop stop-color="#fcf4e8" offset="1"></stop></linearGradient></defs></svg>
+          {/* <svg className="squiggle" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 400"><path d="M112.5560531616211,235.8744354248047C146.708517964681,229.6801161702474,235.74887227376303,201.35126831054689,295.51568603515625,202.69058227539062C355.2824997965495,204.02989624023436,361.7518579101562,243.71898864746095,432.73541259765625,243.04933166503906C503.7189672851563,242.37967468261718,630.4155232747396,207.30642435709635,675.7847290039062,199.10313415527344" fill="none" strokeWidth="11" stroke="url(&quot;#SvgjsLinearGradient1001&quot;)" strokeLinecap="round" strokeDasharray="0 0" transform="matrix(0.9950062499999999,5.551115123125783e-17,-5.551115123125783e-17,0.9950062499999999,7.79798592076304,-19.976401093149178)"></path><defs><linearGradient id="SvgjsLinearGradient1001"><stop stopColor="#d4f9cd" offset="0"></stop><stop stopColor="#fcf4e8" offset="1"></stop></linearGradient></defs></svg> */}
+          <svg className="squiggle" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="100 170 600 100"><path d="M112.5560531616211,235.8744354248047C146.708517964681,229.6801161702474,235.74887227376303,201.35126831054689,295.51568603515625,202.69058227539062C355.2824997965495,204.02989624023436,361.7518579101562,243.71898864746095,432.73541259765625,243.04933166503906C503.7189672851563,242.37967468261718,630.4155232747396,207.30642435709635,675.7847290039062,199.10313415527344" fill="none" strokeWidth="7" stroke="url(&quot;#SvgjsLinearGradient1001&quot;)" strokeLinecap="round" strokeDasharray="0 0" transform="matrix(0.9950062499999999,5.551115123125783e-17,-5.551115123125783e-17,0.9950062499999999,7.79798592076304,-19.976401093149178)"></path><defs><linearGradient id="SvgjsLinearGradient1001" gradientTransform="rotate(188, 0.5, 0.5)"><stop stopColor="#d4f9cd" offset="0"></stop><stop stopColor="#fcf4e8" offset="1"></stop></linearGradient></defs></svg>
           <CallToAction />
         </div>
         <div id="hero-container">
@@ -35,7 +23,7 @@ export function Motif() {
         </div>
         <svg className="blobs" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800" opacity="1">
           <defs>
-            <filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
               <feGaussianBlur stdDeviation="59" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur>
             </filter>
           </defs>

@@ -18,7 +18,7 @@ export function CallToAction({
   const { setBookingModalOpen } = useAppContext()
   const [ bookBtnClass, setBookBtnClass] = useState("book-btn prevent-select")
 
-  const allClassNames = "flex-h-center margin-t-l cream prevent-select " + className
+  const allClassNames = "flex-h-center cream prevent-select " + className
 
   useEffect(() => {
     setBookBtnClass(browserName === "Safari" ? "book-btn-safari prevent-select" : "book-btn prevent-select")

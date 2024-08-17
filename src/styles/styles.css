@@ -407,15 +407,33 @@ h1 {
   width: 100%;
 }
 
-#hero {
-  z-index: 1;
+#motif-line-1 {
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+}
+
+#motif-line-2 {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+#motif-line-3 {
+  width: 100%;
+  text-align: right;
+  font-weight: bold;
 }
 
 .squiggle {
-  position: absolute;
-  height: 20rem;
-  top: 18rem;
-  left: 10rem;
+  /* position: relative; */
+  height: 5rem;
+  /* top: 18rem;
+  left: 10rem; */
+}
+
+#hero {
+  z-index: 1;
 }
 
 .blobs {
@@ -790,24 +808,6 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-#motif-line-1 {
-  width: 100%;
-  text-align: left;
-  font-weight: bold;
-}
-
-#motif-line-2 {
-  width: 100%;
-  text-align: center;
-  font-weight: bold;
-}
-
-#motif-line-3 {
-  width: 100%;
-  text-align: right;
-  font-weight: bold;
 }
 
 .margin-t-l {
