@@ -322,8 +322,8 @@ h1 {
 #book-btn-corner {
   position: fixed;
   z-index: 2;
-  right: 2.3rem;
-  bottom: 3rem;
+  right: 1.3rem;
+  bottom: 2rem;
   background-color: var(--lavender);
   border-radius: 1rem;
   display: flex;

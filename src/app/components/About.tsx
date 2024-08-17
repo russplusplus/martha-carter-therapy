@@ -30,7 +30,7 @@ export function About() {
                     </p>
                 </FadeInOnScroll>
                 <FadeInOnScroll>
-                    <CallToAction className="margin-t-s margin-b-s"/>
+                    <CallToAction className="margin-t-s "/>
                 </FadeInOnScroll>
             </div>
             <div id="snowshoe-container">
