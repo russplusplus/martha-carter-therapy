@@ -19,7 +19,7 @@ export function HeadshotSection() {
         <div id="headshot-caption-container" className="cream">
           <FadeInOnScroll>
             <p className='paragraph headshot-caption'>
-              Hi, I’m Martha!
+              Hi, I&apos;m Martha!
             </p>
           </FadeInOnScroll>
           <FadeInOnScroll>
@@ -32,7 +32,7 @@ export function HeadshotSection() {
             <p className='paragraph headshot-caption'>
               If you feel like therapy has gotten dull, you have a deep 
               understanding of your issues but still feel stuck, or have ever said something along 
-              the lines of “I understand that in my head, but I can’t feel it”, it might be time to 
+              the lines of “I understand that in my head, but I can&apos;t feel it”, it might be time to 
               try a somatic approach. 
             </p>
           </FadeInOnScroll>
@@ -65,11 +65,9 @@ export function HeadshotSection() {
             <p className='paragraph headshot-caption'>
               Ready to uncover your natural resilience? 
               Schedule a free, no-commitment consultation to begin your transformative journey and come back home to yourself. 
-              If you don’t see a time that works for you in my calendar, email me to find a time that does. 
+              If you don&apos;t see a time that works for you in my calendar, email me to find a time that does. 
             </p>
           </FadeInOnScroll>
-
-          
         </div>          
       </div>
     </>
