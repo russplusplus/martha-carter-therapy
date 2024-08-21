@@ -14,9 +14,9 @@ export function SocialProofWrapper({
 
     const [ index, setIndex ] = useState(0)
 
-    async function rotate() {
-        log('in rotate')
-        let rotationStartTime = Date.now()
+    // async function rotate() {
+    //     log('in rotate')
+    //     let rotationStartTime = Date.now()
         // while (true) {
         //     if (Date.now() - rotationStartTime >= 5000) {
         //         log('rotate')
@@ -28,12 +28,12 @@ export function SocialProofWrapper({
         //         log('one second has passed')
         //     }, 1000)
         // } while (true)
-    }
+    // }
 
-    useEffect(() => {
-        log('children:', children)
-        rotate()
-    }, [])
+    // useEffect(() => {
+    //     log('children:', children)
+    //     rotate()
+    // }, [])
     
     return (
         <div className="bg-cream social-proof">
