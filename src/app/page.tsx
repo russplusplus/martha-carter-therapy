@@ -26,7 +26,7 @@ import { CurveToLavender,
          CurveFromCream3,
          CurveToCream3 } from "./components/Curves"
 import { HeadshotSection } from "./components/HeadshotSection"
-import { SocialProof } from "./components/SocialProof"
+import { SocialProof1 } from "./components/SocialProof"
 import { About } from "./components/About"
 import { MoreAbout } from "./components/MoreAbout"
 import { Certification } from "./components/Certification"
@@ -45,26 +45,17 @@ export default function Home() {
         </BookingModalContextProvider>
         <Header />
         <Motif />
-        {/* <HDivider />
-        <CallToAction /> */}
         <AboutYou />
         <CurveFromCream1 />
-        {/* <CurveToLavender /> */}
         <HeadshotSection />
-        {/* <CurveFromLavender /> */}
         <CurveToCream1 />
-        <SocialProof />
+        <SocialProof1 />
         <CurveFromCream2 />
-        {/* <CurveToLavender2 /> */}
         <About />
-        {/* <CurveFromLavender2 /> */}
         <CurveToCream2 />
         <MoreAbout />
-        {/* <HDivider /> */}
         <CurveFromCream3 />
-        {/* <CurveToLavender3 /> */}
         <Certification />
-        {/* <CurveFromLavender3 /> */}
         <CurveToCream3 />
         <FAQ />
         <Footer />

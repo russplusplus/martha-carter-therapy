@@ -1,7 +1,7 @@
 
 import { FadeInOnScroll } from "./FadeInOnScroll"
 
-export function SocialProof1() {
+export function SocialProof1({ children }) {
   return (
     <div className="bg-cream social-proof">
       <FadeInOnScroll>
