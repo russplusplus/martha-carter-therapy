@@ -1,7 +1,11 @@
 
 import { FadeInOnScroll } from "./FadeInOnScroll"
 
-export function SocialProof1({ children }) {
+export function SocialProof1({
+    children
+}:{
+    children: React.ReactNode[]
+}) {
   return (
     <div className="bg-cream social-proof">
       <FadeInOnScroll>
