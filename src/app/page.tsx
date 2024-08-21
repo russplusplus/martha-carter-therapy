@@ -26,7 +26,8 @@ import { CurveToLavender,
          CurveFromCream3,
          CurveToCream3 } from "./components/Curves"
 import { HeadshotSection } from "./components/HeadshotSection"
-import { SocialProof1 } from "./components/SocialProof"
+import { SocialProofWrapper } from "./components/SocialProofWrapper"
+import { SocialProof1, SocialProof2 } from "./components/SocialProof"
 import { About } from "./components/About"
 import { MoreAbout } from "./components/MoreAbout"
 import { Certification } from "./components/Certification"
@@ -49,7 +50,10 @@ export default function Home() {
         <CurveFromCream1 />
         <HeadshotSection />
         <CurveToCream1 />
-        <SocialProof1 />
+        <SocialProofWrapper>
+          <SocialProof1 />
+          <SocialProof2 />
+        </SocialProofWrapper>
         <CurveFromCream2 />
         <About />
         <CurveToCream2 />

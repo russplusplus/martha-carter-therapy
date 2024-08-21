@@ -19,13 +19,19 @@ export function Menu() {
 
     const [ menuHover, setMenuHover ] = useState(false)
 
-    function scrollToIntro() {
+    function scrollToAboutYou() {
+        document?.getElementById("about-you-row-container")?.scrollIntoView({
+            behavior: "smooth"
+        })
+    }
+
+    function scrollToAboutMe() {
         document?.getElementById("headshot-row-container")?.scrollIntoView({
             behavior: "smooth"
         })
     }
 
-    function scrollToAbout() {
+    function scrollToWhoISee() {
         document?.getElementById("about-row-container")?.scrollIntoView({
             behavior: "smooth"
         })
@@ -53,11 +59,14 @@ export function Menu() {
                     <h2 className={rowClass} onClick={() => setBookingModalOpen(true)}>
                         Book a free consultation
                     </h2>
-                    <h2 className={rowClass} onClick={scrollToIntro}>
-                        Intro
+                    <h2 className={rowClass} onClick={scrollToAboutYou}>
+                        About you
                     </h2>
-                    <h2 className={rowClass} onClick={scrollToAbout}>
+                    <h2 className={rowClass} onClick={scrollToAboutMe}>
                         About me
+                    </h2>
+                    <h2 className={rowClass} onClick={scrollToWhoISee}>
+                        Who I see
                     </h2>
                     <h2 className={rowClass} onClick={scrollToFAQ}>
                         FAQs

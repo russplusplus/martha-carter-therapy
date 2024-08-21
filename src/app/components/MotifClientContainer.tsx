@@ -8,7 +8,7 @@ export function MotifClientContainer({
   children: React.ReactNode
 }) {
   return (
-    <div id="hero-row-container" className="flex-h-center prevent-select bg-lavender margin-b-l">
+    <div id="hero-row-container" className="flex-h-center prevent-select bg-lavender ">
       <FadeIn delay={700} transitionDuration={1000}>
         { children }
       </FadeIn>

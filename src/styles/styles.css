@@ -36,8 +36,8 @@ body {
 
 h1 {
   font-family: Ubuntu;
-  text-align: center;
-  width: 50%;
+  /* text-align: center;
+  width: 50%; */
   font-size: 2rem;
   font-weight: 400;
 }
@@ -389,15 +389,12 @@ h1 {
 }
 
 #hero-row-container {
-  /* margin-bottom: 4rem; */
 }
 
 #hero-container {
   display: flex;
   flex-direction: row;
   width: 100%;
-  /* background: rgb(205,184,255);
-  background: radial-gradient(circle, rgba(205,184,255,1) 0%, rgba(212,249,205,1) 65%); */
 }
 
 #hero-caption-container {
@@ -524,7 +521,6 @@ h1 {
   justify-content: center;
 }
 
-
 #about-row-container {
   align-items: center;
   background-color: var(--lavender);
@@ -560,9 +556,14 @@ h1 {
   position: relative;
 }
 
-.social-proof {
+.social-proof-row-container {
   position: relative;
-  /* z-index: 2; */
+  
+}
+
+.social-proof {
+  /* width: 50%; */
+  text-align: center;
 }
 
 #snowshoe-container {

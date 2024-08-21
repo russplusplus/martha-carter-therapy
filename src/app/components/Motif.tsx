@@ -19,7 +19,7 @@ export function Motif() {
           <CallToAction />
         </div>
         <div id="hero-container">
-          <img id='hero' src='hero.png' height='600'></img>
+          <img id='hero' src='hero.png' height='650'></img>
         </div>
         <svg className="blobs" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800" opacity="1">
           <defs>
