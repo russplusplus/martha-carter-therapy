@@ -5,9 +5,9 @@ export function AboutYou() {
         <div className="flex-h-center padding-t-s padding-b-l prevent-select bg-cream flex-h-center" id="about-you-row-container">
             <div id="about-you-container" className="green margin-t-l ">
                 <FadeInOnScroll>
-                    <p className="paragraph about-you margin-b-s text-align-center">
+                    <h1 className="paragraph about-you margin-b-s text-align-center">
                         You&apos;re tired of feeling trapped in your own mind.
-                    </p>
+                    </h1>
                 </FadeInOnScroll>
                 <FadeInOnScroll>
                     <p className="paragraph about-you margin-b-s">

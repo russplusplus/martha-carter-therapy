@@ -567,7 +567,7 @@ h1 {
   /* width: 50%; */
   position: relative;
   text-align: center;
-  height: 24rem;
+  height: 32rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

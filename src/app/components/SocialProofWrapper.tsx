@@ -57,7 +57,7 @@ export function SocialProofWrapper({
     }, [])
     
     return (
-        <div className="bg-cream padding-t-s social-proof">
+        <div className="bg-cream padding-t-l social-proof">
             <FadeInOnScroll>
                 <div className={fadeType + " flex-h-center green bg-cream prevent-select "}>
                     {children[index % children.length]}
