@@ -18,9 +18,9 @@ export function HeadshotSection() {
         
         <div id="headshot-caption-container" className="cream">
           <FadeInOnScroll>
-            <p className='paragraph headshot-caption'>
+            <h1 className='bold headshot-caption'>
               Hi, I&apos;m Martha!
-            </p>
+            </h1>
           </FadeInOnScroll>
           <FadeInOnScroll>
             <p className='paragraph headshot-caption'>

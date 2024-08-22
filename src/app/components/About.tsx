@@ -7,9 +7,9 @@ export function About() {
         <div className='flex-h-center prevent-select' id='about-row-container'>
             <div id="about-container" className="cream">
                 <FadeInOnScroll>
-                    <p className='paragraph about-caption bold'>
+                    <h1 className='about-caption bold'>
                         Who I see
-                    </p>
+                    </h1>
                 </FadeInOnScroll>
                 <FadeInOnScroll>
                     <p className='paragraph about-caption '>

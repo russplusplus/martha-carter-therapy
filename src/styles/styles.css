@@ -528,7 +528,7 @@ h1 {
   background-color: var(--lavender);
   /* padding-top: 6rem;
   padding-bottom: 6rem; */
-  height: 44rem;
+  height: 40rem;
   /* overflow-y: hidden; */
 }
 
@@ -540,7 +540,7 @@ h1 {
 }
 
 #about-container {
-  padding-top: 4rem;
+  /* padding-top: 2rem; */
   padding-bottom: 4rem;
 
   width: 45%;
