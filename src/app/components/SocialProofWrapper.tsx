@@ -13,6 +13,7 @@ export function SocialProofWrapper({
 }) {
 
     const [ index, setIndex ] = useState(0)
+    const [ fadeType, setFadeType ] = useState('fade-in')
 
     // async function rotate() {
     //     log('in rotate')
@@ -34,12 +35,32 @@ export function SocialProofWrapper({
     //     log('children:', children)
     //     rotate()
     // }, [])
+
+    function rotate(i: number) {
+        setTimeout(() => {
+            setFadeType('fade-out')
+            setTimeout(() => {
+                setIndex(i + 1)
+                rotate(i + 1)
+                setFadeType('fade-in')
+            }, 1000)
+        }, 10000)
+    }
+
+    // useEffect(() => {
+    //     log('index:', index)
+    // }, [index])
+
+    useEffect(() => {
+        log('mounted')
+        rotate(0)
+    }, [])
     
     return (
-        <div className="bg-cream social-proof">
+        <div className="bg-cream padding-t-s social-proof">
             <FadeInOnScroll>
-                <div className="flex-h-center padding-t-s padding-b-l green bg-cream prevent-select ">
-                    {children[1]}
+                <div className={fadeType + " flex-h-center green bg-cream prevent-select "}>
+                    {children[index % children.length]}
                 </div>
             </FadeInOnScroll>
         </div>

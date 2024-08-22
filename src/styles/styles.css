@@ -560,12 +560,17 @@ h1 {
 
 .social-proof-row-container {
   position: relative;
-  
+  transition: all .25s;
 }
 
 .social-proof {
   /* width: 50%; */
+  position: relative;
   text-align: center;
+  height: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 #snowshoe-container {
@@ -875,6 +880,15 @@ textarea {
 
 .bold {
   font-weight: bold;
+}
+
+.fade-in {
+  transition: opacity 1s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 .custom-shape-divider-bottom-1723591800 {
