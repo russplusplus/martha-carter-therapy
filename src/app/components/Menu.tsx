@@ -56,8 +56,13 @@ export function Menu() {
             </div>
             {isMenuOpen && 
                 <div id="menu">
+                    <h2 className={rowClass}>
+                        <a href="https://martha-carter.clientsecure.me/" target="_blank">
+                            Book a free consultation
+                        </a>
+                    </h2>
                     <h2 className={rowClass} onClick={() => setBookingModalOpen(true)}>
-                        Book a free consultation
+                        Get in touch
                     </h2>
                     <h2 className={rowClass} onClick={scrollToAboutYou}>
                         About you

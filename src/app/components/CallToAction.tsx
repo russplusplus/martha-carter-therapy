@@ -18,7 +18,7 @@ export function CallToAction({
   const { setBookingModalOpen } = useAppContext()
   const [ bookBtnClass, setBookBtnClass] = useState("book-btn prevent-select")
 
-  const allClassNames = "flex-h-center cream prevent-select " + className
+  const allClassNames = "flex-h-center prevent-select paragraph " + className
 
   useEffect(() => {
     setBookBtnClass(browserName === "Safari" ? "book-btn-safari prevent-select" : "book-btn prevent-select")
@@ -26,9 +26,11 @@ export function CallToAction({
 
   return (
     <div className={allClassNames}>
-      <h2 className={bookBtnClass} onClick={() => setBookingModalOpen(true)}>
-        Book a free consultation
-      </h2>
+      <a href="https://martha-carter.clientsecure.me" target="_blank">
+        <p className={bookBtnClass}>
+          Book a free consultation
+        </p>
+      </a>
     </div>
   )
 }

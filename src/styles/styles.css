@@ -15,7 +15,7 @@ body {
   padding: 0;
   margin: 0;
   background: var(--lavender);
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 .prevent-select {
@@ -444,7 +444,7 @@ h1 {
 }
 
 .book-btn {
-  font-family: Ubuntu;
+  /* font-family: Ubuntu; */
   text-align: center;
 
   border: solid;
@@ -457,14 +457,8 @@ h1 {
 
   &:hover {
     cursor: pointer;
-    color: var(--sage);
+    /* color: var(--sage); */
     font-size: 1.6rem;
-  }
-}
-
-.book-btn-sage {
-  &:hover {
-    color: var(--sage)
   }
 }
 
@@ -873,6 +867,18 @@ textarea {
 
 .bg-cream {
   background-color: var(--cream)
+}
+
+.hover-lavender {
+  &:hover {
+    color: var(--lavender)
+  }
+}
+
+.hover-sage {
+  &:hover {
+    color: var(--sage)
+  }
 }
 
 /* .bg-transparent {

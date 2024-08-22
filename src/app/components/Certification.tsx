@@ -6,7 +6,7 @@ export function Certification() {
         <div className="flex-h-center cream prevent-select certification-row-container">
             <div id="certification-container">
                 <FadeInOnScroll>
-                    <p id="certification-title" className="paragraph bold">Education and Certifications:</p>
+                    <h1 className="bold">Education and Certifications:</h1>
                     <br/>
                     <p className="paragraph">
                         Master of Social Work: Direct Practice

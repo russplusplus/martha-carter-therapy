@@ -13,7 +13,7 @@ export function HeadshotSection() {
       {/* <hr id="thicc-line"/> */}
       <div className='flex-h-center prevent-select padding-b-l' id='headshot-row-container'>
         <div id="headshot-container">
-          <img id='headshot' src='headshot2.jpg' width="3024" height="4032"></img>
+          <img id='headshot' src='headshot2.jpg' width="3024" height="4032" alt="Martha Carter Therapy Colorado Headshot"></img>
         </div>
         
         <div id="headshot-caption-container" className="cream">

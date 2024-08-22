@@ -29,12 +29,9 @@ export function About() {
                         Through working with me, clients feel calmer, more connected with themselves, and more engaged with their lives. 
                     </p>
                 </FadeInOnScroll>
-                <FadeInOnScroll>
-                    <CallToAction className="margin-t-s "/>
-                </FadeInOnScroll>
             </div>
             <div id="snowshoe-container">
-                <img id='about-pic' src='snowshoe.jpg' width="554" height="739"></img>
+                <img id='about-pic' src='snowshoe.jpg' width="554" height="739" alt="Martha Carter Therapy Colorado Headshot"></img>
               
             </div>          
         </div>
