@@ -838,6 +838,10 @@ textarea {
     overflow-x: hidden;
   }
 
+  #header-icon {
+    align-self: center
+  }  
+
   .blobs {
     position: absolute;
     height: 60rem;
@@ -850,6 +854,73 @@ textarea {
     position: relative;
     overflow: hidden;
   }
+
+  #motif-line-1 {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  #motif-line-2 {
+    width: 100%;
+    text-align: right;
+    font-weight: bold;
+  }
+
+  #about-you-row-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #headshot-container {
+    width: 50%;
+    padding-right: 1rem;
+  }
+
+  #headshot {
+    width: 100%;
+  }
+  
+  #headshot-caption-container {
+    padding-right: 1rem;
+  }
+
+  .headshot-caption {
+    margin-left: 1rem;
+  }
+
+  .social-proof {
+    height: 44rem;
+  }
+
+  #about-row-container {
+    height: 70rem;
+  }
+
+  #about-pic {
+    margin-left: .75rem;
+    margin-right: .75rem;
+  }  
+
+  #about-container {
+    padding-right: 1rem;
+    width: 50%;
+
+  }
+
+  .about-caption {
+    margin-left: 1rem;
+  }
+
+  .more-about {
+    width: 80%;
+  }
+
+  #certification-container {
+    width: 80%;
+  }
+  
+  
 }
 
 

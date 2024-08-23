@@ -1,6 +1,6 @@
 export function SocialProof1() {
   return (
-    <h1 style={{width: "50%"}}>
+    <h1 style={{width: "60%"}}>
       &quot;Martha is an insightful, warm, compassionate therapist with wisdom and wit that 
       invites vulnerability. I highly recomment her as a clinician and have loved working 
       with her in several different settings.&quot;<br/><br/> - Mikyla Young-Bayless, LMFT
