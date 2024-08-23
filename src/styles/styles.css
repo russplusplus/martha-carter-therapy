@@ -403,6 +403,8 @@ h1 {
 #hero-container {
   display: flex;
   flex-direction: row;
+  /* position: relative;
+  overflow-x: hidden; */
 }
 
 #hero-img-container {
@@ -827,6 +829,26 @@ textarea {
   #a-container {
     width: 50%;
     padding-right: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    min-width: 750px;
+    overflow-x: hidden;
+  }
+
+  .blobs {
+    position: absolute;
+    height: 60rem;
+    left: 10rem;
+  }
+
+  #hero-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
   }
 }
 
