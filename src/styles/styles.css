@@ -30,6 +30,7 @@ body {
   background-color: var(--cream);
   width: 100%;
   padding: 2rem;
+  position: relative;
   z-index: 2;
 }
 
@@ -406,6 +407,8 @@ h1 {
 
 #hero-img-container {
   display: flex;
+  position: relative;
+  z-index: 1;
 }
 
 #hero-caption-container {
@@ -435,10 +438,7 @@ h1 {
 }
 
 .squiggle {
-  /* position: relative; */
   height: 5rem;
-  /* top: 18rem;
-  left: 10rem; */
 }
 
 #hero {
@@ -449,7 +449,7 @@ h1 {
 .blobs {
   position: absolute;
   height: 90rem;
-  left: 22rem;
+  left: 24rem;
   top: 0;
   z-index: 0;
 }
@@ -464,6 +464,7 @@ h1 {
   transition: all .25s;
   padding: 0.3em;
   font-weight: bold;
+  position: relative;
   z-index: 2;
 
   &:hover {
@@ -594,11 +595,6 @@ h1 {
   color: var(--cream)
 }
 
-/* .headshot-caption.visible {
-}
- */
-
-
 .FAQ {
   margin-left: 2rem;
   margin-right: 2rem
@@ -682,7 +678,6 @@ h1 {
 }
 
 #footer-container {
-  /* margin-top: 6rem; */
   background-color: var(--lavender);
   height: 8rem;
   align-items: center;
@@ -754,7 +749,7 @@ textarea {
   font-family: Ubuntu;
 }
 
-@media (min-width: 640px) {
+/* @media (min-width: 640px) {
   .container {
     max-width: 640px;
   }
@@ -764,8 +759,13 @@ textarea {
   .container {
     max-width: 768px;
   }
-}
+} */
 
+/* @media (min-width: 1700px) {
+  .blobs {
+    left: 16rem;
+  }
+} */
 
 @media (max-width: 1280px) {
   #hero-row-container {
@@ -828,24 +828,9 @@ textarea {
     width: 50%;
     padding-right: 2rem;
   }
-
-  
 }
 
-/* 
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
 
-  
-} */
-
-/* @media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-} */
 
 .flex-h-center {
   display: flex;

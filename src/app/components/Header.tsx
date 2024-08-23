@@ -18,7 +18,6 @@ export async function Header() {
                     </a>
                 </div>
                 <Menu />
-
             </div>
         </header>
     )
