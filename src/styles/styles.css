@@ -31,7 +31,6 @@ body {
   width: 100%;
   padding: 2rem;
   z-index: 2;
-
 }
 
 h1 {
@@ -203,6 +202,8 @@ h1 {
   flex-direction: row;
   align-items: center;
   width: 100%;
+  flex-wrap:  wrap;
+
 }
 
 #header-icon {
@@ -218,6 +219,11 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  flex-wrap:  wrap;
+  margin-right: 4rem;
+
 }
 
 #ig-icon {
@@ -264,7 +270,6 @@ h1 {
   font-family: Ubuntu;
   border-radius: 1rem;
   transition: all .25s;
-  margin-right: 4rem;
 
   &:hover {
     border-color: var(--lavender);
@@ -389,13 +394,18 @@ h1 {
 }
 
 #hero-row-container {
+  height: 40rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 #hero-container {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 700;
+}
+
+#hero-img-container {
+  display: flex;
 }
 
 #hero-caption-container {
@@ -403,6 +413,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  margin-right: 4rem;
 }
 
 #motif-line-1 {
@@ -432,13 +443,13 @@ h1 {
 
 #hero {
   z-index: 1;
-  height: 300;
+  height: 40rem;
 }
 
 .blobs {
   position: absolute;
-  height: 70rem;
-  left: 35rem;
+  height: 90rem;
+  left: 22rem;
   top: 0;
   z-index: 0;
 }
@@ -624,7 +635,7 @@ h1 {
 #certification-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   width: 40%;
 }
 
@@ -738,45 +749,11 @@ textarea {
   box-sizing: border-box; 
 }
 
-@media only screen and (min-width: 600px) {
-  header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      height: 8em;
-      /* padding-left: 1rem;
-      padding-right: 1rem; */
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      height: 6em;
-      padding-left: 0;
-      padding-right: 0;
-      margin: 0;
-      width: 100%
-  }
-
-  #header-icon {
-      height: 4em;
-  }
-  
-  .signature-logo {
-      height: 2em;
-  }
-}
-
 .paragraph {
   font-size: 1.5rem;
   font-family: Ubuntu;
 }
-/* 
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -789,19 +766,82 @@ textarea {
   }
 }
 
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
+
+@media (max-width: 1280px) {
+  #hero-row-container {
+    height: 35rem;
   }
+
+  #hero {
+    height: 35rem;
+  }
+
+  .blobs {
+    left: 6rem;
+  }
+
+  .social-proof {
+    height: 36rem;
+  }
+
+  #certification-container {
+    width: 50%;
+  }
+  
 }
 
+@media (max-width: 1024px) {
+  #hero-row-container {
+    height: 30rem;
+  }
+
+  #hero {
+    height: 30rem;
+  }
+
+  .blobs {
+    left: 3rem;
+  }
+
+  #hero-caption-container {
+    margin-right: 0;
+  }
+
+  .social-proof {
+    height: 40rem;
+  }
+
+  #about-row-container {
+    height: 60rem;
+  }
+
+  #certification-container {
+    width: 70%;
+  }
+
+  #q-container {
+    width: 50%;
+    padding-left: 2rem;
+  }
+  
+  #a-container {
+    width: 50%;
+    padding-right: 2rem;
+  }
+
+  
+}
+
+/* 
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
   }
-}
 
-@media (min-width: 1536px) {
+  
+} */
+
+/* @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
   }
