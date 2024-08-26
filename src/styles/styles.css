@@ -25,7 +25,6 @@ body {
 }
 
 .header-container {
-  /* border-radius: 1rem; */
   color: var(--green);
   background-color: var(--cream);
   width: 100%;
@@ -36,8 +35,6 @@ body {
 
 h1 {
   font-family: Ubuntu;
-  /* text-align: center;
-  width: 50%; */
   font-size: 2rem;
   font-weight: 400;
 }
@@ -403,8 +400,6 @@ h1 {
 #hero-container {
   display: flex;
   flex-direction: row;
-  /* position: relative;
-  overflow-x: hidden; */
 }
 
 #hero-img-container {
@@ -457,7 +452,6 @@ h1 {
 }
 
 .book-btn {
-  /* font-family: Ubuntu; */
   text-align: center;
 
   border: solid;
@@ -471,7 +465,6 @@ h1 {
 
   &:hover {
     cursor: pointer;
-    /* color: var(--sage); */
     font-size: 1.6rem;
   }
 }
@@ -489,7 +482,6 @@ h1 {
   &:hover {
     cursor: pointer;
     color: var(--lavender);
-    /* font-size: 1.6rem; */
   }
 }
 
@@ -506,7 +498,6 @@ h1 {
   background-color: var(--cream);
   width: 100%;
   border-width: 0;
-  /* border-style: none; */
 }
 
 #headshot-container {
@@ -534,10 +525,7 @@ h1 {
 #about-row-container {
   align-items: center;
   background-color: var(--lavender);
-  /* padding-top: 6rem;
-  padding-bottom: 6rem; */
   height: 40rem;
-  /* overflow-y: hidden; */
 }
 
 
@@ -548,9 +536,7 @@ h1 {
 }
 
 #about-container {
-  /* padding-top: 2rem; */
   padding-bottom: 4rem;
-
   width: 45%;
   display: flex;
   flex-direction: column;
@@ -559,11 +545,15 @@ h1 {
   border-right-color: var(--cream);
   border-right-width: 2px;
   border-right-style: solid;
-
 }
 
 #about-you-row-container {
   position: relative;
+  margin-bottom: -1px;
+}
+
+#about-you-container {
+  width: 60%;
 }
 
 .social-proof-row-container {
@@ -572,13 +562,14 @@ h1 {
 }
 
 .social-proof {
-  /* width: 50%; */
   position: relative;
   text-align: center;
   height: 32rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-bottom: -1px;
+  margin-top: -1px;
 }
 
 #snowshoe-container {
@@ -618,6 +609,8 @@ h1 {
 
 .more-about-row-container {
   position: relative;
+  margin-top: -1px;
+  margin-bottom: -1px;
 }
 
 .more-about {
@@ -643,9 +636,7 @@ h1 {
 }
 
 #faq-row-container {
-  /* align-items: center; */
-  /* height: 180rem; */
-  
+  margin-top: -1px;
 }
 
 #faq-column {
@@ -832,6 +823,16 @@ textarea {
   }
 }
 
+@media (max-width: 876px) {
+  #header-icon {
+    align-self: center
+  }  
+
+  #menu {
+    top: 7rem;
+  }
+}
+
 @media (max-width: 800px) {
   body {
     min-width: 750px;
@@ -867,12 +868,10 @@ textarea {
     font-weight: bold;
   }
 
-  #about-you-row-container {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    margin-bottom: -1px;
+  #about-you-container {
+    width: 90%;
   }
-
+  
   #headshot-container {
     width: 50%;
     padding-right: 1rem;
@@ -892,8 +891,6 @@ textarea {
 
   .social-proof {
     height: 44rem;
-    margin-bottom: -1px;
-    margin-top: -1px;
   }
 
   #about-row-container {
@@ -908,17 +905,11 @@ textarea {
   #about-container {
     padding-right: 1rem;
     width: 50%;
-
   }
 
   .about-caption {
     margin-left: 1rem;
   }
-
-  .more-about-row-container {
-    margin-top: -1px;
-    margin-bottom: -1px;
-  }  
 
   .more-about {
     width: 80%;
@@ -926,15 +917,8 @@ textarea {
 
   #certification-container {
     width: 80%;
-  }
-  
-  #faq-row-container {
-    margin-top: -1px;
-  }
-  
+  }  
 }
-
-
 
 .flex-h-center {
   display: flex;
@@ -1009,10 +993,6 @@ textarea {
     color: var(--sage)
   }
 }
-
-/* .bg-transparent {
-  background-
-} */
 
 .bold {
   font-weight: bold;

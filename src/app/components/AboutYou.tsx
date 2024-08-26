@@ -11,22 +11,22 @@ export function AboutYou() {
                 </FadeInOnScroll>
                 <FadeInOnScroll>
                     <p className="paragraph margin-b-s">
-                        You&apos;ve spent your life making sure everyone else is okay,<br/> ensuring everyone is comfortable from behind the scenes,<br/>meanwhile you feel alone and exhausted. 
+                        You&apos;ve spent your life making sure everyone else is okay, ensuring everyone is comfortable from behind the scenes, meanwhile you feel alone and exhausted. 
                     </p>
                 </FadeInOnScroll>
                 <FadeInOnScroll>
                     <p className="paragraph margin-b-s">
-                        You feel lost in other people&apos;s lives and are starting to wonder<br/>who you are beyond taking care of others. 
+                        You feel lost in other people&apos;s lives and are starting to wonder who you are beyond taking care of others. 
                     </p>
                 </FadeInOnScroll>
                 <FadeInOnScroll>
                     <p className="paragraph margin-b-s">
-                        While you are good at holding it all together on the outside,<br/>you feel anxious, self-critical, and stuck on the inside. 
+                        While you are good at holding it all together on the outside, you feel anxious, self-critical, and stuck on the inside. 
                     </p>
                 </FadeInOnScroll>
                 <FadeInOnScroll>
                     <p className="paragraph margin-b-s">
-                        But that isn&apos;t cutting it- you want to feel as connected to yourself<br/>as you are to other people and their needs,<br/>and are ready to start living for yourself.
+                        But that isn&apos;t cutting it- you want to feel as connected to yourself as you are to other people and their needs, and are ready to start living for yourself.
                     </p>
                 </FadeInOnScroll>
             </div>
