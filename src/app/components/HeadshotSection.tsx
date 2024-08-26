@@ -43,12 +43,12 @@ export function HeadshotSection() {
               pleasing into saying yes when you want to, and self-doubt into self-assuredness. 
             </p>
           </FadeInOnScroll>
-          <FadeInOnScroll>
+          {/* <FadeInOnScroll>
             <p className='paragraph headshot-caption'>
               After working with me, you will feel more alive and like yourself, connected to your true 
               longings, sure of your strengths, and naturally calmer.  
             </p>
-          </FadeInOnScroll>
+          </FadeInOnScroll> */}
           <FadeInOnScroll>
             <p className='paragraph headshot-caption'>
               I am a passionate and fun-loving therapist and will give you honesty, direct feedback, 
