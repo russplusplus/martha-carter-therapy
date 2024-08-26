@@ -2,7 +2,7 @@ import { FadeInOnScroll } from "./FadeInOnScroll"
 
 export function AboutYou() {
     return (
-        <div className="flex-h-center padding-t-s padding-b-l prevent-select bg-cream flex-h-center" id="about-you-row-container">
+        <div className="flex-h-center padding-t-s padding-b-l prevent-select bg-cream" id="about-you-row-container">
             <div id="about-you-container" className="green margin-t-l ">
                 <FadeInOnScroll>
                     <h1 className="margin-b-s bold">
