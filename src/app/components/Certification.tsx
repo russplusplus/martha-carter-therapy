@@ -1,4 +1,4 @@
-import { Lavender } from "./Lavender"
+import { Sage } from "./Sage"
 import { FadeInOnScroll } from "./FadeInOnScroll"
 
 export function Certification() {
@@ -30,7 +30,9 @@ export function Certification() {
                     <br/>
                     <p className="paragraph">
                         <a href="https://www.swtraumatraining.com/2024-post-traumatic-growth-training" target="_blank">
-                            Post Traumatic Growth
+                            <Sage>
+                                Post Traumatic Growth
+                            </Sage>
                         </a>
                     </p>
                     <p className="paragraph">

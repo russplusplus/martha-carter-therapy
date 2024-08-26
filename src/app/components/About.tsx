@@ -13,20 +13,19 @@ export function About() {
                 </FadeInOnScroll>
                 <FadeInOnScroll>
                     <p className='paragraph about-caption '>
-                        I see clients via tele-health across the state of Colorado. I am a trauma specialist and help adults 
-                        with chronic anxiety, people pleasing, childhood trauma, PTSD, emotional abuse, complex PTSD, and 
-                        relational trauma. 
+                        I work with clients via telehealth across the state of Colorado. I am a trauma specialist and help adults with chronic anxiety, 
+                        people-pleasing, childhood trauma, PTSD, emotional abuse, complex PTSD, and relational trauma.
                     </p>
                 </FadeInOnScroll>
                 <FadeInOnScroll>
                     <p className='paragraph about-caption '>
-                        With more than 5 years of experience, I help clients to resolve their symptoms and build a more regulated 
-                        and easeful life by prioritizing what is most in service of their nervous systems during sessions. 
+                        With more than five years of experience, I help clients resolve trauma symptoms and build a more easeful life by prioritizing 
+                        what is most beneficial to the nervous system during sessions.
                     </p>
                 </FadeInOnScroll>
                 <FadeInOnScroll>
                     <p className='paragraph about-caption '>
-                        Through working with me, clients feel calmer, more connected with themselves, and more engaged with their lives. 
+                        In working with me, clients feel calmer, more connected to themselves, and more engaged with their lives.
                     </p>
                 </FadeInOnScroll>
             </div>

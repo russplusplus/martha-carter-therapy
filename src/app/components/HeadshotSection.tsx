@@ -1,5 +1,5 @@
 
-import { Lavender } from "./Lavender"
+import { CallToAction } from "./CallToAction"
 import { FadeInOnScroll } from "./FadeInOnScroll"
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.compat.css"
@@ -30,43 +30,50 @@ export function HeadshotSection() {
           </FadeInOnScroll>
           <FadeInOnScroll>
             <p className='paragraph headshot-caption'>
-              If you feel like therapy has gotten dull, you have a deep 
-              understanding of your issues but still feel stuck, or have ever said something along 
-              the lines of “I understand that in my head, but I can&apos;t feel it”, it might be time to 
-              try a somatic approach. 
+              If you feel that:
+              <br/>
+              <br/>
+              <ul>
+                <li>Therapy has become dull</li>
+                <li>You have extensive insight about your issues and are still feeling stuck</li>
+                <li>You understand something on an intellectual level, but don&apos;t actually feel it</li>
+              </ul>
+              <br/>
+              ... it may be time to explore a somatic approach. 
             </p>
           </FadeInOnScroll>
           <FadeInOnScroll>
             <p className='paragraph headshot-caption'>
-              Through somatic techniques, we can help your body feel the same 
-              way your mind does. Together, we will transform toxic shame into confidence, people 
-              pleasing into saying yes when you want to, and self-doubt into self-assuredness. 
+              Through somatic techniques, we can help your body feel the same way your mind does. 
+              Together, we will transform toxic shame into confidence, people-pleasing tendencies into saying 
+              “yes” when you want to, and shift self-doubt into self-assuredness.
             </p>
           </FadeInOnScroll>
-          {/* <FadeInOnScroll>
-            <p className='paragraph headshot-caption'>
-              After working with me, you will feel more alive and like yourself, connected to your true 
-              longings, sure of your strengths, and naturally calmer.  
-            </p>
-          </FadeInOnScroll> */}
           <FadeInOnScroll>
             <p className='paragraph headshot-caption'>
-              I am a passionate and fun-loving therapist and will give you honesty, direct feedback, 
+              I am a passionate and fun-loving therapist who offers honesty, humor, direct feedback, 
               and a safe place to land as we navigate the impact of trauma together. 
             </p>
           </FadeInOnScroll>
           <FadeInOnScroll>
             <p className='paragraph headshot-caption'>
-              After working with me, you will feel more alive and like yourself, connected to your true 
-              longings, sure of your strengths, and naturally calmer.  
+              After working with me, you will feel more alive, connected to your true longings, 
+              confident in your strengths, naturally calmer, and most importantly—more like yourself. 
             </p>
           </FadeInOnScroll>
           <FadeInOnScroll>
             <p className='paragraph headshot-caption'>
-              Ready to uncover your natural resilience? 
-              Schedule a free, no-commitment consultation to begin your transformative journey and come back home to yourself. 
-              If you don&apos;t see a time that works for you in my calendar, email me to find a time that does. 
+              Ready to uncover your natural resilience?
             </p>
+          </FadeInOnScroll>
+          <FadeInOnScroll>
+            <p className='paragraph headshot-caption'>
+              Schedule a free, no-commitment consultation to begin your transformative journey and come back home to yourself. 
+              If you don&apos;t see a time that works for you in my calendar, please reach out via email and we will find a time that does!
+            </p>
+          </FadeInOnScroll>
+          <FadeInOnScroll>
+            <CallToAction className="headshot-caption margin-t-s hover-sage"/>
           </FadeInOnScroll>
         </div>          
       </div>
