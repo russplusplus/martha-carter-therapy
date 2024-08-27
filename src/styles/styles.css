@@ -558,10 +558,44 @@ h1 {
 
 .social-proof-row-container {
   position: relative;
-  transition: all .25s;
+  text-align: center;
+  height: 34rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-bottom: -1px;
+  margin-top: -1px;
 }
 
-.social-proof {
+.social-proof-next-btn {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  border-width: 0;
+  /* background-color: var(--lavender); */
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  transition: all .25s;
+  /* margin-left: 4rem;
+  margin-right: 4rem; */
+  position: relative;
+
+  background-color: var(--cream);
+
+  &:hover {
+    background-color: var(--lavender);
+    font-size: 1.8rem;
+  }
+}
+
+
+/* .social-proof {
   position: relative;
   text-align: center;
   height: 32rem;
@@ -570,7 +604,7 @@ h1 {
   justify-content: flex-start;
   margin-bottom: -1px;
   margin-top: -1px;
-}
+} */
 
 #snowshoe-container {
   width: 45%;
@@ -773,7 +807,7 @@ textarea {
     left: 6rem;
   }
 
-  .social-proof {
+  .social-proof-row-container {
     height: 36rem;
   }
 
@@ -800,16 +834,17 @@ textarea {
     margin-right: 0;
   }
 
-  .social-proof {
+  .social-proof-row-container {
     height: 40rem;
   }
+
 
   #about-row-container {
     height: 60rem;
   }
 
   #certification-container {
-    width: 70%;
+    width: 60%;
   }
 
   #q-container {
@@ -831,6 +866,17 @@ textarea {
   #menu {
     top: 7rem;
   }
+
+  .social-proof-row-container {
+    height: 44rem;
+  }
+
+
+  #certification-container {
+    width: 80%;
+    padding-left: 2rem
+  }
+
 }
 
 @media (max-width: 800px) {
@@ -915,7 +961,7 @@ textarea {
   }
 
   #certification-container {
-    width: 80%;
+    width: 90%;
   }  
 }
 
@@ -947,6 +993,10 @@ textarea {
 
 .padding-b-l {
   padding-bottom: 6rem;
+}
+
+.padding-b-xl {
+  padding-bottom: 8rem;
 }
 
 .padding-t-s {
@@ -998,12 +1048,12 @@ textarea {
 }
 
 .fade-in {
-  transition: opacity 1s ease;
+  transition: opacity .5s ease;
 }
 
 .fade-out {
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity .5s ease;
 }
 
 .custom-shape-divider-bottom-1723591800 {

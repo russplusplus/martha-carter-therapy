@@ -29,7 +29,7 @@ export function HeadshotSection() {
             </p>
           </FadeInOnScroll>
           <FadeInOnScroll>
-            <p className='paragraph headshot-caption'>
+            <div className='paragraph headshot-caption'>
               If you feel that:
               <br/>
               <br/>
@@ -40,7 +40,7 @@ export function HeadshotSection() {
               </ul>
               <br/>
               ... it may be time to explore a somatic approach. 
-            </p>
+            </div>
           </FadeInOnScroll>
           <FadeInOnScroll>
             <p className='paragraph headshot-caption'>
@@ -62,7 +62,11 @@ export function HeadshotSection() {
             </p>
           </FadeInOnScroll>
           <FadeInOnScroll>
-            <p className='paragraph headshot-caption'>
+            {/* <h1 className='bold headshot-caption'>
+              Ready to uncover your natural resilience?
+            </h1> */}
+            {/* <br/> */}
+            <p className='bold paragraph headshot-caption'>
               Ready to uncover your natural resilience?
             </p>
           </FadeInOnScroll>

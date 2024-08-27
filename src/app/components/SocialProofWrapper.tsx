@@ -3,6 +3,8 @@
 // import { SocialProof1 } from "./SocialProof"
 import { FadeInOnScroll } from "./FadeInOnScroll"
 import { useEffect, useState } from 'react'
+import { IoChevronBack, IoChevronForward } from "react-icons/io5"
+import { TbUvIndex } from "react-icons/tb"
 
 const log = console.log.bind(console)
 
@@ -14,27 +16,6 @@ export function SocialProofWrapper({
 
     const [ index, setIndex ] = useState(0)
     const [ fadeType, setFadeType ] = useState('fade-in')
-
-    // async function rotate() {
-    //     log('in rotate')
-    //     let rotationStartTime = Date.now()
-        // while (true) {
-        //     if (Date.now() - rotationStartTime >= 5000) {
-        //         log('rotate')
-        //         rotationStartTime = Date.now()
-        //     }
-        // }
-        // do {
-        //     setTimeout(() => {
-        //         log('one second has passed')
-        //     }, 1000)
-        // } while (true)
-    // }
-
-    // useEffect(() => {
-    //     log('children:', children)
-    //     rotate()
-    // }, [])
 
     function rotate(i: number) {
         setTimeout(() => {
@@ -48,21 +29,49 @@ export function SocialProofWrapper({
     }
 
     // useEffect(() => {
-    //     log('index:', index)
-    // }, [index])
+    //     log('mounted')
+    //     rotate(0)
+    // }, [])
 
     useEffect(() => {
-        log('mounted')
-        rotate(0)
-    }, [])
+        log('index:', index)
+    }, [index])
+
+    function next() {
+        setFadeType('fade-out')
+        setTimeout(() => {
+            let i = index + 1
+            setIndex(i)
+            setFadeType('fade-in')
+        }, 500)
+    }
+
+    function previous() {
+        setFadeType('fade-out')
+        setTimeout(() => {
+            let i = index - 1
+            setIndex(i)
+            setFadeType('fade-in')
+        }, 500)
+    }
     
     return (
-        <div className="bg-cream padding-t-l social-proof">
+        <div className="bg-cream padding-t-l padding-b-xl social-proof-row-container">
+            <div className="social-proof-next-btn-container">
+                <button className="social-proof-next-btn" onClick={previous}>
+                    <IoChevronBack />
+                </button>
+            </div>
             <FadeInOnScroll>
                 <div className={fadeType + " flex-h-center green bg-cream prevent-select "}>
-                    {children[index % children.length]}
+                    {children[Math.abs(index % children.length)]}
                 </div>
             </FadeInOnScroll>
+            <div className="social-proof-next-btn-container">
+                <button className="social-proof-next-btn" onClick={next}>
+                    <IoChevronForward />
+                </button>
+            </div>
         </div>
     )
 }
