@@ -4,7 +4,6 @@
 import { FadeInOnScroll } from "./FadeInOnScroll"
 import { useEffect, useState } from 'react'
 import { IoChevronBack, IoChevronForward } from "react-icons/io5"
-import { TbUvIndex } from "react-icons/tb"
 
 const log = console.log.bind(console)
 
@@ -13,20 +12,19 @@ export function SocialProofWrapper({
 }:{
     children: React.ReactNode[]
 }) {
-
     const [ index, setIndex ] = useState(0)
     const [ fadeType, setFadeType ] = useState('fade-in')
 
-    function rotate(i: number) {
-        setTimeout(() => {
-            setFadeType('fade-out')
-            setTimeout(() => {
-                setIndex(i + 1)
-                rotate(i + 1)
-                setFadeType('fade-in')
-            }, 1000)
-        }, 10000)
-    }
+    // function rotate(i: number) {
+    //     setTimeout(() => {
+    //         setFadeType('fade-out')
+    //         setTimeout(() => {
+    //             setIndex(i + 1)
+    //             rotate(i + 1)
+    //             setFadeType('fade-in')
+    //         }, 1000)
+    //     }, 10000)
+    // }
 
     // useEffect(() => {
     //     log('mounted')
@@ -40,7 +38,7 @@ export function SocialProofWrapper({
     function next() {
         setFadeType('fade-out')
         setTimeout(() => {
-            let i = index + 1
+            const i = index + 1
             setIndex(i)
             setFadeType('fade-in')
         }, 500)
@@ -49,7 +47,7 @@ export function SocialProofWrapper({
     function previous() {
         setFadeType('fade-out')
         setTimeout(() => {
-            let i = index - 1
+            const i = index - 1
             setIndex(i)
             setFadeType('fade-in')
         }, 500)
