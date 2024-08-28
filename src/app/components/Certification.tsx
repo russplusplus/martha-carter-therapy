@@ -31,7 +31,7 @@ export function Certification() {
                     <p className="paragraph">
                         <a href="https://www.swtraumatraining.com/2024-post-traumatic-growth-training" target="_blank">
                             <Sage>
-                                Post Traumatic Growth
+                                Post-Traumatic Growth
                             </Sage>
                         </a>
                     </p>

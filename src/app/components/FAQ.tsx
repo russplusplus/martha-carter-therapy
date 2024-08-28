@@ -93,7 +93,7 @@ export function FAQ() {
                             <Answer breaks={3}>
                                 During the free consultation you can ask any questions you may have,
                                 we will discuss what your goals are, and if and how they align with my offerings.
-                                During the initial apportionment, we will determine clear goals and start the foundational work to regulate your nervous system. 
+                                During the initial appointment, we will determine clear goals and start the foundational work to regulate your nervous system. 
                             </Answer>   
                         </FadeInOnScroll>          
                     </div>     
