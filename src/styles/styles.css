@@ -478,10 +478,11 @@ h1 {
   transition: all .25s;
   padding: 0.3em;
   font-weight: 500;
+  position: relative;
+  z-index: 2;
 
   &:hover {
     cursor: pointer;
-    color: var(--lavender);
   }
 }
 
