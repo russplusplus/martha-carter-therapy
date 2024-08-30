@@ -20,16 +20,18 @@ export function Motif() {
         <div id="hero-img-container">
           <img id='hero' src='hero3.png' ></img>
         </div>
-        <svg className="blobs" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800" opacity="1">
-          <defs>
-            <filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-              <feGaussianBlur stdDeviation="59" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur>
-            </filter>
-          </defs>
-          <g filter="url(#bbblurry-filter)">
-            <ellipse rx="157" ry="277.5" cx="404.78091814131017" cy="394.4817508078371" fill="#d4f9cdff"></ellipse>
-          </g>
-        </svg>
+        <div>
+          <svg className="blobs" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800" opacity="1">
+            <defs>
+              <filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                <feGaussianBlur stdDeviation="59" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur>
+              </filter>
+            </defs>
+            <g filter="url(#bbblurry-filter)">
+              <ellipse rx="157" ry="277.5" cx="404.78091814131017" cy="394.4817508078371" fill="#d4f9cdff"></ellipse>
+            </g>
+          </svg>
+        </div>
       </div>
     </MotifClientContainer>
   )
