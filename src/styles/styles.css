@@ -449,6 +449,7 @@ h1 {
   left: 24rem;
   top: 0;
   z-index: 0;
+  overflow: hidden;
 }
 
 .book-btn {
@@ -891,7 +892,6 @@ textarea {
   }  
 
   .blobs {
-    position: absolute;
     height: 60rem;
     left: 10rem;
   }
