@@ -20,7 +20,7 @@ export function Motif() {
         <div id="hero-img-container">
           <img id='hero' src='hero3.png' ></img>
         </div>
-        <div style={{width: "100%"}}>
+        <div style={{width: "100%", overflow: "hidden"}}>
           <svg className="blobs" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800" opacity="1">
             <defs>
               <filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
