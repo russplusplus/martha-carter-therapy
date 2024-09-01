@@ -15,7 +15,7 @@ export function Motif() {
           </h1>
           <br/>
           <svg className="squiggle" overflow="hidden" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="100 170 600 100"><path d="M112.5560531616211,235.8744354248047C146.708517964681,229.6801161702474,235.74887227376303,201.35126831054689,295.51568603515625,202.69058227539062C355.2824997965495,204.02989624023436,361.7518579101562,243.71898864746095,432.73541259765625,243.04933166503906C503.7189672851563,242.37967468261718,630.4155232747396,207.30642435709635,675.7847290039062,199.10313415527344" fill="none" strokeWidth="7" stroke="url(&quot;#SvgjsLinearGradient1001&quot;)" strokeLinecap="round" strokeDasharray="0 0" transform="matrix(0.9950062499999999,5.551115123125783e-17,-5.551115123125783e-17,0.9950062499999999,7.79798592076304,-19.976401093149178)"></path><defs><linearGradient id="SvgjsLinearGradient1001" gradientTransform="rotate(188, 0.5, 0.5)"><stop stopColor="#d4f9cd" offset="0"></stop><stop stopColor="#fcf4e8" offset="1"></stop></linearGradient></defs></svg>
-          <CallToAction className="hover-sage"/>
+          <CallToAction className="hover-sage active-sage"/>
         </div>
         <div id="hero-img-container">
           <img id='hero' src='hero3.png' ></img>

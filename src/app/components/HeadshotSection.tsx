@@ -77,7 +77,7 @@ export function HeadshotSection() {
             </p>
           </FadeInOnScroll>
           <FadeInOnScroll>
-            <CallToAction className="headshot-caption margin-t-s hover-sage"/>
+            <CallToAction className="headshot-caption margin-t-s hover-sage active-sage"/>
           </FadeInOnScroll>
         </div>          
       </div>
