@@ -37,7 +37,7 @@ export function FAQ() {
                     <div id="a-container" className="green">
                         <FadeInOnScroll>
                             <Answer breaks={3}>
-                                Like most specialists, I do not accept insurance.
+                                Like most specialists, I do not accept insurance. If you would like to use your out-of-network benefits, I can provide you with a superbill. You will need to contact your insurance to see if you have out-of-network benefits.
                             </Answer>
                         </FadeInOnScroll>
                     </div>
