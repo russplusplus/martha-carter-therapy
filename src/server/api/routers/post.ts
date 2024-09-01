@@ -27,7 +27,7 @@ export const postRouter = createTRPCRouter({
       const mailOptions = {
         from: process.env.EMAIL_ADDRESS,
         // to: "marthacartertherapy@gmail.com",
-        to: "russell.kerber@gmail.com",
+        to: "marthacartertherapy@gmail.com",
         subject: "New Inquiry from marthacartertherapy.com!",
         html: `
           <p>Name: ${input.firstName} ${input.lastName}</p>
