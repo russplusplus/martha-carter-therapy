@@ -747,7 +747,6 @@ input {
   }
 }
 
-
 textarea {
   background-color: var(--cream);
   border-width: 0;
@@ -776,6 +775,18 @@ textarea {
 .paragraph {
   font-size: 1.5rem;
   font-family: Ubuntu;
+}
+
+.active-sage {
+  &:active {
+    color: var(--sage)
+  }
+}
+
+.active-lavender {
+  &:active {
+    color: var(--lavender)
+  }
 }
 
 /* @media (min-width: 640px) {

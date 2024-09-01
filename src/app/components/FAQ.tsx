@@ -1,7 +1,5 @@
 import { FadeInOnScroll } from "./FadeInOnScroll"
-import { useState, useRef } from "react"
 import { Lavender } from "./Lavender"
-import { CallToAction } from "./CallToAction"
 
 export function FAQ() {
 
