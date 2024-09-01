@@ -49,7 +49,7 @@ export function MoreAbout() {
                 </div>
             </FadeInOnScroll>
             <FadeInOnScroll>
-                <CallToAction className="margin-t-s green hover-lavender"/>
+                <CallToAction className="margin-t-s green hover-lavender active-lavender"/>
             </FadeInOnScroll>
         </div>
     )
