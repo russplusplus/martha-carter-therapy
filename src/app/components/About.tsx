@@ -1,6 +1,7 @@
 import { Lavender } from "./Lavender"
 import { FadeInOnScroll } from "./FadeInOnScroll"
 import { CallToAction } from "./CallToAction"
+import Image from "next/image"
 
 export function About() {
     return (
@@ -30,8 +31,7 @@ export function About() {
                 </FadeInOnScroll>
             </div>
             <div id="snowshoe-container">
-                <img id='about-pic' src='snowshoe.jpg' width="554" height="739" alt="Martha Carter Therapy Colorado Headshot"></img>
-              
+                <Image id='about-pic' src='/snowshoe.jpg' width="554" height="739" alt="Martha Carter snowshoeing in a forest on a sunny winter day"></Image>
             </div>          
         </div>
     )

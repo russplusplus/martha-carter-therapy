@@ -11,6 +11,7 @@ import { ColorRing } from "react-loader-spinner"
 
 import { IoClose } from "react-icons/io5";
 import { browserName } from 'react-device-detect';
+import Image from "next/image"
 
 export function BookingModal() {
     const { 
@@ -140,7 +141,7 @@ export function BookingModal() {
             <>
                 {isBookingStarted &&
                 <div id={"book-btn-corner"} className="prevent-select" onClick={() => setBookingModalOpen(true)}>
-                    <img id="book-btn-corner-logo" src="flower-forest.png" alt="Martha Carter Therapy Flower Logo"></img>
+                    <Image id="book-btn-corner-logo" src="/flower-forest.png" fill alt="Martha Carter Therapy Flower Logo"></Image>
                 </div>
                 }
             </>

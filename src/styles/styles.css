@@ -206,6 +206,7 @@ h1 {
 
 #header-icon {
   height: 4em;
+  width: 4rem;
   margin-right: 1em;
 }
 
@@ -440,7 +441,6 @@ h1 {
 
 #hero {
   z-index: 1;
-  height: 40rem;
 }
 
 .blobs {
@@ -707,13 +707,16 @@ h1 {
 }
 
 #footer-container {
+  position: relative;
   background-color: var(--lavender);
   height: 8rem;
   align-items: center;
 }
 
 #footer-logo {
+  width: 4rem;
   height: 4rem;
+  /* position: relative; */
 }
 
 a {
@@ -873,7 +876,7 @@ textarea {
 
 @media (max-width: 876px) {
   #header-icon {
-    align-self: center
+    align-self: center;
   }  
 
   #menu {

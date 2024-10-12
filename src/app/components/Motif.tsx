@@ -1,5 +1,6 @@
 import { MotifClientContainer } from "./MotifClientContainer"
 import { CallToAction } from "./CallToAction"
+import Image from "next/image"
 
 export function Motif() {
   return (
@@ -18,7 +19,7 @@ export function Motif() {
           <CallToAction className="hover-sage active-sage"/>
         </div>
         <div id="hero-img-container">
-          <img id='hero' src='hero3.png' ></img>
+          <Image id='hero' src='/hero3.png' alt='Martha Carter hero' height='640' width='401'></Image>
         </div>
         <div style={{width: "100%", overflow: "hidden"}}>
           <svg className="blobs" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800" opacity="1">

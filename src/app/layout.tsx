@@ -5,14 +5,12 @@ import { GeistSans } from "geist/font/sans";
 
 import { TRPCReactProvider } from "~/trpc/react";
 
-import { AppContextProvider } from "./components/AppContext";
+import type { Metadata } from 'next'
 
-export const metadata = {
-  title: {
-    default: "Martha Carter Therapy"
-  },
+export const metadata: Metadata = {
+  title: "Martha Carter Therapy",
   description: "Online trauma therapy for adults in Colorado",
-  metadataBase: "https://martha-carter-therapy.vercel.app",
+  metadataBase: new URL("https://martha-carter-therapy.vercel.app"),
   icons: [{ rel: "icon", url: "/favicon.ico" }],
   twitter: {
     card: "summary_large_image"

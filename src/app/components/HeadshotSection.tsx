@@ -1,8 +1,8 @@
 
 import { CallToAction } from "./CallToAction"
 import { FadeInOnScroll } from "./FadeInOnScroll"
-import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.compat.css"
+import Image from "next/image"
 
 const log = console.log.bind(console)
 
@@ -13,7 +13,7 @@ export function HeadshotSection() {
       {/* <hr id="thicc-line"/> */}
       <div className='flex-h-center prevent-select padding-b-l' id='headshot-row-container'>
         <div id="headshot-container">
-          <img id='headshot' src='headshot2.jpg' width="3024" height="4032" alt="Martha Carter Therapy Colorado Headshot"></img>
+          <Image id='headshot' src='/headshot2.jpg' width="3024" height="4032" alt="Martha Carter Therapy Colorado Headshot"></Image>
         </div>
         
         <div id="headshot-caption-container" className="cream">
