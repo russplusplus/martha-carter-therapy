@@ -64,7 +64,7 @@ export function About() {
                 </FadeInOnScroll> */}
             </div>
             <div id="snowshoe-container">
-                <Image id='about-pic' src='/snowshoe.jpg' width="554" height="739" alt="Martha Carter snowshoeing in a forest on a sunny winter day"></Image>
+                <Image id='about-pic' src='/snowshoe7.jpg' width="554" height="739" alt="Martha Carter snowshoeing in a forest on a sunny winter day"></Image>
             </div>          
         </div>
     )

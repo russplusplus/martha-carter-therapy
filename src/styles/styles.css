@@ -527,9 +527,8 @@ h1 {
 #about-row-container {
   align-items: center;
   background-color: var(--lavender);
-  height: 40rem;
+  height: 76rem;
 }
-
 
 .about-caption {
   margin-left: 2rem;
@@ -830,6 +829,10 @@ textarea {
   #certification-container {
     width: 50%;
   }
+
+  #about-row-container {
+    height: 96rem
+  }
   
 }
 
@@ -854,9 +857,8 @@ textarea {
     height: 40rem;
   }
 
-
   #about-row-container {
-    height: 60rem;
+    height: 126rem;
   }
 
   #certification-container {
@@ -887,10 +889,13 @@ textarea {
     height: 44rem;
   }
 
-
   #certification-container {
     width: 80%;
     padding-left: 2rem
+  }
+
+  #about-row-container {
+    height: 146rem;
   }
 
 }
@@ -955,7 +960,7 @@ textarea {
   }
 
   #about-row-container {
-    height: 70rem;
+    height: 146rem;
   }
 
   #about-pic {
