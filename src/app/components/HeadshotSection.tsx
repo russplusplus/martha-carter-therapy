@@ -13,7 +13,7 @@ export function HeadshotSection() {
       {/* <hr id="thicc-line"/> */}
       <div className='flex-h-center prevent-select padding-b-l' id='headshot-row-container'>
         <div id="headshot-container">
-          <Image id='headshot' src='/headshot2.jpg' width="3024" height="4032" alt="Martha Carter Therapy Colorado Headshot"></Image>
+          <Image id='headshot' src='/headshot.jpg' width="3024" height="4032" alt="Martha Carter Therapy Colorado Headshot"></Image>
         </div>
         
         <div id="headshot-caption-container" className="cream">
@@ -22,6 +22,12 @@ export function HeadshotSection() {
               Hi, I&apos;m Martha!
             </h1>
           </FadeInOnScroll>
+
+
+
+
+
+
           <FadeInOnScroll>
             <p className='paragraph headshot-caption'>
               I am a trauma therapist, and I fill in the gaps created by talk therapy by using a somatic 

@@ -9,7 +9,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: "Martha Carter Therapy",
-  description: "Online trauma therapy for adults in Colorado",
+  description: "Online somatic trauma therapy for adults in Colorado",
   metadataBase: new URL("https://martha-carter-therapy.vercel.app"),
   icons: [{ rel: "icon", url: "/favicon.ico" }],
   twitter: {

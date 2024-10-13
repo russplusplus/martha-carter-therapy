@@ -8,7 +8,7 @@ export function Motif() {
       <div id="hero-container">
         <div id="hero-caption-container" className="cream">
           <h1 id="motif-line-1">
-            Online trauma therapy
+            Online somatic trauma therapy
           </h1>
           <br/>
           <h1 id="motif-line-2">
@@ -19,7 +19,7 @@ export function Motif() {
           <CallToAction className="hover-sage active-sage"/>
         </div>
         <div id="hero-img-container">
-          <Image id='hero' src='/hero3.png' alt='Martha Carter hero' height='640' width='401'></Image>
+          <Image id='hero' src='/hero.png' alt='Martha Carter hero' height='640' width='401'></Image>
         </div>
         <div style={{width: "100%", overflow: "hidden"}}>
           <svg className="blobs" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800" opacity="1">

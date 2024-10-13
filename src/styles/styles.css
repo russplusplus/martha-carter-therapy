@@ -425,15 +425,15 @@ h1 {
 
 #motif-line-2 {
   width: 100%;
-  text-align: center;
-  font-weight: bold;
-}
-
-#motif-line-3 {
-  width: 100%;
   text-align: right;
   font-weight: bold;
 }
+
+/* #motif-line-3 {
+  width: 100%;
+  text-align: right;
+  font-weight: bold;
+} */
 
 .squiggle {
   height: 5rem;
