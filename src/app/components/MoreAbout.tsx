@@ -19,7 +19,7 @@ export function MoreAbout() {
                 </div>
                 <div className="flex-h-center green prevent-select">
                     <p className="paragraph more-about">
-                        If you think we’d be a good fit, you can schedule a 20 minute consultation with me to ask any questions you may still have. 
+                        If you think we&apos;d be a good fit, you can schedule a 20-minute consultation with me to ask any questions you may still have. 
                         Please feel free to email me if you do not see a time that works for you on my calendar. 
                     </p>
                 </div>
