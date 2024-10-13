@@ -527,7 +527,7 @@ h1 {
 #about-row-container {
   align-items: center;
   background-color: var(--lavender);
-  height: 76rem;
+  height: 66rem;
 }
 
 .about-caption {
@@ -808,6 +808,12 @@ textarea {
     left: 16rem;
   }
 } */
+
+@media (max-width: 1440px) {
+  #about-row-container {
+    height: 76rem
+  }
+}
 
 @media (max-width: 1280px) {
   #hero-row-container {
