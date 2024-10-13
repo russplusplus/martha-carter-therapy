@@ -3,7 +3,7 @@ import { ClientWrapper } from "./components/ClientWrapper"
 import { BookingModalContextProvider } from "./components/BookingModalContext"
 import { BookingModal } from "./components/BookingModal"
 import { Header } from "./components/Header"
-import { Motif } from "./components/Motif"
+import { Hero } from "./components/Hero"
 import { AboutYou } from "./components/AboutYou"
 import { CurveFromCream2,
          CurveToCream2,
@@ -31,7 +31,7 @@ export default function Home() {
           <BookingModal />
         </BookingModalContextProvider>
         <Header />
-        <Motif />
+        <Hero />
         <AboutYou />
         <CurveFromCream1 />
         <HeadshotSection />

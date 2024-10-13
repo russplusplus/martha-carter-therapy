@@ -1,17 +1,17 @@
-import { MotifClientContainer } from "./MotifClientContainer"
+import { HeroClientContainer } from "./HeroClientContainer"
 import { CallToAction } from "./CallToAction"
 import Image from "next/image"
 
-export function Motif() {
+export function Hero() {
   return (
-    <MotifClientContainer>
+    <HeroClientContainer>
       <div id="hero-container">
         <div id="hero-caption-container" className="cream">
-          <h1 id="motif-line-1">
+          <h1 id="hero-line-1">
             Online somatic trauma therapy
           </h1>
           <br/>
-          <h1 id="motif-line-2">
+          <h1 id="hero-line-2">
             for adults across Colorado
           </h1>
           <br/>
@@ -19,7 +19,16 @@ export function Motif() {
           <CallToAction className="hover-sage active-sage"/>
         </div>
         <div id="hero-img-container">
-          <Image id='hero' src='/hero.png' alt='Martha Carter hero' height='640' width='401'></Image>
+          <Image 
+            id='hero' 
+            src='/hero.png' 
+            alt='Martha Carter hero' 
+            height='640' 
+            width='401'
+            style={{
+              width: "auto"
+            }}
+          ></Image>
         </div>
         <div style={{width: "100%", overflow: "hidden"}}>
           <svg className="blobs" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800" opacity="1">
@@ -34,6 +43,6 @@ export function Motif() {
           </svg>
         </div>
       </div>
-    </MotifClientContainer>
+    </HeroClientContainer>
   )
 }
