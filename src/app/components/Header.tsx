@@ -15,9 +15,9 @@ export async function Header() {
                     ></Image>
                 </div>
                 <div id="mct-container">
-                    <Image className="signature-logo" src="/MARTHA.png" height="64" width="169" alt="MARTHA"></Image>
-                    <Image className="signature-logo" src="/CARTER.png" height="64" width="161" alt="CARTER"></Image>
-                    <Image className="signature-logo" src="/THERAPY.png" height="64" width="198" alt="THERAPY"></Image>  
+                    <Image src="/MARTHA.png" height="32" width="169" alt="MARTHA"></Image>
+                    <Image src="/CARTER.png" height="32" width="161" alt="CARTER"></Image>
+                    <Image src="/THERAPY.png" height="32" width="198" alt="THERAPY"></Image>  
                 </div>
                 <div id="contact-container">
                     <a href="https://www.instagram.com/therapy.with.martha" target="_blank"><i className="fa fa-instagram" id="ig-icon"></i></a>
