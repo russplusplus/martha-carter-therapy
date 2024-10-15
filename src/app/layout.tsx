@@ -8,7 +8,7 @@ import { TRPCReactProvider } from "~/trpc/react";
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Martha Carter Therapy",
+  title: "Martha Carter Therapy | Trauma Therapist | Denver",
   description: "Online somatic trauma therapy for adults in Colorado",
   metadataBase: new URL("https://martha-carter-therapy.vercel.app"),
   icons: [{ rel: "icon", url: "/favicon.ico" }],
