@@ -141,7 +141,7 @@ export function BookingModal() {
             <>
                 {isBookingStarted &&
                 <div id={"book-btn-corner"} className="prevent-select" onClick={() => setBookingModalOpen(true)}>
-                    <Image id="book-btn-corner-logo" src="/flower-forest.png" fill alt="Martha Carter Therapy Flower Logo"></Image>
+                    <Image id="book-btn-corner-logo" src="/flower-forest.png" fill alt="Martha Carter Therapy Somatic Therapist Denver Flower Logo"></Image>
                 </div>
                 }
             </>

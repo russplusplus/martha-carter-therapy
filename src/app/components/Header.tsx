@@ -8,16 +8,16 @@ export async function Header() {
                 <div id="header-icon">
                     <Image 
                         src="/flower-lavender-cropped.png" 
-                        alt="Martha Carter Therapy flower logo" 
+                        alt="Martha Carter Therapy Somatic Therapist Denver Flower Logo" 
                         height="64"
                         width="64"
                         sizes="100vw"
                     ></Image>
                 </div>
                 <div id="mct-container">
-                    <Image src="/MARTHA.png" height="32" width="169" alt="MARTHA"></Image>
-                    <Image src="/CARTER.png" height="32" width="161" alt="CARTER"></Image>
-                    <Image src="/THERAPY.png" height="32" width="198" alt="THERAPY"></Image>  
+                    <Image src="/MARTHA.png" height="32" width="169" alt="MARTHA Somatic Therapist Denver"></Image>
+                    <Image src="/CARTER.png" height="32" width="161" alt="CARTER Somatic Therapist Denver"></Image>
+                    <Image src="/THERAPY.png" height="32" width="198" alt="THERAPY Somatic Therapist Denver"></Image>  
                 </div>
                 <div id="contact-container">
                     <a href="https://www.instagram.com/therapy.with.martha" target="_blank"><i className="fa fa-instagram" id="ig-icon"></i></a>
