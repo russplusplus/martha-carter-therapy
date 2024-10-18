@@ -11,7 +11,7 @@ const config = {
             {
                 source: '/',
                 destination: '/somatic-therapist-denver',
-                permanent: false
+                permanent: true
             }
         ]
     }
