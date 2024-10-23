@@ -43,7 +43,7 @@ export function MyApproach() {
           </p>
         </FadeInOnScroll>
         <FadeInOnScroll>
-          <BookBtn className="headshot-caption margin-t-s hover-sage active-sage"/>
+          <BookBtn className="headshot-caption margin-t-s hover-lavender active-sage"/>
         </FadeInOnScroll>
       </div>          
     </div>
