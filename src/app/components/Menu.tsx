@@ -6,6 +6,7 @@ import { useState } from 'react'
 import Hamburger from 'hamburger-react'
 import { useAppContext } from './AppContext'
 import { browserName } from 'react-device-detect';
+import Link from 'next/link'
 
 const rowClass = browserName === "Safari" ? "menu-row-safari" : "menu-row"
 
@@ -56,26 +57,34 @@ export function Menu() {
             </div>
             {isMenuOpen && 
                 <div id="menu">
-                    <h2 className={rowClass}>
-                        <a href="https://martha-carter.clientsecure.me/" target="_blank">
-                            Book a free consultation
-                        </a>
-                    </h2>
+                    <Link href="/">
+                        <h2 className={rowClass} >
+                            Home
+                        </h2>
+                    </Link>
+                    <Link href="/somatic-therapist-denver">
+                        <h2 className={rowClass} >
+                            About me
+                        </h2>
+                    </Link>
+                    <Link href="/trauma-therapy-colorado">
+                        <h2 className={rowClass} >
+                            My Approach
+                        </h2>
+                    </Link>
+                    <Link href="/faq">
+                        <h2 className={rowClass} >
+                            FAQ
+                        </h2>
+                    </Link>
                     <h2 className={rowClass} onClick={() => setBookingModalOpen(true)}>
                         Get in touch
                     </h2>
-                    <h2 className={rowClass} onClick={scrollToAboutYou}>
-                        About you
-                    </h2>
-                    <h2 className={rowClass} onClick={scrollToAboutMe}>
-                        About me
-                    </h2>
-                    <h2 className={rowClass} onClick={scrollToWhoISee}>
-                        Who I see
-                    </h2>
-                    <h2 className={rowClass} onClick={scrollToFAQ}>
-                        FAQs
-                    </h2>
+                    <a href="https://martha-carter.clientsecure.me/" target="_blank">
+                        <h2 className={rowClass}>
+                            Book a free consultation
+                        </h2>
+                    </a>
                 </div>
             }
         </div>

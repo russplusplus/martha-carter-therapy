@@ -4,7 +4,7 @@ import { Lavender } from "./Lavender"
 export function FAQ() {
 
     return (
-        <div id='faq-row-container' className='flex-h-center padding-t-l padding-b-l green bg-cream prevent-select'>
+        <div id='faq-row-container' className='flex-h-center padding-t-l padding-b-l green bg-lavender prevent-select'>
             <div className="faq-column">
                 <div className="faq-row">
                     <div id="q-container" className="green">
@@ -145,9 +145,9 @@ function Question(
     return (
         <>
             <p className='paragraph'>
-                <Lavender>
+                {/* <Lavender> */}
                     Q:
-                </Lavender>
+                {/* </Lavender> */}
             </p>    
             <p className='paragraph'>
                 {children}
@@ -165,9 +165,9 @@ function Answer(
     return (
         <>
             <p className='paragraph FAQ'>
-                <Lavender>
+                {/* <Lavender> */}
                     A:
-                </Lavender>
+                {/* </Lavender> */}
             </p>    
             <p className='paragraph FAQ '>
                 {children}

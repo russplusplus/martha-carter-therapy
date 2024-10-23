@@ -3,19 +3,21 @@
 import { useEffect, useState } from "react"
 import { useAppContext } from "./AppContext"
 import { browserName } from 'react-device-detect';
+import Link from "next/link"
 
 const log = console.log.bind(console)
 
 log('browserName:', browserName)
 
-export function CallToAction({
+export function NavBtn({
   className,
-  hoverColor
+  label,
+  href
   } : { 
   className?: string,
-  hoverColor?: string
+  label: string,
+  href: string
 }) {
-  const { setBookingModalOpen } = useAppContext()
   const [ bookBtnClass, setBookBtnClass] = useState("book-btn prevent-select")
 
   const allClassNames = "flex-h-center prevent-select paragraph " + className
@@ -26,11 +28,11 @@ export function CallToAction({
 
   return (
     <div className={allClassNames}>
-      <a href="https://martha-carter.clientsecure.me" target="_blank">
+      <Link href={href}>
         <p className={bookBtnClass}>
-          Book a free consultation
+          {label}
         </p>
-      </a>
+      </Link>
     </div>
   )
 }

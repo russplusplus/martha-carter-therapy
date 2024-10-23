@@ -1,7 +1,7 @@
 import { FadeInOnScroll } from "./FadeInOnScroll"
-import { CallToAction } from "./CallToAction"
+import { BookBtn } from "./BookBtn"
 
-export function MoreAbout() {
+export function GetStarted() {
     return (
         <div className="bg-cream padding-t-s padding-b-s more-about-row-container">
             <FadeInOnScroll>
@@ -49,7 +49,7 @@ export function MoreAbout() {
                 </div>
             </FadeInOnScroll>
             <FadeInOnScroll>
-                <CallToAction className="margin-t-s green hover-lavender active-lavender"/>
+                <BookBtn className="margin-t-s margin-b-l green hover-lavender active-lavender"/>
             </FadeInOnScroll>
         </div>
     )

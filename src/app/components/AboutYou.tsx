@@ -1,4 +1,5 @@
 import { FadeInOnScroll } from "./FadeInOnScroll"
+import { NavBtn } from "./NavBtn"
 
 export function AboutYou() {
     return (
@@ -28,6 +29,10 @@ export function AboutYou() {
                     <p className="paragraph margin-b-s">
                         You&apos;re ready to shed self-imposed limits and be your true self.  
                     </p>
+                </FadeInOnScroll>
+                <FadeInOnScroll>
+                    <NavBtn className="hover-lavender margin-t-l" label="Learn more about me ►" href="/somatic-therapist-denver"/>
+                    <NavBtn className="hover-lavender margin-t-s margin-b-s" label="Learn more about my approach ►" href="/trauma-therapy-colorado"/>
                 </FadeInOnScroll>
             </div>
         </div>

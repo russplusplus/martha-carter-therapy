@@ -7,6 +7,9 @@ import { TRPCReactProvider } from "~/trpc/react";
 
 import type { Metadata } from 'next'
 
+import { AppContextProvider } from "./components/AppContext"
+import { BookingModalContextProvider } from "./components/BookingModalContext"
+
 export const metadata: Metadata = {
   title: {
     default: "Somatic Therapist Denver | Martha Carter Therapy",
@@ -28,9 +31,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={GeistSans.className}>
-          <TRPCReactProvider>
+        <TRPCReactProvider>
+          <AppContextProvider>
+            <BookingModalContextProvider>
               {children}
-          </TRPCReactProvider>
+            </BookingModalContextProvider>
+          </AppContextProvider>
+        </TRPCReactProvider>
       </body>
     </html>
   );

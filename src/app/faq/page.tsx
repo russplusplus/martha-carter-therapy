@@ -34,20 +34,20 @@ export default function Page() {
         {/* <Hero /> */}
         {/* <AboutYou /> */}
         {/* <CurveFromCream1 /> */}
-        <AboutMe />
+        {/* <AboutMe />
         <CurveToCream1 />
         <SocialProofWrapper>
           <SocialProof1 />
           <SocialProof2 />
         </SocialProofWrapper>
-        <CurveFromCream2 />
+        <CurveFromCream2 /> */}
         {/* <WhoISee /> */}
         {/* <CurveToCream2 /> */}
-        {/* <CurveFromCream3 /> */}
-        <Certification />
-        <CurveToCream3 />
-        {/* <FAQ /> */}
-        <GetStarted />
+        <CurveFromCream3 />
+        {/* <Certification /> */}
+        {/* <CurveToCream3 /> */}
+        <FAQ />
+        {/* <GetStarted /> */}
         <Footer />
       </ClientWrapper>
     // </AppContextProvider>

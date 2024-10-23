@@ -6,15 +6,15 @@ await import("./src/env.js");
 
 /** @type {import("next").NextConfig} */
 const config = {
-    async redirects() {
-        return [
-            {
-                source: '/',
-                destination: '/somatic-therapist-denver',
-                permanent: true
-            }
-        ]
-    }
+    // async redirects() {
+    //     return [
+    //         {
+    //             source: '/',
+    //             destination: '/somatic-therapist-denver',
+    //             permanent: true
+    //         }
+    //     ]
+    // }
 };
 
 export default config;

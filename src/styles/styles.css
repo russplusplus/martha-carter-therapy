@@ -18,6 +18,10 @@ body {
   overflow-x: hidden;
 }
 
+/* button {
+  background-color: transparent
+} */
+
 .prevent-select {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
@@ -489,6 +493,14 @@ h1 {
   padding-top: 6rem;
 }
 
+#approach-row-container {
+  align-items: center;
+  padding-top: 6rem;
+  background: var(--cream);
+  padding-top: 6rem;
+  position: relative;
+}
+
 #thicc-line {
   margin-top: 6rem;
   height: 14px;
@@ -511,6 +523,20 @@ h1 {
   border-right-style: solid;
 }
 
+#kyoto-container {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 4rem;
+  align-items: flex-end;
+  border-right-color: var(--green);
+  border-right-width: 2px;
+  border-right-style: solid;
+}
+
 #headshot-caption-container {
   width: 45%;
   padding-right: 5rem;
@@ -519,10 +545,19 @@ h1 {
   justify-content: center;
 }
 
+#approach-caption-container {
+  width: 45%;
+  padding-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
 #about-row-container {
   align-items: center;
   background-color: var(--lavender);
-  height: 66rem;
+  height: 70rem;
 }
 
 .about-caption {
@@ -616,7 +651,6 @@ h1 {
   margin-left: 4rem;
   margin-top: .5em;
   margin-bottom: .5em;
-  color: var(--cream)
 }
 
 .FAQ {
@@ -687,7 +721,7 @@ h1 {
   justify-content: flex-start;
   padding-right: 4rem;
   padding-left: 10rem;
-  border-right-color: var(--lavender);
+  border-right-color: var(--cream);
   border-right-width: 2px;
   border-right-style: solid;
 }
@@ -708,7 +742,7 @@ h1 {
 }
 
 #footer-logo {
-  width: 4rem;
+  width: auto;
   height: 4rem;
   /* position: relative; */
 }

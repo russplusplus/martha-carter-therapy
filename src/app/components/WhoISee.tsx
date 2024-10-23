@@ -1,7 +1,7 @@
 import { FadeInOnScroll } from "./FadeInOnScroll"
 import Image from "next/image"
 
-export function About() {
+export function WhoISee() {
     return (
         <div className='flex-h-center prevent-select' id='about-row-container'>
             <div id="about-container" className="cream">

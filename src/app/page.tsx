@@ -11,11 +11,11 @@ import { CurveFromCream2,
          CurveToCream1,
          CurveFromCream3,
          CurveToCream3 } from "./components/Curves"
-import { HeadshotSection } from "./components/HeadshotSection"
+import { AboutMe } from "./components/AboutMe"
 import { SocialProofWrapper } from "./components/SocialProofWrapper"
 import { SocialProof1, SocialProof2 } from "./components/SocialProof"
-import { About } from "./components/About"
-import { MoreAbout } from "./components/MoreAbout"
+import { WhoISee } from "./components/WhoISee"
+import { GetStarted } from "./components/GetStarted"
 import { Certification } from "./components/Certification"
 import { FAQ } from "./components/FAQ"
 import { Footer } from "./components/Footer"
@@ -25,31 +25,31 @@ import { AppContextProvider } from "./components/AppContext"
 export default function Home() {
 
   return (
-    <AppContextProvider>
+    // <AppContextProvider>
       <ClientWrapper>
-        <BookingModalContextProvider>
+        {/* <BookingModalContextProvider> */}
           <BookingModal />
-        </BookingModalContextProvider>
+        {/* </BookingModalContextProvider> */}
         <Header />
         <Hero />
         <AboutYou />
-        <CurveFromCream1 />
-        <HeadshotSection />
+        {/* <CurveFromCream1 />
+        <AboutMe />
         <CurveToCream1 />
         <SocialProofWrapper>
           <SocialProof1 />
           <SocialProof2 />
         </SocialProofWrapper>
         <CurveFromCream2 />
-        <About />
-        <CurveToCream2 />
-        <MoreAbout />
-        <CurveFromCream3 />
+        <WhoISee />
+        <CurveToCream2 /> */}
+        {/* <GetStarted /> */}
+        {/* <CurveFromCream3 />
         <Certification />
         <CurveToCream3 />
-        <FAQ />
+        <FAQ /> */}
         <Footer />
       </ClientWrapper>
-    </AppContextProvider>
+    // </AppContextProvider>
   );
 }
