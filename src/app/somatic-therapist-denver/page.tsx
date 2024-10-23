@@ -33,7 +33,7 @@ export default function Page() {
         <Header />
         {/* <Hero /> */}
         {/* <AboutYou /> */}
-        {/* <CurveFromCream1 /> */}
+        <CurveFromCream1 />
         <AboutMe />
         <CurveToCream1 />
         <SocialProofWrapper>

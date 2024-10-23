@@ -1,5 +1,6 @@
 import { Sage } from "./Sage"
 import { FadeInOnScroll } from "./FadeInOnScroll"
+import Link from "next/link"
 
 export function Certification() {
     return (
@@ -29,11 +30,11 @@ export function Certification() {
                     </p>
                     <br/>
                     <p className="paragraph">
-                        <a href="https://www.swtraumatraining.com/2024-post-traumatic-growth-training" target="_blank">
+                        <Link href="https://www.swtraumatraining.com/2024-post-traumatic-growth-training" target="_blank">
                             <Sage>
                                 Post-Traumatic Growth
                             </Sage>
-                        </a>
+                        </Link>
                     </p>
                     <p className="paragraph">
                         All modules completed May 2024
