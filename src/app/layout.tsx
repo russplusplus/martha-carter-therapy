@@ -1,14 +1,11 @@
 
 import "~/styles/styles.css";
-
 import { GeistSans } from "geist/font/sans";
-
 import { TRPCReactProvider } from "~/trpc/react";
-
 import type { Metadata } from 'next'
-
 import { AppContextProvider } from "./components/AppContext"
 import { BookingModalContextProvider } from "./components/BookingModalContext"
+import { GoogleTagManager } from '@next/third-parties/google' 
 
 export const metadata: Metadata = {
   title: {
@@ -30,6 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="G-ZLP98CS0LB" />
       <body className={GeistSans.className}>
         <TRPCReactProvider>
           <AppContextProvider>
