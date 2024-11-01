@@ -11,7 +11,7 @@ export async function Header() {
                     <div id="header-icon">
                         <Image 
                             src="/flower-lavender-cropped.png" 
-                            alt="Martha Carter Therapy Somatic Therapist Denver Flower Logo" 
+                            alt="Somatic Therapist Denver Flower Logo" 
                             height="64"
                             width="64"
                             sizes="100vw"
