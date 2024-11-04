@@ -21,14 +21,14 @@ export async function Header() {
                 <div id="mct-container">
                     <Link href="/">
                         <Image src="/MARTHA.png" height="32" width="169" alt="MARTHA Somatic Therapist Denver"></Image>
-                        <Image src="/CARTER.png" height="32" width="161" alt="CARTER Somatic Therapist Denver"></Image>
+                        <Image src="/CARTER.png" height="32" width="161" alt="CARTER Trauma Therapy Colorado"></Image>
                         <Image src="/THERAPY.png" height="32" width="198" alt="THERAPY Somatic Therapist Denver"></Image>  
                     </Link>
                 </div>
                 <div id="contact-container">
-                    <Link href="https://www.instagram.com/therapy.with.martha" target="_blank"><i className="fa fa-instagram" id="ig-icon"></i></Link>
-                    <Link href="mailto: marthacartertherapy@gmail.com" ><i className="fa fa-envelope-o" id="mail-icon" aria-hidden="true"></i></Link>
-                    <Link href="https://www.psychologytoday.com/us/therapists/martha-carter-denver-co/1061265" target="_blank" style={{"textDecoration": "none"}}>
+                    <Link href="https://www.instagram.com/therapy.with.martha" target="_blank" aria-label="somatic therapist denver instagram"><i className="fa fa-instagram" id="ig-icon"></i></Link>
+                    <Link href="mailto: marthacartertherapy@gmail.com" ><i className="fa fa-envelope-o" id="mail-icon" aria-label="trauma therapy colorado email"></i></Link>
+                    <Link href="https://www.psychologytoday.com/us/therapists/martha-carter-denver-co/1061265" target="_blank" style={{"textDecoration": "none"}} aria-label="therapy in colorado springs">
                         <div id="connect-btn">PT</div>
                     </Link>
                 </div>
