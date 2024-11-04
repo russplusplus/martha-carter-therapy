@@ -13,7 +13,7 @@ export async function Header() {
                             src="/flower-lavender-cropped.png" 
                             alt="Somatic Therapist Denver Flower Logo" 
                             height="64"
-                            width="64"
+                            width="58"
                             sizes="100vw"
                         ></Image>
                     </div>
