@@ -28,6 +28,7 @@ export function Hero() {
             style={{
               width: "auto"
             }}
+            priority
           ></Image>
         </div>
         <div style={{width: "100%", overflow: "hidden"}}>
