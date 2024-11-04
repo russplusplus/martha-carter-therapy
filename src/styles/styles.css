@@ -282,7 +282,7 @@ h1 {
   }
 
   &:active {
-    margin-right: 3.7rem;
+    margin-right: -0.3rem;
     margin-left: 0.3rem;
     margin-top: 0.5rem;
   }

@@ -53,7 +53,7 @@ export function Menu() {
                 } }
                 onMouseOver={() => setMenuHover(true)}
                 onMouseOut={() => setMenuHover(false)}>
-                <Hamburger toggled={isMenuOpen} size={menuHover ? 38 : 32}/>
+                <Hamburger toggled={isMenuOpen} size={menuHover ? 38 : 32} label="menu"/>
             </div>
             {isMenuOpen && 
                 <div id="menu">

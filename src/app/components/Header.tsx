@@ -26,11 +26,11 @@ export async function Header() {
                     </Link>
                 </div>
                 <div id="contact-container">
-                    <a href="https://www.instagram.com/therapy.with.martha" target="_blank"><i className="fa fa-instagram" id="ig-icon"></i></a>
-                    <a href="mailto: marthacartertherapy@gmail.com" ><i className="fa fa-envelope-o" id="mail-icon" aria-hidden="true"></i></a>
-                    <a href="https://www.psychologytoday.com/us/therapists/martha-carter-denver-co/1061265" target="_blank" style={{"textDecoration": "none"}}>
+                    <Link href="https://www.instagram.com/therapy.with.martha" target="_blank"><i className="fa fa-instagram" id="ig-icon"></i></Link>
+                    <Link href="mailto: marthacartertherapy@gmail.com" ><i className="fa fa-envelope-o" id="mail-icon" aria-hidden="true"></i></Link>
+                    <Link href="https://www.psychologytoday.com/us/therapists/martha-carter-denver-co/1061265" target="_blank" style={{"textDecoration": "none"}}>
                         <div id="connect-btn">PT</div>
-                    </a>
+                    </Link>
                 </div>
                 <Menu />
             </div>
