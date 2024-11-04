@@ -20,30 +20,6 @@ export function Menu() {
 
     const [ menuHover, setMenuHover ] = useState(false)
 
-    function scrollToAboutYou() {
-        document?.getElementById("about-you-row-container")?.scrollIntoView({
-            behavior: "smooth"
-        })
-    }
-
-    function scrollToAboutMe() {
-        document?.getElementById("headshot-row-container")?.scrollIntoView({
-            behavior: "smooth"
-        })
-    }
-
-    function scrollToWhoISee() {
-        document?.getElementById("about-row-container")?.scrollIntoView({
-            behavior: "smooth"
-        })
-    }
-
-    function scrollToFAQ() {
-        document?.getElementById("faq-row-container")?.scrollIntoView({
-            behavior: "smooth"
-        })
-    }
-
     return (
         <div id="menu-container">
             <div id={isMenuOpen ? "menu-btn-open" : "menu-btn-closed"}

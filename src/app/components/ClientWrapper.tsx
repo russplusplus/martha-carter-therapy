@@ -2,7 +2,7 @@
 
 const log = console.log.bind(console)
 
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 import { useAppContext } from './AppContext'
 
 export function ClientWrapper(
@@ -10,10 +10,7 @@ export function ClientWrapper(
     :
     { children: React.ReactNode}
 ) {
-
-    const { setMenuOpen, isBookingModalOpen, setBookingModalOpen } = useAppContext()
-    // const aboutRef = document.getElementById("about-row-container")
-    // console.log('aboutRef:', aboutRef)
+    const { setMenuOpen, setBookingModalOpen } = useAppContext()
 
     useEffect(() => {
         document.addEventListener("click", (event): void => {

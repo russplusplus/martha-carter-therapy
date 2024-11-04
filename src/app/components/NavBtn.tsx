@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { useAppContext } from "./AppContext"
 import { browserName } from 'react-device-detect';
 import Link from "next/link"
 

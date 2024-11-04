@@ -1,5 +1,4 @@
 import { FadeInOnScroll } from "./FadeInOnScroll"
-import { Lavender } from "./Lavender"
 
 export function FAQ() {
 
@@ -145,9 +144,7 @@ function Question(
     return (
         <>
             <p className='paragraph'>
-                {/* <Lavender> */}
-                    Q:
-                {/* </Lavender> */}
+                Q:
             </p>    
             <p className='paragraph'>
                 {children}
@@ -165,9 +162,7 @@ function Answer(
     return (
         <>
             <p className='paragraph FAQ'>
-                {/* <Lavender> */}
-                    A:
-                {/* </Lavender> */}
+                A:
             </p>    
             <p className='paragraph FAQ '>
                 {children}

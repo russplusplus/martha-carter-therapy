@@ -1,6 +1,5 @@
 "use client"
 
-// import { SocialProof1 } from "./SocialProof"
 import { FadeInOnScroll } from "./FadeInOnScroll"
 import { useEffect, useState } from 'react'
 import { IoChevronBack, IoChevronForward } from "react-icons/io5"
@@ -14,22 +13,6 @@ export function SocialProofWrapper({
 }) {
     const [ index, setIndex ] = useState(0)
     const [ fadeType, setFadeType ] = useState('fade-in')
-
-    // function rotate(i: number) {
-    //     setTimeout(() => {
-    //         setFadeType('fade-out')
-    //         setTimeout(() => {
-    //             setIndex(i + 1)
-    //             rotate(i + 1)
-    //             setFadeType('fade-in')
-    //         }, 1000)
-    //     }, 10000)
-    // }
-
-    // useEffect(() => {
-    //     log('mounted')
-    //     rotate(0)
-    // }, [])
 
     useEffect(() => {
         log('index:', index)
@@ -73,4 +56,3 @@ export function SocialProofWrapper({
         </div>
     )
 }
-
