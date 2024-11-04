@@ -212,12 +212,10 @@ h1 {
   height: 4em;
   width: 4rem;
   margin-right: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-/* .signature-logo {
-  height: 2em;
-  width: auto;
-} */
 
 #contact-container {
   display: flex;
@@ -874,6 +872,7 @@ textarea {
 @media (max-width: 1024px) {
   #hero-row-container {
     height: 30rem;
+    margin-right: 0;
   }
 
   #hero {

@@ -7,8 +7,9 @@ export async function Header() {
         <header className="prevent-select">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
             <div className="flex-h-center header-container">
+            <div id="header-icon">
+
                 <Link href="/">
-                    <div id="header-icon">
                         <Image 
                             src="/flower-lavender-cropped.png" 
                             alt="Somatic Therapist Denver Flower Logo" 
@@ -16,8 +17,9 @@ export async function Header() {
                             width="58"
                             sizes="100vw"
                         ></Image>
-                    </div>
                 </Link>
+                </div>
+
                 <div id="mct-container">
                     <Link href="/">
                         <Image src="/MARTHA.png" height="32" width="169" alt="MARTHA Somatic Therapist Denver"></Image>
