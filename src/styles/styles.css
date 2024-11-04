@@ -35,6 +35,8 @@ body {
   padding: 2rem;
   position: relative;
   z-index: 2;
+  margin-bottom: -1px;
+
 }
 
 h1 {
@@ -497,6 +499,7 @@ h1 {
   background: var(--cream);
   padding-top: 6rem;
   position: relative;
+  margin-top: -1px;
 }
 
 #thicc-line {
