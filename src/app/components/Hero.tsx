@@ -22,7 +22,7 @@ export function Hero() {
           <Image 
             id='hero' 
             src='/hero.png' 
-            alt='Somatic Therapist Denver hero' 
+            alt='Somatic Therapist Denver Hero' 
             height='640' 
             width='401'
             style={{

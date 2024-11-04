@@ -3,6 +3,7 @@ import { BookBtn } from "./BookBtn"
 import { FadeInOnScroll } from "./FadeInOnScroll"
 import "animate.css/animate.compat.css"
 import Image from "next/image"
+import { NavBtn } from "./NavBtn"
 
 export function MyApproach() {
   return (
@@ -43,6 +44,7 @@ export function MyApproach() {
           </p>
         </FadeInOnScroll>
         <FadeInOnScroll>
+          <NavBtn className="headshot-caption hover-lavender margin-t-l" label="Learn more about me ►" href="/somatic-therapist-denver"/>
           <BookBtn className="headshot-caption margin-t-s hover-lavender active-sage"/>
         </FadeInOnScroll>
       </div>          

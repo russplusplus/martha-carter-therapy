@@ -50,8 +50,8 @@ export function GetStarted() {
                 </div>
             </FadeInOnScroll>
             <FadeInOnScroll>
-                <BookBtn className="margin-t-s green hover-lavender active-lavender"/>
-                <NavBtn className="hover-lavender margin-t-s margin-b-l" label="Learn more about my approach ►" href="/trauma-therapy-colorado"/>
+                <NavBtn className="hover-lavender margin-t-s green" label="Learn more about my approach ►" href="/trauma-therapy-colorado"/>
+                <BookBtn className="margin-t-s margin-b-l green hover-lavender active-lavender"/>
             </FadeInOnScroll>
         </div>
     )
