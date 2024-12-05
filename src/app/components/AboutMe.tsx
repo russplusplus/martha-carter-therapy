@@ -13,12 +13,12 @@ export function AboutMe() {
       <div id="headshot-caption-container" className="cream">
         <FadeInOnScroll>
           <h1 className='bold headshot-caption'>
-            Hi, I&apos;m Martha!
+            I'm a somatic trauma therapist who gets it.
           </h1>
         </FadeInOnScroll>
         <FadeInOnScroll>
           <p className='paragraph headshot-caption'>
-            I am a trauma therapist who gets it. I&apos;ve been there — overwhelmed by the mere idea of saying no, 
+            Hi, I'm Martha! I&apos;ve been there — overwhelmed by the mere idea of saying no, 
             and freezing up every time I try to share my opinion because that might make me less likable. 
             I know the value of FINALLY being comfortable in my skin, so there&apos;s nothing I love more than 
             helping people do the same. I fill in the gaps of talk therapy by using a somatic (body-centered) 
@@ -50,8 +50,12 @@ export function AboutMe() {
             Many of my clients have done the talk therapy thing for years, but their “breakthroughs” are getting 
             few and far between. As a somatic therapist, I offer something different. Instead of talking your way 
             through tired patterns and regurgitating the same old sh*t, I&apos;ll help you release those unhelpful 
-            reflexes that live deep in your body so your authentic values can take the wheel. Together, we will 
-            make living authentically feel comfortable and natural — from the inside, out. 
+            reflexes that live deep in your body so your authentic values can take the wheel.
+          </p>
+        </FadeInOnScroll>
+        <FadeInOnScroll>
+          <p className='paragraph headshot-caption'>
+            Together, we will make living authentically feel comfortable and natural — from the inside, out.
           </p>
         </FadeInOnScroll>
         <FadeInOnScroll>

@@ -10,7 +10,6 @@ export function Hero() {
           <h1 id="hero-line-1">
             Online somatic trauma therapy
           </h1>
-          <br/>
           <h1 id="hero-line-2">
             for adults across Colorado
           </h1>

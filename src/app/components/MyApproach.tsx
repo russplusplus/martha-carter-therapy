@@ -14,7 +14,7 @@ export function MyApproach() {
       <div id="approach-caption-container" className="green">
         <FadeInOnScroll>
           <h1 className='bold headshot-caption'>
-            My Approach
+            Somatic Therapy for Complex Trauma, PTSD, Self-Esteem, and Chronic Anxiety 
           </h1>
         </FadeInOnScroll>
         <FadeInOnScroll>

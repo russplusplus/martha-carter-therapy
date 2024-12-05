@@ -424,13 +424,13 @@ h1 {
 
 #hero-line-1 {
   width: 100%;
-  text-align: left;
+  text-align: center;
   font-weight: bold;
 }
 
 #hero-line-2 {
   width: 100%;
-  text-align: right;
+  text-align: center;
   font-weight: bold;
 }
 
