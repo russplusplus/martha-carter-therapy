@@ -13,12 +13,12 @@ export function AboutMe() {
       <div id="headshot-caption-container" className="cream">
         <FadeInOnScroll>
           <h1 className='bold headshot-caption'>
-            I'm a somatic trauma therapist who gets it.
+            I&apos;m a somatic trauma therapist who gets it.
           </h1>
         </FadeInOnScroll>
         <FadeInOnScroll>
           <p className='paragraph headshot-caption'>
-            Hi, I'm Martha! I&apos;ve been there — overwhelmed by the mere idea of saying no, 
+            Hi, I&apos;m Martha! I&apos;ve been there — overwhelmed by the mere idea of saying no, 
             and freezing up every time I try to share my opinion because that might make me less likable. 
             I know the value of FINALLY being comfortable in my skin, so there&apos;s nothing I love more than 
             helping people do the same. I fill in the gaps of talk therapy by using a somatic (body-centered) 
