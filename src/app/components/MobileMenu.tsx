@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 const rowClass = browserName === "Safari" ? "menu-row-safari" : "menu-row"
 
-export function Menu() {
+export function MobileMenu() {
 
     const { 
         isMenuOpen, 

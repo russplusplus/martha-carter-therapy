@@ -1,32 +1,60 @@
-import { Menu } from './Menu'
+"use client"
+
+import { BrowserMenu } from './BrowserMenu'
+import { MobileMenu } from './MobileMenu'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { BrowserView, MobileView } from "react-device-detect"
 
-export async function Header() {
+const log = console.log.bind(console)
+
+export function Header() {
+    const pathname = usePathname()
+    log('pathname:', pathname)
     return (
         <header className="prevent-select">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-            <div className="flex-h-center header-container">
-            <div id="header-icon">
-
-                <Link href="/">
-                        <Image 
-                            src="/flower-lavender-cropped.png" 
-                            alt="Somatic Therapist Denver Flower Logo" 
-                            height="64"
-                            width="58"
-                            sizes="100vw"
-                        ></Image>
-                </Link>
+            <BrowserView>   
+                <div className="flex-h-center header-container">
+                    <div id="header-icon">
+                        <Link href="/">
+                            <Image 
+                                src="/flower-lavender-cropped.png" 
+                                alt="Somatic Therapist Denver Flower Logo" 
+                                height="64"
+                                width="58"
+                                sizes="100vw"
+                            ></Image>
+                        </Link>
+                    </div>
+                    <div id="mct-container">
+                        <Link href="/">
+                            <Image src="/mct4.png" height="54" width="267" alt="MARTHA Somatic Therapist Denver"></Image>
+                        </Link>
+                    </div>
+                    <div id="browser-nav-container">
+                        <Link 
+                            href="/somatic-therapist-denver" 
+                            className={"paragraph browser-nav-item hover-underline " + (pathname === "/somatic-therapist-denver" ? "underline" : "")}
+                        >About Me</Link>
+                        <Link 
+                            href="/trauma-therapy-colorado" 
+                            className={"paragraph browser-nav-item hover-underline " + (pathname === "/trauma-therapy-colorado" ? "underline" : "")}
+                        >Who I See</Link>
+                        <Link 
+                            href="/therapy-in-colorado-springs" 
+                            className={"paragraph browser-nav-item hover-underline " + (pathname === "/therapy-in-colorado-springs" ? "underline" : "")}
+                        >My Approach</Link>
+                        <Link 
+                            href="/faq" 
+                            className={"paragraph browser-nav-item hover-underline " + (pathname === "/faq" ? "underline" : "")}
+                        >FAQ</Link>
+                    </div>
+                    <BrowserMenu/>
                 </div>
-
-                <div id="mct-container">
-                    <Link href="/">
-                        <Image src="/MARTHA.png" height="32" width="169" alt="MARTHA Somatic Therapist Denver"></Image>
-                        <Image src="/CARTER.png" height="32" width="161" alt="CARTER Trauma Therapy Colorado"></Image>
-                        <Image src="/THERAPY.png" height="32" width="198" alt="THERAPY Somatic Therapist Denver"></Image>  
-                    </Link>
-                </div>
+            </BrowserView>
+            <MobileView>
                 <div id="contact-container">
                     <Link href="https://www.instagram.com/therapy.with.martha" target="_blank" aria-label="somatic therapist denver instagram"><i className="fa fa-instagram" id="ig-icon"></i></Link>
                     <Link href="mailto: marthacartertherapy@gmail.com" ><i className="fa fa-envelope-o" id="mail-icon" aria-label="trauma therapy colorado email"></i></Link>
@@ -34,8 +62,8 @@ export async function Header() {
                         <div id="connect-btn">PT</div>
                     </Link>
                 </div>
-                <Menu />
-            </div>
+                <MobileMenu />
+            </MobileView>
         </header>
     )
 }
