@@ -16,29 +16,16 @@ export function WhoISee() {
                     </p>
                 </FadeInOnScroll>
                 <FadeInOnScroll>
-                    <div style={{display: 'flex', flexDirection: 'row'}}>
-                        <div style={{display: 'flex', flexDirection: 'column'}}>
-                            <p className='paragraph about-caption '>
-
-                                <ul>
-                                    <li>Chronic Anxiety</li>
-                                    <li>People-Pleasing</li>
-                                    <li>Attachment Wounds</li>
-                                    <li>Childhood Trauma</li>
-                                </ul>
-                            </p>
-                        </div>
-                        <div style={{display: 'flex', flexDirection: 'column'}}>
-                            <p className='paragraph about-caption '>
-                                <ul>
-                                    <li>PTSD</li>
-                                    <li>Emotional Abuse</li>
-                                    <li>Complex PTSD</li>
-                                    <li>Relational Trauma</li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
+                    <ul className='paragraph about-caption'>
+                        <li>Chronic Anxiety</li>
+                        <li>People-Pleasing</li>
+                        <li>Attachment Wounds</li>
+                        <li>Childhood Trauma</li>
+                        <li>PTSD</li>
+                        <li>Emotional Abuse</li>
+                        <li>Complex PTSD</li>
+                        <li>Relational Trauma</li>
+                    </ul>
                 </FadeInOnScroll>
                 <FadeInOnScroll>
                     <p className='paragraph about-caption '>
@@ -47,31 +34,10 @@ export function WhoISee() {
                         yourself or trying to keep people around by prioritizing them at the expense of yourself. 
                     </p>
                 </FadeInOnScroll>
-                <FadeInOnScroll>
-                    <p className='paragraph about-caption '>
-                        When most people hear “trauma”, they may think of war tragedies or physical abuse, but there are other forms of 
-                        trauma that are just as harmful. For example, complex trauma happens over a long period of time rather than over 
-                        one clearly defined event, and tends to be emotional rather than physical. Due to the obscure nature of it, 
-                        complex trauma often goes unrecognized or minimized, even by therapists. 
-                        </p>
-                </FadeInOnScroll>
-                <FadeInOnScroll>
-                    <p className='paragraph about-caption '>
-                        I am here to help those who have been 
-                        overlooked or have fallen through the cracks of the mental health system because their trauma is harder to identify. 
-                        If this is you, I see you, and I believe your pain is legitimate and enough. You deserve better. 
-                    </p>
-                </FadeInOnScroll>
-                <FadeInOnScroll>
-                    <p className='paragraph about-caption '>
-                        With more than five years of experience, I help clients resolve trauma symptoms — including feeling like you&apos;re 
-                        a burden, emotional flashbacks, and struggling to ask for help. In our work together, I will help you feel more relaxed 
-                        in your relationships, more secure in your wants and needs, and more willing to ask for help when you need it. 
-                    </p>
-                </FadeInOnScroll>
+                
             </div>
             <div id="snowshoe-container">
-                <Image id='about-pic' src='/snowshoe.jpg' width="554" height="739" alt="Martha Carter somatic therapist denver snowshoeing in a forest on a sunny winter day"></Image>
+                <Image id='about-pic' src='/snowshoe4.jpg' width="2505" height="4032" alt="Martha Carter somatic therapist denver snowshoeing in a forest on a sunny winter day"></Image>
             </div>          
         </div>
     )

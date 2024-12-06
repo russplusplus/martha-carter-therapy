@@ -3,6 +3,7 @@ import { Metadata } from "next"
 import { BookingModal } from "../components/BookingModal"
 import { Header } from "../components/Header"
 import { WhoISee } from "../components/WhoISee"
+import { WhoISee2 } from "../components/WhoISee2"
 import { MyApproach } from "../components/MyApproach"
 import { CurveFromCream2,
          CurveToCream1 } from "../components/Curves"
@@ -10,12 +11,11 @@ import { Footer } from "../components/Footer"
 
 export const metadata: Metadata = {
     title: {
-        absolute: "Trauma Therapy Colorado | Martha Carter Therapy"
+        absolute: "Trauma Therapy | Colorado"
     }
 }
 
 export default function Page() {
-
   return (
       <ClientWrapper>
         <BookingModal />
@@ -23,7 +23,7 @@ export default function Page() {
         <CurveFromCream2 />
         <WhoISee />
         <CurveToCream1 />
-        <MyApproach />
+        <WhoISee2 />
         <Footer />
       </ClientWrapper>
   );

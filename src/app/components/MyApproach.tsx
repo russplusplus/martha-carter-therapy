@@ -7,11 +7,11 @@ import { NavBtn } from "./NavBtn"
 
 export function MyApproach() {
   return (
-    <div className='flex-h-center prevent-select padding-b-l' id='approach-row-container'>
-      <div id="kyoto-container">
+    <div className='flex-h-center prevent-select padding-b-l cream' id='approach-row-container'>
+      {/* <div id="kyoto-container">
         <Image id='headshot' src='/kyoto.jpg' width="3024" height="4032" alt="Martha Carter Therapy Somatic Therapist Denver Colorado Headshot"></Image>
-      </div>
-      <div id="approach-caption-container" className="green">
+      </div> */}
+      <div id="approach-caption-container">
         <FadeInOnScroll>
           <h1 className='bold headshot-caption'>
             Somatic Therapy for Complex Trauma, PTSD, Self-Esteem, and Chronic Anxiety 

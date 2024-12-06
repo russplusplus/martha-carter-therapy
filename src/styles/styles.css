@@ -496,7 +496,7 @@ h1 {
 #approach-row-container {
   align-items: center;
   padding-top: 6rem;
-  background: var(--cream);
+  background: var(--lavender);
   padding-top: 6rem;
   position: relative;
   margin-top: -1px;
@@ -547,7 +547,7 @@ h1 {
 }
 
 #approach-caption-container {
-  width: 45%;
+  width: 55%;
   padding-right: 5rem;
   display: flex;
   flex-direction: column;
@@ -558,7 +558,7 @@ h1 {
 #about-row-container {
   align-items: center;
   background-color: var(--lavender);
-  height: 70rem;
+  height: 50rem;
 }
 
 .about-caption {
@@ -841,7 +841,7 @@ textarea {
 
 @media (max-width: 1440px) {
   #about-row-container {
-    height: 76rem
+    height: 55rem
   }
 }
 
@@ -867,7 +867,7 @@ textarea {
   }
 
   #about-row-container {
-    height: 96rem
+    height: 60rem
   }
   
 }
@@ -895,7 +895,7 @@ textarea {
   }
 
   #about-row-container {
-    height: 126rem;
+    height: 65rem;
   }
 
   #certification-container {
@@ -932,7 +932,7 @@ textarea {
   }
 
   #about-row-container {
-    height: 146rem;
+    height: 70rem;
   }
 
 }
@@ -994,10 +994,6 @@ textarea {
 
   .social-proof {
     height: 44rem;
-  }
-
-  #about-row-container {
-    height: 146rem;
   }
 
   #about-pic {

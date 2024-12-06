@@ -11,9 +11,15 @@ import { SocialProof1, SocialProof2 } from "../components/SocialProof"
 import { GetStarted } from "../components/GetStarted"
 import { Certification } from "../components/Certification"
 import { Footer } from "../components/Footer"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: {
+      absolute: "Somatic Therapist | Denver"
+  }
+}
 
 export default function Page() {
-
   return (
     <ClientWrapper>
       <BookingModal />
