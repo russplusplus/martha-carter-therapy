@@ -7,11 +7,11 @@ import { NavBtn } from "./NavBtn"
 
 export function WhoISee2() {
   return (
-    <div className='flex-h-center prevent-select padding-b-l' id='approach-row-container'>
+    <div className='flex-h-center prevent-select padding-b-l' id='whoisee2-row-container'>
       <div id="kyoto-container">
         <Image id='headshot' src='/kyoto.jpg' width="3024" height="4032" alt="Martha Carter Therapy Somatic Therapist Denver Colorado Headshot"></Image>
       </div>
-      <div id="approach-caption-container" className="green">
+      <div id="whoisee2-caption-container" className="green">
         <FadeInOnScroll>
             <p className='paragraph about-caption '>
                 When most people hear “trauma”, they may think of war tragedies or physical abuse, but there are other forms of 

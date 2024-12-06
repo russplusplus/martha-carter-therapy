@@ -40,10 +40,15 @@ export function Menu() {
                     </Link>
                     <Link href="/somatic-therapist-denver">
                         <h2 className={rowClass} >
-                            About me
+                            About Me
                         </h2>
                     </Link>
                     <Link href="/trauma-therapy-colorado">
+                        <h2 className={rowClass} >
+                            Who I See
+                        </h2>
+                    </Link>
+                    <Link href="/therapy-in-colorado-springs">
                         <h2 className={rowClass} >
                             My Approach
                         </h2>
@@ -54,11 +59,11 @@ export function Menu() {
                         </h2>
                     </Link>
                     <h2 className={rowClass} onClick={() => setBookingModalOpen(true)}>
-                        Get in touch
+                        Get in Touch
                     </h2>
                     <a href="https://martha-carter.clientsecure.me/" target="_blank">
                         <h2 className={rowClass}>
-                            Book a free consultation
+                            Book a Free Consultation
                         </h2>
                     </a>
                 </div>
