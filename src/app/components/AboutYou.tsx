@@ -32,7 +32,7 @@ export function AboutYou() {
                 </FadeInOnScroll>
                 <FadeInOnScroll>
                     <NavBtn className="hover-lavender margin-t-l" label="Learn more about me ►" href="/somatic-therapist-denver"/>
-                    <NavBtn className="hover-lavender margin-t-s margin-b-s" label="Learn more about my approach ►" href="/trauma-therapy-colorado"/>
+                    <NavBtn className="hover-lavender margin-t-s margin-b-s" label="Learn more about who I see ►" href="/trauma-therapy-colorado"/>
                 </FadeInOnScroll>
             </div>
         </div>
