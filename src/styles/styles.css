@@ -32,8 +32,11 @@ body {
   color: var(--green);
   background-color: var(--cream);
   width: 100%;
-  padding: 2rem;
-  position: relative;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: fixed;
   z-index: 2;
   margin-bottom: -1px;
 
@@ -568,7 +571,6 @@ h1 {
   padding-top: 6rem;
   background: var(--lavender);
   padding-top: 6rem;
-  position: relative;
   margin-top: -1px;
 }
 
@@ -1334,7 +1336,7 @@ textarea {
 
 .custom-shape-divider-top-1723787578 {
   position: relative;
-  top: 0;
+  top: 6rem;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -1374,7 +1376,7 @@ textarea {
 
 .custom-shape-divider-top-1723864175 {
   position: relative;
-  top: 0;
+  top: 6rem;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -1415,7 +1417,7 @@ textarea {
 
 .custom-shape-divider-top-1723871019 {
   position: relative;
-  top: 0;
+  top: 6rem;
   left: 0;
   width: 100%;
   overflow: hidden;
