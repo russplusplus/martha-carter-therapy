@@ -230,7 +230,34 @@ h1 {
   width: 100%;
   flex-wrap:  wrap;
   margin-right: 4rem;
+}
 
+#browser-contact-container {
+  margin-right: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  /* width: 100% */
+
+}
+
+#browser-contact-dropdown {
+  position: fixed;
+  top: 4rem;
+  right: 6rem;
+  z-index: 2;
+  background-color: var(--cream);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+.browser-contact-dropdown-item {
+  margin-bottom: 0.5rem;
+  text-align: right;
+  transition: all .25s ease;
 }
 
 #ig-icon {
@@ -911,7 +938,7 @@ textarea {
 }
 
 .hover-underline {
-  transition: all .5s;
+  transition: all .5s ease;
   &:hover {
     border-bottom: 2px solid var(--green);
 
