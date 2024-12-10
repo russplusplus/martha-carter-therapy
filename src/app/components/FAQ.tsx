@@ -3,7 +3,7 @@ import { FadeInOnScroll } from "./FadeInOnScroll"
 export function FAQ() {
 
     return (
-        <div id='faq-row-container' className='flex-h-center padding-t-l padding-b-l green bg-lavender prevent-select'>
+        <div id='faq-row-container' className='flex-h-center padding-b-l green bg-lavender prevent-select'>
             <div className="faq-column">
                 <div className="faq-row">
                     <div id="q-container" className="green">

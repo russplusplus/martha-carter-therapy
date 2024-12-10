@@ -5,6 +5,7 @@ import { MobileMenu } from './MobileMenu'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { relative } from 'path'
 import { BrowserView, MobileView } from "react-device-detect"
 
 const log = console.log.bind(console)
@@ -53,6 +54,7 @@ export function Header() {
                     </div>
                     <BrowserMenu/>
                 </div>
+                <div style={{height: '6rem'}}></div>
             </BrowserView>
             <MobileView>
                 <div id="contact-container">

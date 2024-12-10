@@ -412,7 +412,7 @@ h1 {
 
 #browser-menu {
   position: fixed;
-  top: 6rem;
+  top: 4.5rem;
   right: 1.3rem;
   background-color: var(--cream);
   font-family: Ubuntu;
@@ -561,16 +561,12 @@ h1 {
 
 #headshot-row-container {
   align-items: center;
-  padding-top: 6rem;
   background: var(--lavender);
-  padding-top: 6rem;
 }
 
 #approach-row-container {
   align-items: center;
-  padding-top: 6rem;
   background: var(--lavender);
-  padding-top: 6rem;
   margin-top: -1px;
 }
 
@@ -625,6 +621,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 4rem;
 }
 
 #approach-caption-container {
@@ -1336,7 +1333,7 @@ textarea {
 
 .custom-shape-divider-top-1723787578 {
   position: relative;
-  top: 6rem;
+  top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -1376,7 +1373,7 @@ textarea {
 
 .custom-shape-divider-top-1723864175 {
   position: relative;
-  top: 6rem;
+  top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -1417,7 +1414,7 @@ textarea {
 
 .custom-shape-divider-top-1723871019 {
   position: relative;
-  top: 6rem;
+  top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
